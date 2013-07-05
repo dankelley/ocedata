@@ -11,6 +11,7 @@
     Lawrence Internal Wave Experiment (SLEIWEX).}
 
 \examples{
+\dontrun{
 library(oce)
 library(ocedata)
 data(adp)
@@ -27,6 +28,7 @@ plot(adp, which="uv+ellipse+arrow")
 data(coastlineSLE)
 plot(coastlineSLE, clongitude=adp[["longitude"]], clatitude=adp[["latitude"]], span=50)
 points(adp[["longitude"]], adp[["latitude"]], pch='+', cex=2, col='red')
+}
 }
 
 \usage{data(adp)}

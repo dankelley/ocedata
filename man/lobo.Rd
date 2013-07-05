@@ -12,11 +12,12 @@ of Halifax by Satlantic.}
 \usage{data(ctd)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(lobo)
+data(lobo, package="ocedata")
 summary(lobo)
 plot(lobo)
+}
 }
 
 \source{The data were downloaded from a web interface at Satlantic

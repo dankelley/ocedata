@@ -29,10 +29,11 @@ topoWorld  <- as.topo(seq(0.25,359.75,1/2),seq(-89.75,89.75,1/2),z)
 \references{\url{http://www.ngdc.noaa.gov/mgg/global/relief/ETOPO5/TOPO/ETOPO5/}}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(topoWorld)
+data(topoWorld, package="ocedata") 
 plot(topoWorld, legend=NULL)
+}
 }
 
 \seealso{Created with \code{\link[oce]{as.topo}}.}

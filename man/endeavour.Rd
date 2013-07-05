@@ -12,12 +12,13 @@
 \usage{data(endeavour)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(coastlineWorld)
+data(coastlineWorld, package="ocedata")
 data(endeavour)
 mapPlot(coastlineWorld, type='l', proj='mollweide', orientation=c(90, -100, 0))
 mapPoints(endeavour$longitude, endeavour$latitude, pch=20, col='red')
+}
 }
 
 \source{The data were extracted from an XML file contained within a zipfile

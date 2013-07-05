@@ -14,11 +14,12 @@
 \usage{data(giss)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(giss)
+data(giss, package="ocedata")
 ## Compare the graph with Fig3 of Hansen et al. (2010)
 plot(giss$year, giss$Ta, type='l', xlab="Year", ylab="Temperature Anomaly")
+}
 }
 
 \source{The data were downloaded in summer 2012 from [1] and trimmed to just

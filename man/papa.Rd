@@ -20,9 +20,9 @@
 \usage{data(papa)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(papa)
+data(papa, package="ocedata")
 par(mfrow=c(3,1))
 imagep(papa$t, papa$z, papa$temperature, col=oceColorsJet, filledContour=TRUE)
 imagep(papa$t, papa$z, papa$salinity, col=oceColorsJet, filledContour=TRUE)
@@ -39,6 +39,7 @@ plot(papa$t, papa$sigmaTheta[,1], type='l',ylim=range(papa$sigmaTheta), lwd=2)
 for (i in 2:dim(papa$sigmaTheta)[2])
     lines(papa$t, papa$sigmaTheta[,i], col=i, lwd=2)
 legend("topleft", title="z [m]", lwd=2, legend=papa$z, col=1:length(papa$z), bg="white")
+}
 }
 
 \source{Salinity is from

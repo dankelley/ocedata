@@ -12,10 +12,11 @@
 \usage{data(met)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(met)
+data(met, package="ocedata")
 plot(met)
+}
 }
 
 \source{Environment Canada website (downloaded 2011-11-17)

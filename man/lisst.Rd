@@ -10,10 +10,11 @@
     constructed artificially.}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(lisst)
+data(lisst, package="ocedata")
 plot(lisst)
+}
 }
 
 \usage{data(lisst)}

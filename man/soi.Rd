@@ -9,10 +9,11 @@
 \description{This is the Southern Oscillation Index, downloaded in June 2013.}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(soi)
+data(soi, package="ocedata")
 plot(soi$year, soi$soi, type='l')
+}
 }
 
 \usage{data(soi)}

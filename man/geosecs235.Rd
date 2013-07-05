@@ -11,11 +11,12 @@
 \usage{data(geosecs235)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(geosecs235)
+data(geosecs235, package="ocedata")
 ## reproduce part of Figure 10 of Kelley and Van Scoy (1999)
 plotProfile(geosecs235, xtype="tritium", type='p', ylim=c(600, 0))
+}
 }
 
 \source{Data from \url{http://iridl.ldeo.columbia.edu/SOURCES/.GEOSECS/ISTA/237/VALUE/data.cdf}}

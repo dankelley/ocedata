@@ -14,11 +14,12 @@
 \usage{data(oceans)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(oceans)
+data(oceans, package="ocedata")
 dotchart(oceans$Area, rownames(oceans), main="Surface Area [m^2]",
          xlim=c(0, max(oceans$Area)))
+}
 }
 
 \source{Data were downloaded from the NOAA website

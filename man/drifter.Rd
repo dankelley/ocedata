@@ -14,12 +14,13 @@
     \code{drifter[["temperature"]][1,]} is the surface temperature.}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(drifter)
+data(drifter, package="ocedata")
 summary(drifter)
 data(coastlineWorld)
 plot(drifter, which="trajectory", coastline=coastlineWorld)
+}
 }
 
 \usage{data(drifter)}

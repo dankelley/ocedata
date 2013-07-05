@@ -28,11 +28,12 @@ save(sealevelHalifax, file="data/sealevelHalifax.rda")
   \url{http://www.atl.ec.gc.ca/weather/hurricane/juan/}.}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(sealevelHalifax)
+data(sealevelHalifax, package="ocedata")
 plot(sealevelHalifax)
 plot(sealevelHalifax, which=1, xlim=as.POSIXct(c("2003-01-01","2003-02-01")))
+}
 }
 
 \seealso{The documentation for \code{\link[oce]{sealevel-class}} explains the

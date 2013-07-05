@@ -13,9 +13,9 @@
     a normal distribution with standard deviation of 2 percent of signal.}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(adv)
+data(adv, package="ocedata")
 
 # Velocity time-series
 plot(adv)
@@ -25,6 +25,7 @@ s <- spectrum(adv[["v"]][,3],plot=FALSE)
 plot(log10(s$freq), log10(s$spec), type='l')
 for (a in seq(-20, 20, by=1))
     abline(a=a, b=-5/3, col='gray', lty='dotted')
+}
 }
 
 \usage{data(adv)}

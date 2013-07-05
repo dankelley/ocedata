@@ -12,13 +12,14 @@
 \usage{data(munk)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(munk)
+data(munk, package="ocedata")
 attach(munk)
 plot(temperature, depth,
      ylim=rev(range(depth)), xlab="Temperature [degC]", ylab="Depth [km]")
 detach(munk)
+}
 }
 
 \references{

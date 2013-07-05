@@ -13,8 +13,7 @@
 \examples{
 \dontrun{
 library(oce)
-library(ocedata)
-data(echosounder)
+data(echosounder, package="ocedata")
 plot(echosounder)
 plot(echosounder, drawBottom=TRUE)
 plot(echosounder, which=2, drawBottom=TRUE, atTop=pretty(echosounder[["time"]]))

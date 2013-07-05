@@ -12,13 +12,14 @@
 \usage{data(ctd)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(ctd)
+data(ctd, package="ocedata")
 plot(ctd, which=c(1,2,3,5), coastline="coastlineMaritimes")
 }
+}
 
-\source{This is a station within the \code{\link[oce]{section}} dataset, and details
+\source{This is a station within the \code{\link{section}} dataset, and details
    are provided in the documentation for the latter.}
 
 \seealso{The documentation for \code{\link[oce]{ctd-class}} explains the structure

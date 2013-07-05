@@ -12,10 +12,11 @@
 \usage{data(schmitt)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(schmitt)
+data(schmitt, package="ocedata")
 plotTS(as.ctd(schmitt$S, schmitt$theta, 0))
+}
 }
 
 \source{Data were digitized from Schmitt's Figure 1, to a tolerance of about

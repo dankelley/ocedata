@@ -11,11 +11,12 @@
 \usage{data(cm)}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(cm)
+data(cm, package="ocedata")
 summary(cm)
 plot(cm)
+}
 }
 
 \source{This is a snippet from a time series recorded as part of the SLEIWEX

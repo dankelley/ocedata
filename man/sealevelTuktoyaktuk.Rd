@@ -20,9 +20,9 @@
 }
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(sealevelTuktoyaktuk)
+data(sealevelTuktoyaktuk, data="ocedata")
 time <- sealevelTuktoyaktuk[["time"]]
 elevation <- sealevelTuktoyaktuk[["elevation"]]
 oce.plot.ts(time, elevation, type='l', ylab="Height [m]", ylim=c(-2,6))
@@ -31,6 +31,7 @@ legend("topleft", legend=c("Tuktoyaktuk (1975)","Detided"),
 tide <- tidem(sealevelTuktoyaktuk)
 detided <- elevation - predict(tide)
 lines(time, detided, col="red")
+}
 }
 
 \usage{data(sealevelTuktoyaktuk)}

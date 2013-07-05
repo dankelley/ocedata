@@ -18,10 +18,13 @@
     them.}
 
 \examples{
+\dontrun{
 library(oce)
-library(ocedata)
-data(tdr)
+data(tdr, package="ocedata")
 plot(tdr)
 }
+}
+
 \author{Dan Kelley}
+
 \keyword{datasets}
