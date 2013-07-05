@@ -12,6 +12,8 @@
 \usage{data(redfieldNP)}
 
 \examples{
+library(oce)
+library(ocedata)
 data(redfieldNP)
 attach(redfieldNP)
 plot(PO4, NO3, xlab=expression(PO[4]), ylab=expression(NO[3]))

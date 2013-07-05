@@ -9,7 +9,7 @@
   time spent near the surface.  Spikes are also clearly evident in the
   pressure record.  With such real-world wrinkles, this dataset provides
   a good example of data that need trimming with
-  \code{\link{ctdTrim}}.}
+  \code{\link[oce]{ctdTrim}}.}
 
 \usage{data(ctdRaw)}
 \source{The data were acquired near the centre of 
@@ -19,7 +19,7 @@ Oceanography 4120/5120 class.}
 
 \author{Dan Kelley}
 
-\seealso{The documentation for \code{\link{ctd-class}} explains the structure
+\seealso{The documentation for \code{\link[oce]{ctd-class}} explains the structure
     of CTD objects, and also outlines the other functions dealing with them.}
 
 \keyword{datasets}

@@ -16,6 +16,7 @@
 \examples{
 \dontrun{
 library(oce)
+library(ocedata)
 # Gulf Stream (note that section runs east to west)
 data(a03)
 GS <- subset.oce(a03, indices=124:102)
@@ -40,7 +41,7 @@ save(a03, file="oce/data/a03.rda")
 If the URL shown above fails, try other WOCE servers.
 }
 
-\seealso{The documentation for \code{\link{section-class}} explains the
+\seealso{The documentation for \code{\link[oce]{section-class}} explains the
     structure of section objects, and also outlines the functions dealing with
     them.}
 

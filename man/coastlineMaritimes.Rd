@@ -19,7 +19,7 @@
 
 \references{\url{http://www.ngdc.noaa.gov/mgg_coastline/index.jsp?llat=43.0&ulat=47.2&llon=-66.8&rlon=-59.5}}
 
-\seealso{The documentation for \code{\link{coastline-class}} explains the
+\seealso{The documentation for \code{\link[oce]{coastline-class}} explains the
     structure of coastline objects, and also outlines the other functions
     dealing with them.}
 

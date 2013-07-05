@@ -14,6 +14,8 @@
 \usage{data(redfieldPlankton)}
 
 \examples{
+library(oce)
+library(ocedata)
 data(redfieldPlankton)
 attach(redfieldPlankton)
 par(mfrow=c(1,2))

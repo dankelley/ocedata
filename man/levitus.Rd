@@ -13,6 +13,7 @@
 
 \examples{
 library(oce)
+library(ocedata)
 data(levitus)
 par(mfrow=c(2,1))
 imagep(levitus$longitude,levitus$latitude,levitus$SST,col=oceColorsJet,zlim=c(-2,30))

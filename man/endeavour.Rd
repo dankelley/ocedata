@@ -13,6 +13,7 @@
 
 \examples{
 library(oce)
+library(ocedata)
 data(coastlineWorld)
 data(endeavour)
 mapPlot(coastlineWorld, type='l', proj='mollweide', orientation=c(90, -100, 0))

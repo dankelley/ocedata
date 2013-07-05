@@ -30,7 +30,7 @@
   Creative Commons license
   (\url{http://creativecommons.org/licenses/by-sa/3.0/}).}
 
-\seealso{The documentation for \code{\link{coastline-class}} explains the
+\seealso{The documentation for \code{\link[oce]{coastline-class}} explains the
     structure of coastline objects, and also outlines the other functions
     dealing with them.}
 

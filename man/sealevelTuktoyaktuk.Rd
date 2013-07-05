@@ -17,10 +17,11 @@
   Although Foreman's Appendix 7.2 states that times are in Mountain standard
   time, the timezone is set to \code{UTC} in the present case, so that the
   results will be similar to those he provides in his Appendix 7.3.  
-  
-} % description
+}
 
 \examples{
+library(oce)
+library(ocedata)
 data(sealevelTuktoyaktuk)
 time <- sealevelTuktoyaktuk[["time"]]
 elevation <- sealevelTuktoyaktuk[["elevation"]]
@@ -62,7 +63,7 @@ sealevelTuktoyaktuk <- as.sealevel(elevation=elevation, time=time,
   Computers and Geosciences, 28, 929-937.
 }
 
-\seealso{The documentation for \code{\link{sealevel-class}} explains the
+\seealso{The documentation for \code{\link[oce]{sealevel-class}} explains the
     structure of sea-level objects, and also outlines the other functions
     dealing with them.}
 

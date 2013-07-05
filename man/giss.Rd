@@ -15,6 +15,7 @@
 
 \examples{
 library(oce)
+library(ocedata)
 data(giss)
 ## Compare the graph with Fig3 of Hansen et al. (2010)
 plot(giss$year, giss$Ta, type='l', xlab="Year", ylab="Temperature Anomaly")

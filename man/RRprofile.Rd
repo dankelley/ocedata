@@ -19,6 +19,8 @@ interpolation with application to oceanographic data.  \emph{Deep Sea
 Research}, \bold{15}, 185-193.}
 
 \examples{
+library(oce)
+library(ocedata)
 data(RRprofile)
 par(mgp=getOption('oceMgp'))
 par(mar=c(3,3,1,1))

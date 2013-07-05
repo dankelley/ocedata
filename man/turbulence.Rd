@@ -16,6 +16,7 @@
 
 \examples{
 library(oce)
+library(ocedata)
 ## Recreate Fig 9 of Grant et al. (1962), with intercept
 ## chosen to mimic the published figure
 data(turbulence)

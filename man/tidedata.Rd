@@ -7,7 +7,7 @@
 \title{Tidal constituent information}
 
 \description{The \code{tidedata} dataset contains Tide-constituent
-  information that is use by \code{\link{tidem}} to fit tidal models.
+  information that is use by \code{\link[oce]{tidem}} to fit tidal models.
   \code{tidedata} is a list containing
   \describe{
     \item{const}{a list containing vectors
@@ -71,9 +71,8 @@ cat("standard constituents:",tidedata$const$name[tidedata$const$ikmpr])
   \code{T_TIDE} values as a reference.
 }
 
-\seealso{
-\code{\link{tidem}} is used to fit tidal models using \code{tidedata}.
-}
+\seealso{\code{\link[oce]{tidem}} is used to fit tidal models using \code{tidedata}.  }
+
 \references{
   Foreman, M. G. G., 1977.
   Manual for tidal heights analysis and prediction.
@@ -86,5 +85,7 @@ cat("standard constituents:",tidedata$const$name[tidedata$const$ikmpr])
 }
 
 \author{Dan Kelley}
+
 \keyword{datasets}
+
 \concept{tide}

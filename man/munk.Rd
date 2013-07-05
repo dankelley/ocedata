@@ -12,6 +12,8 @@
 \usage{data(munk)}
 
 \examples{
+library(oce)
+library(ocedata)
 data(munk)
 attach(munk)
 plot(temperature, depth,

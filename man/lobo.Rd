@@ -1,12 +1,19 @@
 \name{lobo}
+
 \docType{data}
+
 \alias{lobo}
+
 \title{lobo dataset}
+
 \description{This is sample lobo dataset obtained in the Northwest Arm
 of Halifax by Satlantic.}
+
 \usage{data(ctd)}
+
 \examples{
 library(oce)
+library(ocedata)
 data(lobo)
 summary(lobo)
 plot(lobo)
@@ -24,7 +31,7 @@ lobo <- read.lobo(uri)
 }
 }
 
-\seealso{The documentation for \code{\link{lobo-class}} explains the structure
+\seealso{The documentation for \code{\link[oce]{lobo-class}} explains the structure
     of LOBO objects, and also outlines the other functions dealing with them.}
 
 \author{Dan Kelley}

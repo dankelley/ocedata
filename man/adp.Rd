@@ -12,6 +12,7 @@
 
 \examples{
 library(oce)
+library(ocedata)
 data(adp)
 
 # Velocity components.  (Note: we should probably trim some bins at top.)
@@ -32,7 +33,7 @@ points(adp[["longitude"]], adp[["latitude"]], pch='+', cex=2, col='red')
 
 \source{This file came from the SLEIWEX-2008 experiment.}
 
-\seealso{The documentation for \code{\link{adp-class}} explains the structure
+\seealso{The documentation for \code{\link[oce]{adp-class}} explains the structure
     of ADP objects, and also outlines the other functions dealing with them.}
 
 \author{Dan Kelley}

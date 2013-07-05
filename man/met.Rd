@@ -13,6 +13,7 @@
 
 \examples{
 library(oce)
+library(ocedata)
 data(met)
 plot(met)
 }
@@ -22,7 +23,7 @@ plot(met)
 }
 
 
-\seealso{The documentation for \code{\link{met-class}} explains the structure
+\seealso{The documentation for \code{\link[oce]{met-class}} explains the structure
     of \code{met} objects, and also outlines the other functions dealing with them.}
 
 \keyword{datasets}

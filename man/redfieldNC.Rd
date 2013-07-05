@@ -13,6 +13,8 @@
 \usage{data(redfieldNC)}
 
 \examples{
+library(oce)
+library(ocedata)
 data(redfieldNC)
 attach(redfieldNC)
 plot(CO2, NO3, xlab=expression(CO[2]), ylab=expression(NO[3]))

@@ -15,7 +15,7 @@ dataset at the NOAA site.}
 
 \references{\url{http://www.ngdc.noaa.gov/mgg_coastline}}
 
-\seealso{The documentation for \code{\link{coastline-class}} explains the
+\seealso{The documentation for \code{\link[oce]{coastline-class}} explains the
     structure of coastline objects, and also outlines the other functions
     dealing with them.}
 

@@ -30,11 +30,12 @@ topoWorld  <- as.topo(seq(0.25,359.75,1/2),seq(-89.75,89.75,1/2),z)
 
 \examples{
 library(oce)
+library(ocedata)
 data(topoWorld)
 plot(topoWorld, legend=NULL)
 }
 
-\seealso{Created with \code{\link{as.topo}}.}
+\seealso{Created with \code{\link[oce]{as.topo}}.}
 
 \author{Dan Kelley}
 

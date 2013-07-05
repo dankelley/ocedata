@@ -14,6 +14,8 @@
 \usage{data(oceans)}
 
 \examples{
+library(oce)
+library(ocedata)
 data(oceans)
 dotchart(oceans$Area, rownames(oceans), main="Surface Area [m^2]",
          xlim=c(0, max(oceans$Area)))

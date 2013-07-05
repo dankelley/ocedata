@@ -13,6 +13,7 @@
 
 \examples{
 library(oce)
+library(ocedata)
 data(schmitt)
 plotTS(as.ctd(schmitt$S, schmitt$theta, 0))
 }

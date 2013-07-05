@@ -21,6 +21,7 @@
 
 \examples{
 library(oce)
+library(ocedata)
 data(papa)
 par(mfrow=c(3,1))
 imagep(papa$t, papa$z, papa$temperature, col=oceColorsJet, filledContour=TRUE)
@@ -45,7 +46,7 @@ legend("topleft", title="z [m]", lwd=2, legend=papa$z, col=1:length(papa$z), bg=
     temperature is from
     \url{http://www.pmel.noaa.gov/stnP/data/daily/t50n145w_dy.ascii}.  Although
     there is a data file for \eqn{\sigma_\theta}{sigma-theta} on the NOAA
-    website, here it was calculated with \code{\link{swSigmaTheta}}.}
+    website, here it was calculated with \code{\link[oce]{swSigmaTheta}}.}
 
 \references{The larger data set is described at
     \url{http://www.pmel.noaa.gov/stnP/}, and related datasets can be found at
