@@ -14,7 +14,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(redfieldNP, package="ocedata")
+data(redfieldNP)
 attach(redfieldNP)
 plot(PO4, NO3, xlab=expression(PO[4]), ylab=expression(NO[3]))
 abline(0, 20, lwd=3)                   # line N:P = 20:1, as shown by Redfield

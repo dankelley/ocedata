@@ -13,7 +13,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(topo2, package="ocedata")
+data(topo2)
 # Image with default axes
 imagep(topo2)
 x <- seq(.25, 358.25, 2)

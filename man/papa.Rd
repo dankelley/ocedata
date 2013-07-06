@@ -22,7 +22,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(papa, package="ocedata")
+data(papa)
 par(mfrow=c(3,1))
 imagep(papa$t, papa$z, papa$temperature, col=oceColorsJet, filledContour=TRUE)
 imagep(papa$t, papa$z, papa$salinity, col=oceColorsJet, filledContour=TRUE)

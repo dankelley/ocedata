@@ -16,7 +16,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(drifter, package="ocedata")
+data(drifter)
 summary(drifter)
 data(coastlineWorld)
 plot(drifter, which="trajectory", coastline=coastlineWorld)

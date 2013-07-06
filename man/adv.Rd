@@ -15,7 +15,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(adv, package="ocedata")
+data(adv)
 
 # Velocity time-series
 plot(adv)

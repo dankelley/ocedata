@@ -12,7 +12,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(lisst, package="ocedata")
+data(lisst)
 plot(lisst)
 }
 }

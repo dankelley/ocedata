@@ -16,7 +16,6 @@
 \examples{
 \dontrun{
 library(oce)
-library(ocedata)
 # Gulf Stream (note that section runs east to west)
 data(a03)
 GS <- subset.oce(a03, indices=124:102)

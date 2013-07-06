@@ -31,7 +31,7 @@ topoWorld  <- as.topo(seq(0.25,359.75,1/2),seq(-89.75,89.75,1/2),z)
 \examples{
 \dontrun{
 library(oce)
-data(topoWorld, package="ocedata") 
+data(topoWorld) 
 plot(topoWorld, legend=NULL)
 }
 }

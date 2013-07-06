@@ -18,7 +18,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(drag, package="ocedata")
+data(drag)
 par(mar=c(3,3,1,1), mgp=c(2, 0.7, 0))
 plot(drag$U, drag$Cd, pch=ifelse(drag$method == "profile", 1, 19),
      xlab="U [m/s]", ylab=expression(C[D]),

@@ -20,7 +20,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(tdr, package="ocedata")
+data(tdr)
 plot(tdr)
 }
 }

@@ -11,7 +11,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(soi, package="ocedata")
+data(soi)
 plot(soi$year, soi$soi, type='l')
 }
 }

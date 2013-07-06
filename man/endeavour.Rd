@@ -14,7 +14,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(coastlineWorld, package="ocedata")
+data(coastlineWorld)
 data(endeavour)
 mapPlot(coastlineWorld, type='l', proj='mollweide', orientation=c(90, -100, 0))
 mapPoints(endeavour$longitude, endeavour$latitude, pch=20, col='red')

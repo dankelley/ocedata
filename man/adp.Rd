@@ -13,7 +13,6 @@
 \examples{
 \dontrun{
 library(oce)
-library(ocedata)
 data(adp)
 
 # Velocity components.  (Note: we should probably trim some bins at top.)

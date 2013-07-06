@@ -14,7 +14,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(met, package="ocedata")
+data(met)
 plot(met)
 }
 }

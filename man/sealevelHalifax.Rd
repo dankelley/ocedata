@@ -30,7 +30,7 @@ save(sealevelHalifax, file="data/sealevelHalifax.rda")
 \examples{
 \dontrun{
 library(oce)
-data(sealevelHalifax, package="ocedata")
+data(sealevelHalifax)
 plot(sealevelHalifax)
 plot(sealevelHalifax, which=1, xlim=as.POSIXct(c("2003-01-01","2003-02-01")))
 }

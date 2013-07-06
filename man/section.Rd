@@ -40,7 +40,7 @@ Harbour, offshore of the aptly-named Point Pleasant Park.
 \examples{
 \dontrun{
 library(oce)
-data(section, package="ocedata")
+data(section)
 data(coastlineHalifax, package="ocedata")
 plot(section, coastline=coastlineHalifax, grid=TRUE)
 }

@@ -14,7 +14,7 @@ of Halifax by Satlantic.}
 \examples{
 \dontrun{
 library(oce)
-data(lobo, package="ocedata")
+data(lobo)
 summary(lobo)
 plot(lobo)
 }

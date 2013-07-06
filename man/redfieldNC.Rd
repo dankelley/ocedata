@@ -15,7 +15,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(redfieldNC, package="ocedata")
+data(redfieldNC)
 attach(redfieldNC)
 plot(CO2, NO3, xlab=expression(CO[2]), ylab=expression(NO[3]))
 slope <- 1/7

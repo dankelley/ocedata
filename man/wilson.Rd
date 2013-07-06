@@ -14,7 +14,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(wilson, package="ocedata")
+data(wilson)
 attach(wilson)
 plot(Age, Distance, xlab="Age [My]", ylab="Distance [km]", xlim=c(125,0), ylim=c(0,4000))
 abline(0,4000/125)

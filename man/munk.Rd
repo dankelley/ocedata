@@ -14,7 +14,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(munk, package="ocedata")
+data(munk)
 attach(munk)
 plot(temperature, depth,
      ylim=rev(range(depth)), xlab="Temperature [degC]", ylab="Depth [km]")

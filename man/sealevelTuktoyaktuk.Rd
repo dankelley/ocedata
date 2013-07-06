@@ -22,7 +22,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(sealevelTuktoyaktuk, data="ocedata")
+data(sealevelTuktoyaktuk)
 time <- sealevelTuktoyaktuk[["time"]]
 elevation <- sealevelTuktoyaktuk[["elevation"]]
 oce.plot.ts(time, elevation, type='l', ylab="Height [m]", ylim=c(-2,6))

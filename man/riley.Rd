@@ -34,7 +34,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(riley, package="ocedata")
+data(riley)
 plot(riley$fig21points$day, riley$fig21points$P, xlab="Day of Year", ylab="Phytoplankton [gC/m^2]")
 lines(riley$fig21curve$day, riley$fig21curve$P)
 }

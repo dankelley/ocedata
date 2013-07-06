@@ -16,7 +16,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(redfieldPlankton, package="ocedata")
+data(redfieldPlankton)
 attach(redfieldPlankton)
 par(mfrow=c(1,2))
 boxplot(Nitrogen)
