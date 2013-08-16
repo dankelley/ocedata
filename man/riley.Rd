@@ -27,7 +27,7 @@
 
     }
     
-    This is used in Chapter 4 of Kelley (2012).}
+    This is used in Chapter 4 of Kelley (2013).}
 
 \usage{data(riley)}
 
