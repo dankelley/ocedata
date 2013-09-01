@@ -6,9 +6,9 @@
 
 \title{Redfield's (1934) NO3 and total CO2 data}
 
-\description{Data digitized from Redfield's (1934) Figure 3, showing NO$_3$
-    dependence on total CO$_2$.  This dataset is used in Chapter 4 of Kelley
-    (2012).}
+\description{Data digitized from Redfield's (1934) Figure 3, showing
+    \eqn{\textrm{NO}_3}{NO3} dependence on total \eqn{\textrm{CO}_2}{CO2}.
+    This dataset is used in Chapter 4 of Kelley (2013).}
 
 \usage{data(redfieldNC)}
 

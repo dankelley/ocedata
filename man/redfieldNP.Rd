@@ -6,8 +6,9 @@
 
 \title{Redfield's (1934) NO3 and PO4 data}
 
-\description{Data digitized from Redfield's (1934) Figure 1, showing NO$_3$
-    dependence on PO$_4$.  This dataset is used in Chapter 3 of Kelley (2012).}
+\description{Data digitized from Redfield's (1934) Figure 1, showing
+    \eqn{\textrm{NO}_3}{NO3} dependence on \eqn{\textrm{PO}_4}{PO4}.  This
+    dataset is used in Chapter 4 of Kelley (2012).}
 
 \usage{data(redfieldNP)}
 
@@ -23,7 +24,8 @@ detach(redfieldNP)
 }
 
 \source{Data digitized by Dan Kelley from a scanned copy of Redfield's (1934)
-    Figure 1, showing the dependence of NO$_3$ on PO$_4$.}
+    Figure 1, showing the dependence of \eqn{\textrm{NO}_3}{NO3} on
+    \eqn{\textrm{PO}_4}{PO4}.}
 
 \references{
     Dan Kelley, in preparation. Oceanographic Analysis with R.  Springer Verlag.
