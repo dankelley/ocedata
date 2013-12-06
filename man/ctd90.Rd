@@ -13,6 +13,7 @@
 \usage{data(ctd90)}
 
 \examples{
+\dontrun{
 library(oce)
 data(ctd90)
 par(mfrow=c(1, 2), mar=c(3, 3, 3, 1))
@@ -22,6 +23,7 @@ mapPlot(coastlineWorld, latitudelim=c(60,120), longitudelim=c(-130,-50),
         proj="stereographic", orientation=c(90, -90, 0), 
         axes=FALSE, fill='lightgray')
 mapPoints(ctd90[["longitude"]], ctd90[["latitude"]], pch=20, col='red')
+}
 }
 
 \source{The data were downloaded from
