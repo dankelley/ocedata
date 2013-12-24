@@ -41,8 +41,7 @@ Harbour, offshore of the aptly-named Point Pleasant Park.
 \dontrun{
 library(oce)
 data(section)
-data(coastlineHalifax, package="ocedata")
-plot(section, coastline=coastlineHalifax, grid=TRUE)
+plot(section, grid=TRUE)
 }
 }
 
