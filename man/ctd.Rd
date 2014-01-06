@@ -4,10 +4,11 @@
 
 \alias{ctd}
 
-\title{Seawater CTD profile}
+\title{A CTD profile in Halifax Harbour}
 
-\description{This is sample CTD profile provided for testing, created by
-  the code given in \dQuote{Examples}.}
+\description{A CTD profile measured in Halifax Harbour in 2003, by students
+    enrolled in the author's Physical Oceanography class at Dalhousie
+    University.}
 
 \usage{data(ctd)}
 
@@ -15,7 +16,7 @@
 \dontrun{
 library(oce)
 data(ctd)
-plot(ctd, which=c(1,2,3,5), coastline="coastlineMaritimes")
+plot(ctd, which=c(1,2,3,5), coastline="coastlineWorldFine")
 }
 }
 
