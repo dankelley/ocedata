@@ -6,7 +6,8 @@
 
 \title{Southern Oscillation Index}
 
-\description{This is the Southern Oscillation Index, downloaded in June 2013.}
+\description{This is the Southern Oscillation Index, downloaded in January
+    2014.}
 
 \examples{
 \dontrun{
