@@ -5,7 +5,7 @@
 
 \title{tdr (temperature-data recorder) dataset}
 
-\description{A sample object of class \code{\link[oce]{tdr-class}}.}
+\description{A sample object of Oce class \code{tdr-class}.}
 
 \usage{data(tdr)}
 
@@ -13,9 +13,9 @@
 
 \references{\url{http://myweb.dal.ca/kelley/SLEIWEX/index.php}}
 
-\seealso{The documentation for \code{\link[oce]{tdr-class}} explains the structure
-    of \code{tdr} objects, and also outlines the other functions dealing with
-    them.}
+\seealso{The documentation for \code{tdr-class} in the Oce package explains the
+    structure of \code{tdr} objects, and also outlines the other functions
+    dealing with them.}
 
 \examples{
 \dontrun{

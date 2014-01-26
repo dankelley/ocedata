@@ -23,8 +23,6 @@ mapPoints(endeavour$longitude, endeavour$latitude, pch=20, col='red')
 
 \source{The data were extracted from an XML file contained within a zipfile
     provided at the Australian government website
-    \url{http://data.gov.au/dataset/journal-of-the-h-m-s-endeavour-1768-1771/}.
-    (The world would be a better place if other governments similarly archived
-    data of this sort.)}
+    \url{http://data.gov.au/dataset/journal-of-the-h-m-s-endeavour-1768-1771/}.}
 
 \keyword{datasets}

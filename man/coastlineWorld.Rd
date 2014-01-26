@@ -39,11 +39,11 @@ data(coastlineWorldFine)}
     \code{ne_50m_admin_0_countries.shp} for \code{coastlineWorld}, and
     \code{ne_10m_admin_0_countries.shp} for \code{coastlineWorldFine}.}
 
-\seealso{The documentation for \code{\link[oce]{coastline-class}} explains the
-    structure of coastline objects, and also outlines the other functions
-    dealing with them.
+\seealso{The documentation for \code{coastline-class} in the Oce package
+    explains the structure of coastline objects, and also outlines the other
+    functions dealing with them.
 
-    The \code{maps} package provides a database named \code{\link[maps]{world}}
+    The \code{maps} package provides a database named \code{world}
     that has 27221 points, putting it intermediate between the Oce default and
     coarse versions.  This can be compared with Oce coastlines as follows.
     \preformatted{

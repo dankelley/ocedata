@@ -6,7 +6,7 @@
 
 \title{Wilson's (1963) table of seafloor spreading}
 
-\description{Wilson's (1963) table of seafloor spreading.  This dataset is used in Chapter 4 of Kelley (2013).}
+\description{Wilson's (1963) table of seafloor spreading.}
 
 
 \usage{data(wilson)}
@@ -32,8 +32,6 @@ detach(wilson)
     of spreading rate.}
 
 \references{
-    Dan Kelley, in preparation. Oceanographic Analysis with R.  Springer Verlag.
-
     J. Tuzo Wilson, 1963. Evidence from islands on the spreading of ocean floors.  \emph{Nature}, 197(4867):536-538.  \url{//dx.doi.org/10.1038/197536a0.}
 }
 

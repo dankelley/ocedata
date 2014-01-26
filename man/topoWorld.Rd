@@ -36,8 +36,9 @@ plot(topoWorld, legend=NULL)
 }
 }
 
-\seealso{Created with \code{\link[oce]{as.topo}}.}
+\seealso{Created with \code{as.topo} in the Oce package.}
 
 \author{Dan Kelley}
 
 \keyword{datasets}
+

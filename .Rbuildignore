@@ -4,3 +4,5 @@ README.rst
 inst/doc/.gitignore
 inst/doc/ctd-object.svg
 
+^.*\.Rproj$
+^\.Rproj\.user$

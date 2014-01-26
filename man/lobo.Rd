@@ -32,8 +32,9 @@ lobo <- read.lobo(uri)
 }
 }
 
-\seealso{The documentation for \code{\link[oce]{lobo-class}} explains the structure
-    of LOBO objects, and also outlines the other functions dealing with them.}
+\seealso{The documentation for \code{lobo-class} in the Oce package explains
+    the structure of LOBO objects, and also outlines the other functions
+    dealing with them.}
 
 \author{Dan Kelley}
 \keyword{datasets}

@@ -39,9 +39,9 @@ save(a03, file="oce/data/a03.rda")
 If the URL shown above fails, try other WOCE servers.
 }
 
-\seealso{The documentation for \code{\link[oce]{section-class}} explains the
-    structure of section objects, and also outlines the functions dealing with
-    them.}
+\seealso{The documentation for \code{section-class} in the Oce package explains
+    the structure of section objects, and also outlines the functions dealing
+    with them.}
 
 \author{Dan Kelley}
 

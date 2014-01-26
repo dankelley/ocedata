@@ -7,8 +7,7 @@
 \title{Redfield's (1934) NO3 and total CO2 data}
 
 \description{Data digitized from Redfield's (1934) Figure 3, showing
-    \eqn{\textrm{NO}_3}{NO3} dependence on total \eqn{\textrm{CO}_2}{CO2}.
-    This dataset is used in Chapter 4 of Kelley (2013).}
+    \eqn{\textrm{NO}_3}{NO3} dependence on total \eqn{\textrm{CO}_2}{CO2}.}
 
 \usage{data(redfieldNC)}
 
@@ -30,8 +29,6 @@ detach(redfieldNC)
 \seealso{See \code{\link{redfieldNP}} and \code{\link{redfieldPlankton}}.}
 
 \references{
-    Dan Kelley, in preparation. Oceanographic Analysis with R.  Springer Verlag.
-
     Alfred C. Redfield, 1934.  On the proportions of organic derivations in sea
     water and their relation to the composition of plankton.  Pages 177--192 in
     James Johnstone Memorial Volume, University Press of Liverpool.

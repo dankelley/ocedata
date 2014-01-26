@@ -24,7 +24,8 @@ plot(met)
 }
 
 
-\seealso{The documentation for \code{\link[oce]{met-class}} explains the structure
-    of \code{met} objects, and also outlines the other functions dealing with them.}
+\seealso{The documentation for \code{met-class} in the Oce package explains the
+    structure of \code{met} objects, and also outlines the other functions
+    dealing with them.}
 
 \keyword{datasets}

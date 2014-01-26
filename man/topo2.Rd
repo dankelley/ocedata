@@ -24,8 +24,8 @@ contour(x, y, topo2, level=0, drawlabels=FALSE)
 }
 
 \source{The data are calculated from the \code{z} entry in the
-    \code{\link{topoWorld}} data, smoothed with
-    \code{\link[oce]{matrixSmooth}} with \code{passes=2}, and then subsetted to
-    2 degrees of latitude and longitude.} 
+    \code{\link{topoWorld}} data, smoothed with the Oce function
+    \code{matrixSmooth} with \code{passes=2}, and then subsetted to 2 degrees
+    of latitude and longitude.} 
 
 \keyword{datasets}

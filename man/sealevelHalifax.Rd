@@ -9,9 +9,9 @@
 \description{This sample sea-level dataset is the 2003 record from Halifax
     Harbour in Nova Scotia, Canada. Note that Hurricane Juan hit Halifax a half
     hour before midnight on September 28th of 2003, causing a strong storm
-    surge; see example at \code{\link[oce]{plot.sealevel}}.  For reasons that are
-    not mentioned on the data archive website, the record ends on the 8th of
-    October.}
+    surge; see example at \code{plot.sealevel} in the Oce package.  For reasons
+    that are not mentioned on the data archive website, the record ends on the
+    8th of October.}
 
 \usage{data(sealevelHalifax)}
 
@@ -36,9 +36,9 @@ plot(sealevelHalifax, which=1, xlim=as.POSIXct(c("2003-01-01","2003-02-01")))
 }
 }
 
-\seealso{The documentation for \code{\link[oce]{sealevel-class}} explains the
-    structure of sealevel objects, and also outlines the other functions
-    dealing with them.}
+\seealso{The documentation for \code{sealevel-class} in the Oce package
+    explains the structure of sealevel objects, and also outlines the other
+    functions dealing with them.}
 
 \author{Dan Kelley}
 
