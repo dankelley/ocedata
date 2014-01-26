@@ -10,16 +10,6 @@
     Biosonics scientific echousounder, as part of the St Lawrence Internal Wave
     Experiment (SLEIWEX).}
 
-\examples{
-\dontrun{
-library(oce)
-data(echosounder)
-plot(echosounder)
-plot(echosounder, drawBottom=TRUE)
-plot(echosounder, which=2, drawBottom=TRUE, atTop=pretty(echosounder[["time"]]))
-}
-}
-
 \usage{data(echosounder)}
 
 \source{This file came from the SLEIWEX-2008 experiment.}

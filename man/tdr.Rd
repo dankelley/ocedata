@@ -17,14 +17,6 @@
     structure of \code{tdr} objects, and also outlines the other functions
     dealing with them.}
 
-\examples{
-\dontrun{
-library(oce)
-data(tdr)
-plot(tdr)
-}
-}
-
 \author{Dan Kelley}
 
 \keyword{datasets}

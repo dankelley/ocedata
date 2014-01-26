@@ -12,17 +12,6 @@
 
 \usage{data(redfieldNP)}
 
-\examples{
-\dontrun{
-library(oce)
-data(redfieldNP)
-attach(redfieldNP)
-plot(PO4, NO3, xlab=expression(PO[4]), ylab=expression(NO[3]))
-abline(0, 20, lwd=3)                   # line N:P = 20:1, as shown by Redfield
-detach(redfieldNP)
-}
-}
-
 \source{Data digitized by Dan Kelley from a scanned copy of Redfield's (1934)
     Figure 1, showing the dependence of \eqn{\textrm{NO}_3}{NO3} on
     \eqn{\textrm{PO}_4}{PO4}.}

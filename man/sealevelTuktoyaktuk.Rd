@@ -19,21 +19,6 @@
   results will be similar to those he provides in his Appendix 7.3.  
 }
 
-\examples{
-\dontrun{
-library(oce)
-data(sealevelTuktoyaktuk)
-time <- sealevelTuktoyaktuk[["time"]]
-elevation <- sealevelTuktoyaktuk[["elevation"]]
-oce.plot.ts(time, elevation, type='l', ylab="Height [m]", ylim=c(-2,6))
-legend("topleft", legend=c("Tuktoyaktuk (1975)","Detided"),
-       col=c("black","red"),lwd=1)
-tide <- tidem(sealevelTuktoyaktuk)
-detided <- elevation - predict(tide)
-lines(time, detided, col="red")
-}
-}
-
 \usage{data(sealevelTuktoyaktuk)}
 
 \source{The data were based on the \code{T_TIDE} dataset,  which in turn seems

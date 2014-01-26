@@ -13,15 +13,6 @@
     
 \usage{data(giss)}
 
-\examples{
-\dontrun{
-library(oce)
-data(giss)
-## Compare the graph with Fig3 of Hansen et al. (2010)
-plot(giss$year, giss$Ta, type='l', xlab="Year", ylab="Temperature Anomaly")
-}
-}
-
 \source{The data were downloaded in summer 2012 from [1] and trimmed to just
     the years 1880 to 2011 during which values are available for each month.
     See the NASA webpage [2] for a description of the data processing done by

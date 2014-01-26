@@ -13,16 +13,6 @@
     with first index corresponding to depth, e.g.
     \code{drifter[["temperature"]][1,]} is the surface temperature.}
 
-\examples{
-\dontrun{
-library(oce)
-data(drifter)
-summary(drifter)
-data(coastlineWorld)
-plot(drifter, which="trajectory", coastline=coastlineWorld)
-}
-}
-
 \usage{data(drifter)}
 
 \source{\url{http://www.usgodae.org/ftp/outgoing/argo/dac/bodc/6900388/6900388_prof.nc}}

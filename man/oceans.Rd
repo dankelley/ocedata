@@ -13,15 +13,6 @@
 
 \usage{data(oceans)}
 
-\examples{
-\dontrun{
-library(oce)
-data(oceans)
-dotchart(oceans$Area, rownames(oceans), main="Surface Area [m^2]",
-         xlim=c(0, max(oceans$Area)))
-}
-}
-
 \source{Data were downloaded from the NOAA website
     \url{http://ngdc.noaa.gov/mgg/global/etopo1_ocean_volumes.html} in October
     2012.}

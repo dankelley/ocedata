@@ -16,14 +16,6 @@
 
 \references{\url{http://www.ngdc.noaa.gov/mgg/global/relief/ETOPO5/TOPO/ETOPO5/}}
 
-\examples{
-\dontrun{
-library(oce)
-data(topoWorld) 
-plot(topoWorld, legend=NULL)
-}
-}
-
 \seealso{Created with \code{as.topo} in the Oce package.}
 
 \author{Dan Kelley}

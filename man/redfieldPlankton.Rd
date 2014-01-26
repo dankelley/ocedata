@@ -13,20 +13,6 @@
 
 \usage{data(redfieldPlankton)}
 
-\examples{
-\dontrun{
-library(oce)
-data(redfieldPlankton)
-attach(redfieldPlankton)
-par(mfrow=c(1,2))
-boxplot(Nitrogen)
-abline(h=16.7, col='gray')
-boxplot(Phosphorus)
-abline(h=1.85, col='gray')
-detach(redfieldPlankton)
-}
-}
-
 \source{Data entered verbatim (sans italics for species name) by Dan Kelley
     from Redfield's (1934) Table II.}
 

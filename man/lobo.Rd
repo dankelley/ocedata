@@ -11,15 +11,6 @@ of Halifax by Satlantic.}
 
 \usage{data(ctd)}
 
-\examples{
-\dontrun{
-library(oce)
-data(lobo)
-summary(lobo)
-plot(lobo)
-}
-}
-
 \source{The data were downloaded from a web interface at Satlantic LOBO web
     server and then read with \code{read.lobo} in the Oce package.}
 

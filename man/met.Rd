@@ -11,14 +11,6 @@
 
 \usage{data(met)}
 
-\examples{
-\dontrun{
-library(oce)
-data(met)
-plot(met)
-}
-}
-
 \source{Downloaded from the Environment Canada website
     \url{http://climate.weatheroffice.gc.ca/climateData/bulkdata_e.html?timeframe=1&Prov=XX&StationID=6358&Year=2011&Month=7&Day=15&format=csv}
     on November 17, 2011.}

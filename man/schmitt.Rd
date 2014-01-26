@@ -11,14 +11,6 @@
 
 \usage{data(schmitt)}
 
-\examples{
-\dontrun{
-library(oce)
-data(schmitt)
-plotTS(as.ctd(schmitt$S, schmitt$theta, 0))
-}
-}
-
 \source{Data were digitized from Schmitt's Figure 1, to a tolerance of about
     half the symbol size in that diagram.  Schmitt reported the original data
     source as a cruise of the vessel T. G. Thompson in 1970, and a location of

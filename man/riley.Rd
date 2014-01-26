@@ -31,15 +31,6 @@
 
 \usage{data(riley)}
 
-\examples{
-\dontrun{
-library(oce)
-data(riley)
-plot(riley$fig21points$day, riley$fig21points$P, xlab="Day of Year", ylab="Phytoplankton [gC/m^2]")
-lines(riley$fig21curve$day, riley$fig21curve$P)
-}
-}
-
 \source{\code{riley$fig21points} is based on manual manual digitization of
     Riley's Figure 21.  \code{riley$fig21curve} are based on manual
     digitization of Riley's theoretical curve in the same figure, fitted to a

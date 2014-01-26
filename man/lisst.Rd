@@ -9,14 +9,6 @@
 \description{LISST (Laser in-situ scattering and transmissometry) dataset,
     constructed artificially.}
 
-\examples{
-\dontrun{
-library(oce)
-data(lisst)
-plot(lisst)
-}
-}
-
 \usage{data(lisst)}
 
 \source{This was constructed artifically, to roughly match the sort of values

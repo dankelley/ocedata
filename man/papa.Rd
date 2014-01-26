@@ -19,29 +19,6 @@
 
 \usage{data(papa)}
 
-\examples{
-\dontrun{
-library(oce)
-data(papa)
-par(mfrow=c(3,1))
-imagep(papa$t, papa$z, papa$temperature, col=oceColorsJet, filledContour=TRUE)
-imagep(papa$t, papa$z, papa$salinity, col=oceColorsJet, filledContour=TRUE)
-imagep(papa$t, papa$z, papa$sigmaTheta, col=oceColorsJet, filledContour=TRUE)
-plot(papa$t, papa$temperature[,1], type='l',ylim=range(papa$temperature), lwd=2)
-for (i in 2:dim(papa$temperature)[2])
-    lines(papa$t, papa$temperature[,i], col=i, lwd=2)
-legend("topleft", title="z [m]", lwd=2, legend=papa$z, col=1:length(papa$z), bg="white")
-plot(papa$t, papa$salinity[,1], type='l',ylim=range(papa$salinity), lwd=2)
-for (i in 2:dim(papa$salinity)[2])
-    lines(papa$t, papa$salinity[,i], col=i, lwd=2)
-legend("topleft", title="z [m]", lwd=2, legend=papa$z, col=1:length(papa$z), bg="white")
-plot(papa$t, papa$sigmaTheta[,1], type='l',ylim=range(papa$sigmaTheta), lwd=2)
-for (i in 2:dim(papa$sigmaTheta)[2])
-    lines(papa$t, papa$sigmaTheta[,i], col=i, lwd=2)
-legend("topleft", title="z [m]", lwd=2, legend=papa$z, col=1:length(papa$z), bg="white")
-}
-}
-
 \source{Salinity is from
     \url{http://www.pmel.noaa.gov/stnP/data/daily/s50n145w_dy.ascii} and
     temperature is from

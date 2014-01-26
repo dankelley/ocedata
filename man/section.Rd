@@ -13,17 +13,6 @@
     heading in the last few dozen stations to run across the nominal Gulf
     Stream axis.}
 
-\examples{
-\dontrun{
-library(oce)
-# Gulf Stream
-data(section)
-GS <- subset(section, 109<=stationId&stationId<=129)
-GSg <- sectionGrid(GS, p=seq(0, 5000, 100))
-plot(GSg, map.xlim=c(-80,-60))
-}
-}
-
 \usage{data(a03)}
 
 \source{This is based on a WOCE file downloaded from

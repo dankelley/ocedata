@@ -12,14 +12,6 @@
 
 \usage{data(ctd)}
 
-\examples{
-\dontrun{
-library(oce)
-data(ctd)
-plot(ctd, which=c(1,2,3,5), coastline="coastlineWorldFine")
-}
-}
-
 \source{This is a station within the \code{\link{section}} dataset, and details
    are provided in the documentation for the latter.}
 

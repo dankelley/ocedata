@@ -11,19 +11,6 @@
 
 \usage{data(redfieldNC)}
 
-\examples{
-\dontrun{
-library(oce)
-data(redfieldNC)
-attach(redfieldNC)
-plot(CO2, NO3, xlab=expression(CO[2]), ylab=expression(NO[3]))
-slope <- 1/7
-abline(-275.5, slope, lwd=3)
-abline(-288.5, slope, lwd=3)
-detach(redfieldNC)
-}
-}
-
 \source{Data digitized by Dan Kelley from a scanned copy of Redfield (1934).}
 
 \seealso{See \code{\link{redfieldNP}} and \code{\link{redfieldPlankton}}.}

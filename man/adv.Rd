@@ -12,22 +12,6 @@
     redacted, and velocities have modified by adding random numbers chosen from
     a normal distribution with standard deviation of 2 percent of signal.}
 
-\examples{
-\dontrun{
-library(oce)
-data(adv)
-
-# Velocity time-series
-plot(adv)
-
-# Spectrum of upward component of velocity, with ``turbulent'' reference line
-s <- spectrum(adv[["v"]][,3],plot=FALSE)
-plot(log10(s$freq), log10(s$spec), type='l')
-for (a in seq(-20, 20, by=1))
-    abline(a=a, b=-5/3, col='gray', lty='dotted')
-}
-}
-
 \usage{data(adv)}
 
 \source{This file came from the SLEIWEX-2008 experiment.}
