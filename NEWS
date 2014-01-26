@@ -1,3 +1,6 @@
+0.1.2
+- trial version uploaded to CRAN Jan 26, 2014 (trying to fix a dependency on oce)
+
 0.1
 - first version, with data moved from 'oce' version 0.9-12
 
