@@ -15,12 +15,8 @@
 
 \usage{data(sealevelHalifax)}
 
-\source{The data were downloaded from MEDS, and treated as follows.
-   \preformatted{
-sealevelHalifax <- read.oce("490-01-jan-2003_slev.csv")
-sealevelHalifax[["longitude"]] <- -sealevelHalifax[["longitude"]]
-save(sealevelHalifax, file="data/sealevelHalifax.rda")
-   }}
+\source{The data were downloaded from MEDS, and read with \code{read.oce} in
+    the Oce package.  The sign of the longitude was flipped before storing.}
 
 \references{The MEDS archive is at
   \url{http://www.meds-sdmm.dfo-mpo.gc.ca/meds/Databases/TWL/TWL_inventory_e.htm}.

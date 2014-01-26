@@ -45,19 +45,7 @@ data(coastlineWorldFine)}
 
     The \code{maps} package provides a database named \code{world}
     that has 27221 points, putting it intermediate between the Oce default and
-    coarse versions.  This can be compared with Oce coastlines as follows.
-    \preformatted{
-library(oce)
-library(maps)
-xy <- maps:::map.poly('world')
-coastline <- as.coastline(xy$x, xy$y)
-plot(coastline, clat=47, clon=-63, span=1000)
-lines(coastlineWorld[['longitude']],
-      coastlineWorld[['latitude']], col='red')
-lines(coastlineWorldFine[['longitude']],
-      coastlineWorldFine[['latitude']], col='blue')
-}
-}
+    coarse versions.}
 
 \author{Dan Kelley}
 

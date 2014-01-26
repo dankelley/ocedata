@@ -38,20 +38,8 @@ lines(time, detided, col="red")
 
 \source{The data were based on the \code{T_TIDE} dataset,  which in turn seems
     to be based on Appendix 7.2 of Foreman (1977).  Minor editing was on file
-    format, and then the \code{sealevelTuktoyaktuk} object was created as
-    follows.
-\preformatted{
-# Note: the data file is not supplied with Oce.
-tuk <- read.table("tuk/tuk_time_elev.dat", header=FALSE, as.is=TRUE)
-time <- as.POSIXlt(strptime(tuk$V1, "\%d-\%b-\%Y \%H:\%M:\%S", tz="GMT"), tz="GMT")
-elevation <- tuk$V2
-sealevelTuktoyaktuk <- as.sealevel(elevation=elevation, time=time,
-  stationName="Tuktoyaktuk", region="NWT", stationNumber=6485,
-  longitude=-133.0292, latitude=69.43889,
-  year=1975, GMTOffset=0)
-#save(sealevelTuktoyaktuk, file="oce/data/sealevelTuktoyaktuk.rda")
-} % preformatted
-} % source
+    format, and then the \code{sealevelTuktoyaktuk} object was created using
+    \code{as.sealevel} in the Oce package.}
 
 \references{
   Foreman, M. G. G., 1977.

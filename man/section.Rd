@@ -26,18 +26,8 @@ plot(GSg, map.xlim=c(-80,-60))
 
 \usage{data(a03)}
 
-\source{
-This is based on a WOCE file downloaded from a server, as below:
-\preformatted{
-section <- read.section("http://cchdo.ucsd.edu/data/onetime/atlantic/a03/a03_hy1.csv", 
-                        sectionId="a03",
-                        ship="R/V Professor Multanovskiy", 
-                        scientist="Vladimir Tereschenkov",
-                        institute="SIO")
-save(a03, file="oce/data/a03.rda")
-}
-If the URL shown above fails, try other WOCE servers.
-}
+\source{This is based on a WOCE file downloaded from
+    \url{http://cchdo.ucsd.edu/data/onetime/atlantic/a03/a03_hy1.csv}.}
 
 \seealso{The documentation for \code{section-class} in the Oce package explains
     the structure of section objects, and also outlines the functions dealing

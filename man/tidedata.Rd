@@ -51,15 +51,6 @@
   Apart from the use of \code{d1} through \code{d6}, the naming and
   content follows \code{T_TIDE}.  All of this is based on Foreman
   (1977), to which the reader is referred for details.
-
-  To get a list of all the available tidal constituents, do
-  \preformatted{
-cat("all constituents:",tidedata$const$name)
-  }
-  and to get a list of the so-called standard coefficients, do
-  \preformatted{
-cat("standard constituents:",tidedata$const$name[tidedata$const$ikmpr])
-  }
 }
 
 \usage{data(tidedata)}
