@@ -1,1 +1,3 @@
+import(methods)
+exportClasses(oce, adp, adv, cm, coastline, ctd, drifter, lisst, lobo, met, sealevel, section, tdr, tidem, topo, windrose)
 
