@@ -24,7 +24,7 @@ plot(GSg, map.xlim=c(-80,-60))
 }
 }
 
-\usage{data(a03)}
+\usage{data(section)}
 
 \source{This is based on a WOCE file downloaded from
     \url{http://cchdo.ucsd.edu/data/onetime/atlantic/a03/a03_hy1.csv}.}
