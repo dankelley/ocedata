@@ -6,12 +6,12 @@
 
 \title{Landsat-8 dataset}
 
-\description{Subset of band-8 of the Landsat-8 image designated
-    LC80080292014065LGN00.  The dataset covers a span of about 7km in the Minas
-    Basin of the Bay of Fundy.  Visible on the right of the image, at
-    mid-latitude, is the end of Cape Split.  Strong tidal currents in this
-    region produce interesting currents near that spot, e.g. a hydraulic jump.
-    Note the eddy train to the west of the Cape.}
+\description{Subset of the Landsat-8 image designated LC80080292014065LGN00.
+    The dataset covers a span of about 30 square kilometres in the Minas Basin
+    of the Bay of Fundy.  Visible on the right of the image, at mid-latitude,
+    is the end of Cape Split.  Strong tidal currents in this region produce
+    interesting currents in that vicininty, including hydraulic jumps, and the
+    image shows some features that may be of interest.}
 
 \examples{
 \dontrun{
@@ -34,10 +34,11 @@ plot(landsat, which=2, zlim=c(0.10, 0.15))
 
 \preformatted{
 library(oce)
-l <- read.landsat("LC80080292014065LGN00", band=8)
+setwd("~/Dropbox")
+l <- read.landsat("LC80080292014065LGN00", band=1:11, debug=3)
 landsat <- landsatTrim(l, 
-                       list(longitude=-64.535, latitude=45.288),
-                       list(longitude=-64.429, latitude=45.368))
+                       list(longitude=-64.521, latitude=45.300),
+                       list(longitude=-64.429, latitude=45.368), debug=3)
 }
 }
    
