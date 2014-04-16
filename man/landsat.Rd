@@ -34,8 +34,7 @@ plot(landsat, which=2, zlim=c(0.10, 0.15))
 
 \preformatted{
 library(oce)
-setwd("~/Dropbox")
-l <- read.landsat("LC80080292014065LGN00", band=1:11, debug=3)
+l <- read.landsat("LC80080292014065LGN00")
 landsat <- landsatTrim(l, 
                        list(longitude=-64.521, latitude=45.300),
                        list(longitude=-64.429, latitude=45.368), debug=3)
