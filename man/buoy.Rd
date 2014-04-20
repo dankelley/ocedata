@@ -42,7 +42,26 @@ oce.plot.ts(buoy$t, buoy$period, ylab="Wave period [s]")
 \source{The data were downloaded as a file named \code{44258.txt} in April 2014
     from \url{http://www.ndbc.noaa.gov/data/realtime2/}, and made into a data
     frame.  See [1] and [2] for information on the data in such buoys, and [3]
-    for more on this particular buoy.}
+    for more on this particular buoy.  The code to create the dataset is given below.
+\preformatted{
+d <- read.table("44258.txt", stringsAsFactors=FALSE, skip=2)
+t <- ISOdatetime(d[,1], d[,2], d[,3], d[,4], d[,5], 0, tz="UTC")
+o <- order(t)
+## missing data
+d[d == "MM"] <- NA
+## put oldest first
+t <- t[o]
+d <- d[o,]
+footPerMetre <- 39.3701 / 12
+direction <- as.numeric(d[,6])
+wind <- as.numeric(d[,7])
+height <- as.numeric(d[,9])
+period <- as.numeric(d[,10])
+pa <- as.numeric(d[,13])
+Ta <- as.numeric(d[,14])
+Tw <- as.numeric(d[,15])
+}
+}
     
 \references{\enumerate{\item\url{http://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf}
         \item\url{http://www.ndbc.noaa.gov/measdes.shtml}
