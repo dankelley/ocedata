@@ -29,12 +29,14 @@
 }
 
 \examples{
+\dontrun{
 library(oce)
 data(buoy)
 par(mfrow=c(3,1))
 oce.plot.ts(buoy$t, buoy$wind, ylab="Wind Speed [m/s]")
 oce.plot.ts(buoy$t, buoy$height, ylab="Wave height [m]")
 oce.plot.ts(buoy$t, buoy$period, ylab="Wave period [s]")
+}
 }
 
 \usage{data(buoy)}
