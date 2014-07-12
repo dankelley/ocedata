@@ -3,6 +3,6 @@ README.rst
 .gitignore
 inst/doc/.gitignore
 inst/doc/ctd-object.svg
-
+_layouts
 ^.*\.Rproj$
 ^\.Rproj\.user$
