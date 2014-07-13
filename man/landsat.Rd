@@ -6,12 +6,11 @@
 
 \title{Landsat-8 dataset}
 
-\description{Subset of the Landsat-8 image designated LC80080292014065LGN00.
-    The dataset covers a span of about 30 square kilometres in the Minas Basin
-    of the Bay of Fundy.  Visible on the right of the image, at mid-latitude,
-    is the end of Cape Split.  Strong tidal currents in this region produce
-    interesting currents in that vicininty, including hydraulic jumps, and the
-    image shows some features that may be of interest.}
+\description{Subset of the Landsat-8 image designated LC80080292014065LGN00, an
+    image from March 2014 that covers Nova Scotia and portions of the Bay of
+    Fundy and the Scotian Shelf.  The image is decimated by a factor of 33,
+    yielding roughly 0.5-km grid scale in the panchromatic band and 1-km scale
+    in the other bands.}
 
 \examples{
 \dontrun{
@@ -23,22 +22,17 @@ plot(landsat)
 
 \usage{data(landsat)}
 
-\source{The data were downloaded from the USGS earthexploerer website,
-    \url{http://earthexplorer.usgs.gov}.  This site requires login, and then a
-    fair bit of clicking around, making it a bit difficult to state the source
-    precisely, but the datasetname (\code{LC80080292014065LGN00}) may be enough
-    for clever users to download the data.  Warning: the data occupy a
-    gigabyte.
-
-    The code below shows how the dataset was created.
-
+\source{The original data were downloaded from the USGS earthexplorer website,
+    \url{http://earthexplorer.usgs.gov}, although other sites can also be used
+    to uncover it by name.  The decimation by 33 reduces file size by about a
+    factor of a thousand, i.e. from a GB to a bit under 1MB. The code below
+    shows how the dataset was created.
 \preformatted{
 library(oce)
-l <- read.landsat("LC80080292014065LGN00")
-landsat <- landsatTrim(l, 
-                       list(longitude=-64.572, latitude=45.295),
-                       list(longitude=-64.481, latitude=45.363))
+landsat <- read.landsat("LC80080292014065LGN00")
+landsat <- decimate(landsat, by=33)
 }
 }
    
 \keyword{datasets}
+
