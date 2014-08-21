@@ -35,7 +35,7 @@ plot(giss$year, giss$Ta, type='l', xlab="Year", ylab="Temperature Anomaly")
 
 3. J. Hansen, R. Ruedy, M. Sato and K. Lo, 2010.  Global surface temperature
 change.  Rev. Geophys., 48, RG4004.
-(\url{http://pubs.giss.nasa.gov/docs/2010/2010_Hansen_etal.pdf})
+(\url{http://pubs.giss.nasa.gov/docs/2010/2010_Hansen_etal_1.pdf})
     
 }
 
