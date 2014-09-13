@@ -6,14 +6,20 @@
 
 \title{Southern Oscillation Index}
 
-\description{This is the Southern Oscillation Index, downloaded in September
-    2014 and processed as follows.
+\description{A data frame containing the Southern Oscillation Index with
+    columns named \code{year} for decimal year (sampled monthly and represented
+    at mid-month) and \code{index} for the index.  The data frame was created
+    in September of 2014 as follows.
 \preformatted{
-d <- scan("http://www.cgd.ucar.edu/cas/catalog/climind/SOI.signal.annstd.ascii")
-isYear <- d > 1800
-index <- d[!isYear]
-year <- 1/24 + seq(d[isYear][1], by=1/12, length.out=length(index))
-## Trim -99.99 values
+f <- "http://www.cgd.ucar.edu/cas/catalog/climind/SOI.signal.ascii"
+d <- as.matrix(read.table(f, header=FALSE))
+nYear <- nrow(d)
+startYear <- d[1, 1]
+endYear <- d[nYear, 1]
+## Centre times to mid-month
+year <- 1 / 24 + seq(from=startYear, by=1/12, length.out=nYear*12)
+index <- as.vector(t(d[,-1]))
+## Trim -99.99 values (may be some at start or end)
 missing <- index < -90
 year <- year[!missing]
 index <- index[!missing]
@@ -25,13 +31,15 @@ soi <- data.frame(year=year, index=index)
 \dontrun{
 library(ocedata)
 data(soi)
-plot(soi$year, soi$index, type='l')
+## Source website graphs 1950 to 2014 (although they smooth data)
+recent <- subset(soi, year > 1950)
+plot(recent$year, recent$index, type='l')
 }
 }
 
 \usage{data(soi)}
 
-\source{\url{http://www.cgd.ucar.edu/cas/catalog/climind/SOI.signal.annstd.ascii}}
+\source{\url{http://www.cgd.ucar.edu/cas/catalog/climind/SOI.signal.ascii}}
     
 \author{Dan Kelley}
 
