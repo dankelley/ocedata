@@ -36,10 +36,9 @@ plot(giss$year, giss$index, type='l', xlab="Year", ylab="Temperature Anomaly")
 }
 }
 
-\source{The data were downloaded in autumn 2014 from [1] and trimmed to just
-    the years 1880 to 2013 during which values are available for each month.
-    See the NASA webpage [2] for a description of the data processing done by
-    NASA, and [3] for a scientific paper on the matter.}
+\source{The data were downloaded from [1].  See the NASA webpage [2] for a
+    description of the data processing done by NASA, and [3] for a scientific
+    paper on the matter.}
     
 \references{
 
