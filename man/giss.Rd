@@ -28,12 +28,9 @@ giss <- data.frame(year=year, index=index)
 \usage{data(giss)}
 
 \examples{
-\dontrun{
-library(oce)
-data(giss)
+data(giss, package="ocedata")
 ## Compare the graph with Fig3 of Hansen et al. (2010)
 plot(giss$year, giss$index, type='l', xlab="Year", ylab="Temperature Anomaly")
-}
 }
 
 \source{The data were downloaded from [1].  See the NASA webpage [2] for a
