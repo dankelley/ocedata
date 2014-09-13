@@ -28,13 +28,10 @@ soi <- data.frame(year=year, index=index)
 }
 
 \examples{
-\dontrun{
-library(ocedata)
-data(soi)
+data(soi, package="ocedata")
 ## Source website graphs 1950 to 2014 (although they smooth data)
 recent <- subset(soi, year > 1950)
 plot(recent$year, recent$index, type='l')
-}
 }
 
 \usage{data(soi)}
