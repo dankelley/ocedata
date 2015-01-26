@@ -4,12 +4,11 @@
 
 \alias{levitus}
 
-\title{Sea-surface temperature and salinity}
+\title{Annually-averaged sea-surface temperature and salinity}
 
-\description{Data from the 2009 version of the Levitus Ocean Atlas, in the form
+\description{Data from the 2013 version of the Levitus Ocean Atlas, in the form
     of a list containing \code{longitude}, \code{latitude}, and sea-surface
-    salinity \code{SSS} and temperature \code{SST}.  Missing values, 1E30 in
-    the data files, are here converted to \code{NA}.}
+    salinity \code{SSS} and temperature \code{SST}.}
 
 \examples{
 \dontrun{
@@ -23,23 +22,26 @@ imagep(levitus$longitude,levitus$latitude,levitus$SSS,col=oceColorsJet,zlim=c(20
 
 \usage{data(levitus)}
 
-\source{NOAA data repository
-    (\url{http://www.nodc.noaa.gov/OC5/WOA09/netcdf_data.html})}
+\source{NOAA data repositories
+\url{http://data.nodc.noaa.gov/thredds/fileServer/woa/WOA13/DATA/temperature/netcdf/decav/1.00/woa13_decav_t00_01.nc}
+and
+\url{http://data.nodc.noaa.gov/thredds/fileServer/woa/WOA13/DATA/salinity/netcdf/decav/1.00/woa13_decav_s00_01.nc}.}
 
-\author{Subsetted and stored in an R list by Dan Kelley.}
+\author{The profile data were compiled and cast upon a grid by NOAA [1, 2, 3],
+    then subsetted to the top level and stored in an R list by Dan Kelley.}
 
 \references{
 
-Locarnini, R. A., A. V. Mishonov, J. I. Antonov, T. P. Boyer, H. E. Garcia, O.
-K. Baranova, M. M. Zweng, and D. R. Johnson, 2010. World Ocean Atlas 2009,
-Volume 1: Temperature. S. Levitus, Ed. NOAA Atlas NESDIS 68, U.S. Government
-Printing Office, Washington, D.C., 184 pp.
- 
-Antonov, J. I., D. Seidov, T. P. Boyer, R. A. Locarnini, A. V. Mishonov, H. E.
-Garcia, O. K. Baranova, M. M. Zweng, and D. R. Johnson, 2010. World Ocean Atlas
-2009, Volume 2: Salinity. S. Levitus, Ed. NOAA Atlas NESDIS 69, U.S. Government
-Printing Office, Washington, D.C., 184 pp.
+[1] \url{http://www.nodc.noaa.gov/OC5/woa13/}
 
-}
+[2] Locarnini, R. A., A. V. Mishonov, J. I. Antonov, T. P. Boyer, H. E. Garcia,
+O. K. Baranova, M. M. Zweng, C. R. Paver, J. R. Reagan, D. R. Johnson, M.
+Hamilton, and D. Seidov, 2013. World Ocean Atlas 2013, Volume 1: Temperature.
+S. Levitus, Ed., A. Mishonov Technical Ed.; NOAA Atlas NESDIS 73, 40 pp.
+
+[3] Zweng, M.M, J.R. Reagan, J.I. Antonov, R.A. Locarnini, A.V. Mishonov, T.P.
+Boyer, H.E. Garcia, O.K. Baranova, D.R. Johnson, D.Seidov, M.M. Biddle, 2013.
+World Ocean Atlas 2013, Volume 2: Salinity. S. Levitus, Ed., A. Mishonov
+Technical Ed.; NOAA Atlas NESDIS 74, 39 pp.  }
 
 \keyword{datasets}
