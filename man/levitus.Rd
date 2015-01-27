@@ -3,32 +3,63 @@
 \docType{data}
 
 \alias{levitus}
+\alias{woa}
 
 \title{Annually-averaged sea-surface temperature and salinity}
 
-\description{Data from the 2013 version of the Levitus Ocean Atlas, in the form
-    of a list containing \code{longitude}, \code{latitude}, and sea-surface
-    salinity \code{SSS} and temperature \code{SST}.}
+\description{Sea-surface temperature and salinity from the 2013 version of the
+    World Ocean Atlas (WOA), commonly referred to as the ``Levitus'' atlas, in
+    the form of a list containing \code{longitude}, \code{latitude}, and
+    sea-surface salinity \code{SSS} and temperature \code{SST}.}
+
+\details{The \code{levitus} dataset was constructed as follows. (The details
+    need be adjusted only slightly for other depths, or other datasets such as
+    oxygen, nutrients, etc.)  First, the netcdf datafile was downloaded from
+    the source listed below, a URL known to work in January 2015.  Then, the
+    following code was executed to extract the top level from the salinity and
+    temperature matrices, and to store them in an \code{.rda} file.
+    \preformatted{
+library(oce)
+library(ncdf4)
+
+con <- nc_open("/data/oar/levitus/woa13_decav_t00_01.nc")
+longitude <- ncvar_get(con, "lon")
+latitude <- ncvar_get(con, "lat")
+SST <- ncvar_get(con, "t_an")[,,1]
+nc_close(con)
+
+con <- nc_open("/data/oar/levitus/woa13_decav_s00_01.nc")
+SSS <- ncvar_get(con, "s_an")[,,1]
+nc_close(con)
+
+levitus <- list(longitude=longitude, latitude=latitude, SSS=SSS, SST=SST)
+save(levitus, file='levitus.rda')
+tools::resaveRdaFiles("levitus.rda") # compact the file
+    }
+}
 
 \examples{
 \dontrun{
 library(oce)
-data(levitus)
+data(levitus, package="ocedata")
+attach(levitus)
 par(mfrow=c(2,1))
-imagep(levitus$longitude,levitus$latitude,levitus$SST,col=oceColorsJet,zlim=c(-2,30))
-imagep(levitus$longitude,levitus$latitude,levitus$SSS,col=oceColorsJet,zlim=c(20,40))
+imagep(longitude, latitude, SST, col=oceColorsJet, zlim=c(-2, 30))
+imagep(longitude, latitude, SSS, col=oceColorsJet, zlim=c(20, 40))
 }
 }
 
 \usage{data(levitus)}
 
-\source{NOAA data repositories
+\source{\itemize{
+        \item
 \url{http://data.nodc.noaa.gov/thredds/fileServer/woa/WOA13/DATA/temperature/netcdf/decav/1.00/woa13_decav_t00_01.nc}
-and
-\url{http://data.nodc.noaa.gov/thredds/fileServer/woa/WOA13/DATA/salinity/netcdf/decav/1.00/woa13_decav_s00_01.nc}.}
+\item
+\url{http://data.nodc.noaa.gov/thredds/fileServer/woa/WOA13/DATA/salinity/netcdf/decav/1.00/woa13_decav_s00_01.nc}
+}}
 
-\author{The profile data were compiled and cast upon a grid by NOAA [1, 2, 3],
-    then subsetted to the top level and stored in an R list by Dan Kelley.}
+\author{The atlas was constructed by NOAA personnel [1, 2, 3]. The top level
+    was extracted and packaged in \code{ocedata} by Dan Kelley.}
 
 \references{
 
