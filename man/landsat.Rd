@@ -8,9 +8,8 @@
 
 \description{Subset of the Landsat-8 image designated LC80080292014065LGN00, an
     image from March 2014 that covers Nova Scotia and portions of the Bay of
-    Fundy and the Scotian Shelf.  The image is decimated by a factor of 33,
-    yielding roughly 0.5-km grid scale in the panchromatic band and 1-km scale
-    in the other bands.}
+    Fundy and the Scotian Shelf. The image is decimated to reduce the memory
+    requirements of this package, yielding a spatial resolution of about 2km.}
 
 \examples{
 \dontrun{
@@ -24,13 +23,11 @@ plot(landsat)
 
 \source{The original data were downloaded from the USGS earthexplorer website,
     \url{http://earthexplorer.usgs.gov}, although other sites can also be used
-    to uncover it by name.  The decimation by 33 reduces file size by about a
-    factor of a thousand, i.e. from a GB to a bit under 1MB. The code below
-    shows how the dataset was created.
+    to uncover it by name.  The code below shows how the dataset was created.
+    The decimation by 60 reduces file size from about 1GB to 0.3Mb. 
 \preformatted{
 library(oce)
-landsat <- read.landsat("LC80080292014065LGN00")
-landsat <- decimate(landsat, by=33)
+landsat <- decimate(read.landsat("LC80080292014065LGN00"), by=60)
 }
 }
    
