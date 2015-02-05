@@ -16,10 +16,9 @@
 
 \examples{
 \dontrun{
-library(oce)
 ## Recreate Fig 9 of Grant et al. (1962), with intercept
 ## chosen to mimic the published figure
-data(turbulence)
+data(turbulence, package="ocedata")
 plot(log10(turbulence$k), log10(turbulence$phi),
      xlab=expression(log[10]*k), ylab=expression(log[10]*phi), pch=20)
 grid()

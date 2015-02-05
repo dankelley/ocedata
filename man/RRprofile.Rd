@@ -21,7 +21,7 @@ Research}, \bold{15}, 185-193.}
 \examples{
 \dontrun{
 library(oce)
-data(RRprofile)
+data(RRprofile, package="ocedata")
 par(mgp=getOption('oceMgp'))
 par(mar=c(3,3,1,1))
 ctd <- as.ctd(RRprofile$salinity, RRprofile$temperature, RRprofile$depth)

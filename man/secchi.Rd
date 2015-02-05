@@ -11,7 +11,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(secchi)
+data(secchi, package="ocedata")
 mapPlot(coastlineWorld, longitudelim=c(-5, 20), latitudelim=c(50, 66),
         grid=5, fill='gray', proj="lambert",
         parameters=c(lat0=50, lat1=65))

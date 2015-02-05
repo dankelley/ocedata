@@ -17,9 +17,8 @@
 \examples{
 \dontrun{
 library(oce)
-library(ocedata)
-data(gs)
-data(coastlineWorldMedium)
+data(gs, package="ocedata")
+data(coastlineWorldMedium, package="ocedata")
 plot(coastlineWorldMedium,
      clon=mean(gs$longitude), clat=mean(gs$latitude), span=3200)
 data(topoWorld)

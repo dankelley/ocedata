@@ -14,7 +14,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(schmitt)
+data(schmitt, package="ocedata")
 plotTS(as.ctd(schmitt$S, schmitt$theta, 0))
 }
 }

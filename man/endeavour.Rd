@@ -15,14 +15,15 @@
 \dontrun{
 library(oce)
 data(coastlineWorld)
-data(endeavour)
-mapPlot(coastlineWorld, type='l', proj='mollweide', orientation=c(90, -100, 0))
-mapPoints(endeavour$longitude, endeavour$latitude, pch=20, col='red')
+data(endeavour, package="ocedata")
+mapPlot(coastlineWorld, type='l', proj='+proj=moll', fill='lightgray')
+mapPoints(endeavour$longitude, endeavour$latitude, pch=20, cex=2/3, col='red')
 }
 }
 
 \source{The data were extracted from an XML file contained within a zipfile
     provided at the Australian government website
-    \url{http://data.gov.au/dataset/journal-of-the-h-m-s-endeavour-1768-1771/}.}
+    \url{http://www.data.gov.au/dataset/7f03ac78-7210-4702-8cd5-f3e373f4097b},
+    last checked 2015 Feb 5.}
 
 \keyword{datasets}

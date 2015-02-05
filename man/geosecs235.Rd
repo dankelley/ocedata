@@ -13,7 +13,7 @@
 \examples{
 \dontrun{
 library(oce)
-data(geosecs235)
+data(geosecs235, package="ocedata")
 ## reproduce part of Figure 10 of Kelley and Van Scoy (1999)
 plotProfile(geosecs235, xtype="tritium", type='p', ylim=c(600, 0))
 }

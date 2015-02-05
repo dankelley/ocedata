@@ -15,15 +15,13 @@
 
 \examples{
 \dontrun{
-library(oce)
+library(ocedata)
 data(redfieldPlankton)
-attach(redfieldPlankton)
 par(mfrow=c(1,2))
-boxplot(Nitrogen)
+boxplot(redfieldPlankton$Nitrogen)
 abline(h=16.7, col='gray')
-boxplot(Phosphorus)
+boxplot(redfieldPlankton$Phosphorus)
 abline(h=1.85, col='gray')
-detach(redfieldPlankton)
 }
 }
 

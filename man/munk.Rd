@@ -13,12 +13,10 @@
 
 \examples{
 \dontrun{
-library(oce)
+library(ocedata)
 data(munk)
-attach(munk)
-plot(temperature, depth,
-     ylim=rev(range(depth)), xlab="Temperature [degC]", ylab="Depth [km]")
-detach(munk)
+plot(munk$temperature, munk$depth,
+     ylim=rev(range(munk$depth)), xlab="Temperature [degC]", ylab="Depth [km]")
 }
 }
 
