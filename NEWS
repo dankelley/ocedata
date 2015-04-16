@@ -1,4 +1,5 @@
 0.1.3
+- move landsat to oce (after more shrinking)
 - add nao
 - update levitus to the 2013 version of the atlas (was 2009)
 - reduce landsat size by 3
