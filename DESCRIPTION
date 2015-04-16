@@ -1,7 +1,7 @@
 Package: ocedata
 Version: 0.1.3
 Date: 2015-04-16
-Title: Oceanographic datasets for Oce
+Title: Oceanographic Datasets for Oce
 Author: Dan Kelley <Dan.Kelley@Dal.Ca>
 Maintainer: Dan Kelley <Dan.Kelley@Dal.Ca>
 Depends: R (>= 2.15), methods
