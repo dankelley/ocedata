@@ -15,28 +15,15 @@ library(oce)
 data(coastlineWorld)
 par(mar=rep(1,4))
 mapPlot(coastlineWorld, projection="+proj=wintri +lon_0=70")
-data(conveyor)
+data(conveyor, package="ocedata")
 ## Main path
 lon <- subset(conveyor, path==1)$longitude
 lat <- subset(conveyor, path==1)$latitude
-xy <- lonlat2map(lon, lat)
-n <- 200 # points in spline
-m <- 97 # colour transition [kludge]
-x <- spline(seq_along(xy$x), xy$x, n=n)$y
-y <- spline(seq_along(xy$y), xy$y, n=n)$y
-col <- rev(oceColorsJet(n))
-col <- ifelse(1:n<m, "blue", "red")
-segments(head(x, -1), head(y, -1), tail(x, -1), tail(y, -1), col=col, lwd=3)
-## Secondary path (Indian ocean deep water formation)
+mapLines(lon, lat, col="blue", lwd=3)
+## Secondary path (in Indian Ocean)
 lon <- subset(conveyor, path==2)$longitude
 lat <- subset(conveyor, path==2)$latitude
-xy <- lonlat2map(lon, lat)
-n <- 200 # points in spline
-m <- 110 # colour transition [kludge]
-x <- spline(seq_along(xy$x), xy$x, n=n)$y
-y <- spline(seq_along(xy$y), xy$y, n=n)$y
-col <- ifelse(1:n<m, "blue", "red")
-segments(head(x, -1), head(y, -1), tail(x, -1), tail(y, -1), col=col, lwd=3)
+mapLines(lon, lat, col="darkgreen", lwd=3)
 }
 }
 
@@ -54,7 +41,7 @@ segments(head(x, -1), head(y, -1), tail(x, -1), tail(y, -1), col=col, lwd=3)
     the example). Then, some adjustments were made to the data files, to get
     the splines to more faithfully represent the paths on Broecker's diagram.}
     
-\references{Broecker, W. S., 1991.  The great ocean conveyor.  Oceanography, 4:
-    79-89.}
+\references{Broecker, W. S., 1991.  The great ocean conveyor.
+    \emph{Oceanography}, 4: 79-89.}
 
 \keyword{datasets}
