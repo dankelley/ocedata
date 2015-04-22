@@ -7,7 +7,7 @@ Maintainer: Dan Kelley <Dan.Kelley@Dal.Ca>
 Depends: R (>= 2.15), methods
 Enhances: oce
 BugReports: https://github.com/dankelley/ocedata/issues?sort=created&direction=desc&state=open
-Description: This package provides some useful Oceanographic datasets for use with e.g. the Oce package.
+Description: Several important and Oceanographic datasets are provided. These are particularly useful to the Oce package, but can be helpful in a general context, as well.
 License: GPL (>= 2)
 URL: http://dankelley.github.com/ocedata/
 LazyLoad: yes
