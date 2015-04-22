@@ -6,3 +6,4 @@ inst/doc/ctd-object.svg
 _layouts
 ^.*\.Rproj$
 ^\.Rproj\.user$
+create_data
