@@ -14,7 +14,7 @@
 library(oce)
 data(coastlineWorld)
 par(mar=rep(1,4))
-mapPlot(coastlineWorld, projection="+proj=wintri +lon_0=70")
+mapPlot(coastlineCut(coastlineWorld,70), projection="+proj=wintri +lon_0=70")
 data(conveyor, package="ocedata")
 ## Main path
 lon <- subset(conveyor, path==1)$longitude
