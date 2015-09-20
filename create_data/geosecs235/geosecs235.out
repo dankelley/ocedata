@@ -1,0 +1,144 @@
+
+R version 3.2.2 (2015-08-14) -- "Fire Safety"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+Revolution R Open 3.2.2
+Default CRAN mirror snapshot taken on 2015-08-27
+The enhanced R distribution from Revolution Analytics
+Visit mran.revolutionanalytics.com/open for information
+about additional features.
+
+> library(oce)
+> library(ncdf4)
+> f <- nc_open("geosecs235.cdf")
+> NCVAR_GET <- function(f, name) { # fix NaN and make a vector, not 1-col matrix
++     x <- ncvar_get(f, name)
++     x[!is.finite(x)] <- NA
++     as.vector(x)
++ }
+> salinity <- NCVAR_GET(f, "SAL")
+> temperature <- NCVAR_GET(f, "TEMP")
+> pressure <- NCVAR_GET(f, "PRESS")
+> oxygen <- NCVAR_GET(f, "OXY")
+> nitrate <- NCVAR_GET(f, "NO3")
+> nitrite <- NCVAR_GET(f, "NO2")
+> phosphate <- NCVAR_GET(f, "PO4")
+> silicate <- NCVAR_GET(f, "SIO3")
+> tritium <- NCVAR_GET(f, "Tritium_TU")
+> longitude <- NCVAR_GET(f, "lon")
+> latitude <- NCVAR_GET(f, "lat")
+> station <- NCVAR_GET(f, "STA")[1]
+> 
+> geosecs235 <- as.ctd(salinity=salinity, temperature=temperature, pressure=pressure,
++               oxygen=oxygen, nitrate=nitrate, nitrite=nitrite, phosphate=phosphate,
++               silicate=silicate, longitude=longitude, latitude=latitude,
++               station=station)
+> geosecs235@metadata$deploymentType <- "profile"
+> 
+> ## The following items were not in the object until 2015-09-20.
+> AOU <- NCVAR_GET(f, "AOU")
+> geosecs235 <- ctdAddColumn(geosecs235, column=tritium, name="tritium", label="Tritium", unit="TU")
+> TALK <- NCVAR_GET(f, "TALK")
+> geosecs235 <- ctdAddColumn(geosecs235, column=AOU, name="AOU", label="Apparent oxygen utilization", unit="umol/kg")
+> TCO2 <- NCVAR_GET(f, "TCO2")
+> geosecs235 <- ctdAddColumn(geosecs235, column=AOU, name="TALK", label="Total Alkalinity", unit="microEquivalents/kg")
+> deltaC13 <- NCVAR_GET(f, "Delta_C-13")
+> geosecs235 <- ctdAddColumn(geosecs235, column=deltaC13, name="Delta 13C", label="Delta 13C", unit="per mil")
+> deltaC14 <- NCVAR_GET(f, "Delta_C-14")
+> geosecs235 <- ctdAddColumn(geosecs235, column=deltaC14, name="Delta 14C", label="Delta 14C", unit="per mil")
+> 
+> str(geosecs235)
+Formal class 'ctd' [package "oce"] with 3 slots
+  ..@ metadata     :List of 9
+  .. ..$ labels          : chr [1:15] "Salinity" "Temperature" "Pressure" "SigmaTheta" ...
+  .. ..$ temperatureUnit : chr "ITS-90"
+  .. ..$ conductivityUnit: chr "ratio"
+  .. ..$ pressureType    : chr "sea"
+  .. ..$ deploymentType  : chr "profile"
+  .. ..$ names           : chr [1:15] "salinity" "temperature" "pressure" "sigmaTheta" ...
+  .. ..$ station         : num 235
+  .. ..$ longitude       : num -161
+  .. ..$ latitude        : num 16.8
+  ..@ data         :List of 15
+  .. ..$ salinity   : num [1:120] 34.4 34.3 34.3 34.3 34.4 ...
+  .. ..$ temperature: num [1:120] 25.7 25.8 25.8 25.8 25.7 ...
+  .. ..$ pressure   : num [1:120] 5 10.1 17 33 40.3 ...
+  .. ..$ sigmaTheta : num [1:120] 22.7 22.6 22.5 22.5 22.7 ...
+  .. ..$ scan       : num [1:120] 1 2 3 4 5 6 7 8 9 10 ...
+  .. ..$ oxygen     : num [1:120] NA NA 207 207 NA 208 NA 211 213 NA ...
+  .. ..$ nitrate    : num [1:120] NA NA 0 0 NA 0 NA 0 0 NA ...
+  .. ..$ nitrite    : num [1:120] NA NA 0 0 NA ...
+  .. ..$ phosphate  : num [1:120] NA NA 0.21 0.21 NA ...
+  .. ..$ silicate   : num [1:120] NA NA 2.2 2.2 NA ...
+  .. ..$ tritium    : num [1:120] NA 4.7 4.4 4.6 4.8 ...
+  .. ..$ AOU        : num [1:120] NA NA -2.5 -2.5 NA ...
+  .. ..$ TALK       : num [1:120] NA NA -2.5 -2.5 NA ...
+  .. ..$ Delta 13C  : num [1:120] NA NA NA 0.8 NA ...
+  .. ..$ Delta 14C  : num [1:120] NA 145 NA NA 149 ...
+  ..@ processingLog:List of 2
+  .. ..$ time : POSIXct[1:7], format: "2015-09-20 19:07:04.306" "2015-09-20 19:07:04.307" ...
+  .. ..$ value: chr [1:7] "create 'ctd' object" "as.ctd(salinity = salinity, temperature = temperature, pressure = pressure,     oxygen = oxygen, nitrate = nitrate, nitrite = n"| __truncated__ "ctdAddColumn(x = geosecs235, column = tritium, name = \"tritium\",     label = \"Tritium\", unit = \"TU\")" "ctdAddColumn(x = geosecs235, column = AOU, name = \"AOU\", label = \"Apparent oxygen utilization\",     unit = \"umol/kg\")" ...
+> save(geosecs235, file="geosecs235.rda")
+> tools::resaveRdaFiles("geosecs235.rda")
+> 
+> 
+> ## object contents (prior to this new code)
+> ## > geosecs235
+> ## ctd object has data as follows.
+> ##    salinity: 34.43, 34.31, ...,    NA,    NA (length 120)
+> ##    temperature: 25.7, 25.8, ...,   NA,   NA (length 120)
+> ##    pressure:  5.0, 10.1, ...,   NA,   NA (length 120)
+> ##    oxygen: NA, NA, ..., NA, NA (length 120)
+> ##    nitrate: NA, NA, ..., NA, NA (length 120)
+> ##    nitrite: NA, NA, ..., NA, NA (length 120)
+> ##    phosphate: NA, NA, ..., NA, NA (length 120)
+> ##    silicate: NA, NA, ..., NA, NA (length 120)
+> ##    quality: 2, 2, ..., 2, 2 (length 120)
+> ##    sigmaTheta: 22.699, 22.577, ...,     NA,     NA (length 120)
+> ##    tritium:  NA, 4.7, ...,  NA,  NA (length 120)
+> 
+> 
+> 
+> ## file contents
+> 
+> ## float AOU[IZ,ISTA]   
+> ## float BOTTLE[IZ,ISTA]   
+> ## float Delta_C-13[IZ,ISTA]   
+> ## float Delta_C-14[IZ,ISTA]   
+> ## float DEPTH[IZ,ISTA]   
+> ## float lat[ISTA]   
+> ## float lon[ISTA]   
+> ## float NO2[IZ,ISTA]   
+> ## float NO3[IZ,ISTA]   
+> ## float OXY[IZ,ISTA]   
+> ## float PCO2[IZ,ISTA]   
+> ## float PCO2_TEMP[IZ,ISTA]   
+> ## float PO4[IZ,ISTA]   
+> ## float PRESS[IZ,ISTA]   
+> ## float SAL[IZ,ISTA]   
+> ## float SIGMA0[IZ,ISTA]   
+> ## float SIGMA2[IZ,ISTA]   
+> ## float SIGMA4[IZ,ISTA]   
+> ## float SIO3[IZ,ISTA]   
+> ## float STA[IZ,ISTA]   
+> ## float TALK[IZ,ISTA]   
+> ## float TCO2[IZ,ISTA]   
+> ## float TEMP[IZ,ISTA]   
+> ## float THETA[IZ,ISTA]   
+> ## float Tritium_TU[IZ,ISTA]   
+> 
