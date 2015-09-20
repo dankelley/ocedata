@@ -1,5 +1,7 @@
 language: r
 sudo: required
+r_binary_packages:
+    - oce
 env:
     global:
         - _R_CHECK_FORCE_SUGGESTS_=False
