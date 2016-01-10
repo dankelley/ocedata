@@ -1,5 +1,6 @@
 ## vim:textwidth=80:expandtab:shiftwidth=4:softtabstop=4
-library(ocedata)
+library("ocedata")
+library("testthat")
 context("secchi")
 test_that("secchi has correct form", {
           data("secchi")

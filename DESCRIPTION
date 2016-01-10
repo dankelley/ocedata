@@ -4,7 +4,7 @@ Date: 2016-01-10
 Title: Oceanographic Datasets for Oce
 Author: Dan Kelley <Dan.Kelley@Dal.Ca>
 Maintainer: Dan Kelley <Dan.Kelley@Dal.Ca>
-Depends: R (>= 2.15), methods
+Depends: R (>= 2.15), methods, testthat
 Enhances: oce
 BugReports: https://github.com/dankelley/ocedata/issues?sort=created&direction=desc&state=open
 Description: Several important and Oceanographic datasets are provided. These are particularly useful to the Oce package, but can be helpful in a general context, as well.
