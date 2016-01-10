@@ -1,4 +1,4 @@
-dirs=drag endeavour geosecs235 giss coastline conveyor oceans papa riley secchi soi turbulence
+dirs=beaufort buoy drag endeavour geosecs235 giss gs coastline conveyor levitus oceans papa redfield riley secchi soi turbulence wilson
 all:
 	for d in $(dirs); do cd $$d && make && cd .. ; done
 install:

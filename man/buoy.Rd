@@ -6,14 +6,13 @@
 
 \title{Measurements made at a buoy off Halifax}
 
-\description{Hourly observations made between March 3rd and April 18th of 2014,
-    at the Environment Canada 3-metre discus buoy situated at (44.502N 63.403W)
-    near Halifax Harbour.
+\description{This is a data frame holding hourly observations made between
+    March 3rd and April 18th of 2014, at the Environment Canada 3-metre discus
+    buoy situated at (44.502N 63.403W) near Halifax Harbour.  The contents are
+    as follows; other items in the original data file are ignored.
 
-    The contents of the \code{buoy} data frame are as follows (other items in the
-    data file are ignored).
     \describe{
-        \item{\code{t}}{time of observation, in \code{POSISct} format}
+        \item{\code{time}}{time of observation, in \code{POSIXct} format}
         \item{\code{wind}}{wind speed in m/s}
         \item{\code{direction}}{direction from which the wind is blowing,
             measured in degrees clockwise of true North.}
@@ -35,9 +34,9 @@
 library(oce)
 data(buoy, package="ocedata")
 par(mfrow=c(3,1))
-oce.plot.ts(buoy$t, buoy$wind, ylab="Wind Speed [m/s]")
-oce.plot.ts(buoy$t, buoy$height, ylab="Wave height [m]")
-oce.plot.ts(buoy$t, buoy$period, ylab="Wave period [s]")
+oce.plot.ts(buoy$time, buoy$wind, ylab="Wind Speed [m/s]")
+oce.plot.ts(buoy$time, buoy$height, ylab="Wave height [m]")
+oce.plot.ts(buoy$time, buoy$period, ylab="Wave period [s]")
 }
 }
 
@@ -65,7 +64,7 @@ Ta <- as.numeric(d[,14])
 Tw <- as.numeric(d[,15])
 }
 }
-    
+
 \references{\enumerate{\item\url{http://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf}
         \item\url{http://www.ndbc.noaa.gov/measdes.shtml}
         \item\url{http://www.ndbc.noaa.gov/station_page.php?station=44258} }}

@@ -1,0 +1,24 @@
+# Data from wilson1963efio Table 1, showing only first 4 columns, and only rows for which Wilson computed a rate of motion.  Age in MY; Distance in km
+Island,Period,Age,Distance
+Jan Mayan,Pliocene,10,0
+Iceland,Eocene,50,150
+Faeroes,Eocene,50,600
+Azores,Miocene,20,300
+Madeira Is.,Miocene (Cret.?),20,1500
+Canary Is.,Oligocene,32,1900
+C. Verde Is.,L. Cretaceous,120,2200
+F. de Noronha,L. Cretaceous,120,2000
+Bermuda Is.,Eoc. or Olig.,36,2200
+Bahama,L. Cretaceous,120,3000
+Ascension,Pleistocene,1,150
+Saint Helena,Miocene,20,700
+Tristan da Cunha,,18,0
+Bouvet,Pleistocene,1,0
+Kerguelen,Miocene,20,1200
+Heard,Palaeocene,60,1500
+Saint Paul,Recent,1,0
+Providence,Eocene-Oligocene,36,1600
+Christmas,Eocene,50,3700
+
+
+
