@@ -12,10 +12,10 @@ library(oce)
 system.time(coastlineWorldFine <- read.oce("ne_10m_admin_0_countries.shp"))
 save(coastlineWorldFine, file="coastlineWorldFine.rda")
 tools::resaveRdaFiles("coastlineWorldFine.rda", compress="auto")
-d <- coastlineWorldFine
-data(coastlineWorldFine, package="ocedata")
-stopifnot(all(d[["longitude"]]==coastlineWorldFine[["longitude"]], na.rm=TRUE))
-stopifnot(all(d[["latitude"]]==coastlineWorldFine[["latitude"]], na.rm=TRUE))
+##> d <- coastlineWorldFine
+##> data(coastlineWorldFine, package="ocedata")
+##> stopifnot(all(d[["longitude"]]==coastlineWorldFine[["longitude"]], na.rm=TRUE))
+##> stopifnot(all(d[["latitude"]]==coastlineWorldFine[["latitude"]], na.rm=TRUE))
 
 ## TIMING TESTS before/after using stringsAsFactors=FALSE in read.table()
 ## BEFORE (laptop) user time: 0.635 0.660 0.689
@@ -23,7 +23,7 @@ stopifnot(all(d[["latitude"]]==coastlineWorldFine[["latitude"]], na.rm=TRUE))
 system.time(coastlineWorldMedium <- read.oce("ne_50m_admin_0_countries.shp"))
 save(coastlineWorldMedium, file="coastlineWorldMedium.rda")
 tools::resaveRdaFiles("coastlineWorldMedium.rda", compress="auto")
-d <- coastlineWorldMedium
-data(coastlineWorldMedium, package="ocedata")
-stopifnot(all(d[["longitude"]]==coastlineWorldMedium[["longitude"]], na.rm=TRUE))
-stopifnot(all(d[["latitude"]]==coastlineWorldMedium[["latitude"]], na.rm=TRUE))
+##> d <- coastlineWorldMedium
+##> data(coastlineWorldMedium, package="ocedata")
+##> stopifnot(all(d[["longitude"]]==coastlineWorldMedium[["longitude"]], na.rm=TRUE))
+##> stopifnot(all(d[["latitude"]]==coastlineWorldMedium[["latitude"]], na.rm=TRUE))
