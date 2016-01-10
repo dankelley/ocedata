@@ -1,12 +1,5 @@
 ## Timing tests: stringsAsFactors doesn't help much, if at all.
 library(oce)
-source("~/src/oce/R/oce.R")
-source("~/src/oce/R/coastline.R")
-message("Manual steps:")
-message(" 1. visit http://www.naturalearthdata.com/downloads/110m-cultural-vectors")
-message(" 2. click the link named 'Download countries' in the section called 'Admin 0 - Countries")
-message(" 3. run this R file")
-
 ##> file <- "http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip"
 ##> temp <- tempfile()
 ##> download.file(file, temp)

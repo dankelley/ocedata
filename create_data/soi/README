@@ -1,0 +1,1 @@
+curl http://www.cgd.ucar.edu/cas/catalog/climind/soi.html > soi.dat

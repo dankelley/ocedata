@@ -1,7 +1,4 @@
 library(oce)
-##> source("~/src/oce/R/misc.R")
-##> source("~/src/oce/R/AllClass.R")
-##> source("~/src/oce/R/ctd.R")
 library(ncdf4)
 f <- nc_open("geosecs235.cdf")
 get <- function(f, name) { # fix NaN and make a vector, not 1-col matrix

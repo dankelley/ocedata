@@ -1,0 +1,6 @@
+profileMethod <- read.table("profileMethod.txt", skip=1, col.names=c("U","Cd", "n"))
+profileMethod <- data.frame(profileMethod, method="profile")
+eddyCorrelationMethod <- read.table("eddyCorrelationMethod.txt", skip=1, col.names=c("U","Cd", "n"))
+eddyCorrelationMethod <- data.frame(eddyCorrelationMethod, method="eddy")
+drag <- rbind(profileMethod, eddyCorrelationMethod)
+save(drag, file="drag.rda")

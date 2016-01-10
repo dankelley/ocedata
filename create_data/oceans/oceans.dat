@@ -1,0 +1,8 @@
+# http://ngdc.noaa.gov/mgg/global/etopo1_ocean_volumes.html
+          Area     AvgDepth MaxDepth
+Arctic   15558000  1205         5567
+Atlantic 85133000  3646         8486
+Indian   70560000  3741         7906
+Pacific 161760000  4080        10803
+Southern 21960000  3270         7075
+
