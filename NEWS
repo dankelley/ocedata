@@ -1,5 +1,5 @@
 0.1.4
--
+- objects get metadata$units and metadata$flag
 
 0.1.3
 - add conveyor
