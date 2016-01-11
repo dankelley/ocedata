@@ -1,4 +1,2 @@
 library(testthat)
-library(oce)
-
-test_check("oce")
+test_check("ocedata")
