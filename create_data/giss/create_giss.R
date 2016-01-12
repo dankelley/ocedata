@@ -1,4 +1,5 @@
 ## http://data.giss.nasa.gov/gistemp/updates_v3/
+
 readGISS <- function(file)
 {
     lines <- readLines(file)
@@ -19,20 +20,7 @@ readGISS <- function(file)
     data.frame(year=year[keep], index=index[keep])
 }
 
-##> Code below was not as good as the update
-##> readGISS2014 <- function(file)
-##> {
-##>     l <- readLines(file) # http://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt
-##>     l <- l[grep("^[1-2].*", l)]            # ignore headers at start, and every 20 years
-##>     ## year is in char 1 to 4; data in 0.01degC are in char 8 to 65
-##>     startyear <- scan(textConnection(l[1]), n=1, quiet=TRUE)
-##>     l <- substr(l, 8, 65)
-##>     l <- l[grep("\\*+", l, invert=TRUE)]    # ignore lines with missing month data
-##>     index <- 0.01 * scan(textConnection(l), quiet=TRUE)
-##>     year <- 1/24 + seq(startyear, by=1/12, length.out=length(index))
-##>     data.frame(year=year, index=index)
-##> }
-
-giss <- readGISS("giss-20151107.dat")
+giss <- readGISS("giss.dat")
 save(giss, file="giss.rda")
 tools::resaveRdaFiles("giss.rda")
+
