@@ -27,9 +27,9 @@ contour(lon, lat, topo2, level=0, add=TRUE, col='red', lty='dotted', drawlabels=
 }
 }
 
-\source{The data are calculated by applying \code{\link{decimate}} to
-    \code{topoWorld} in the \code{oce} package, followed by extraction of the
-    \code{"z"} value.}
+\source{The data are calculated by applying \code{\link[oce]{decimate}} to the
+    \code{topoWorld} dataset from the \code{oce} package, followed by
+    extraction of the \code{"z"} value.}
 
 \keyword{datasets}
 
