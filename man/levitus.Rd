@@ -12,31 +12,11 @@
     the form of a list containing \code{longitude}, \code{latitude}, and
     sea-surface salinity \code{SSS} and temperature \code{SST}.}
 
-\details{The \code{levitus} dataset was constructed as follows. (The details
-    need be adjusted only slightly for other depths, or other datasets such as
-    oxygen, nutrients, etc.)  First, the netcdf datafile was downloaded from
-    the source listed below, a URL known to work in January 2015.  Then, the
-    following code was executed to extract the top level from the salinity and
-    temperature matrices, and to store them in an \code{.rda} file.
-    \preformatted{
-library(oce)
-library(ncdf4)
-
-con <- nc_open("/data/oar/levitus/woa13_decav_t00_01.nc")
-longitude <- ncvar_get(con, "lon")
-latitude <- ncvar_get(con, "lat")
-SST <- ncvar_get(con, "t_an")[,,1]
-nc_close(con)
-
-con <- nc_open("/data/oar/levitus/woa13_decav_s00_01.nc")
-SSS <- ncvar_get(con, "s_an")[,,1]
-nc_close(con)
-
-levitus <- list(longitude=longitude, latitude=latitude, SSS=SSS, SST=SST)
-save(levitus, file='levitus.rda')
-tools::resaveRdaFiles("levitus.rda") # compact the file
-    }
-}
+\details{The \code{levitus} dataset was constructed from the World Ocean Atlas
+    as of 2013, downloaded from the link given in \dQuote{Source}. The data were read
+    with \CRANpkg{ncdf4}, and the top layer of temperature and salinity were selected.
+    Then longitude was shifted from (0,360) notation to the (-180,180) notation
+    used by \CRANpkg{oce}.}
 
 \examples{
 \dontrun{
