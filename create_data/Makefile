@@ -3,6 +3,8 @@ all:
 	for d in $(dirs); do cd $$d && make && cd .. ; done
 install:
 	for d in $(dirs); do cd $$d && make install && cd .. ; done
+check:
+	Rscript check_longitude.R
 clean:
 	for d in $(dirs); do cd $$d && make clean && cd .. ; done
 
