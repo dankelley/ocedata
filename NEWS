@@ -1,4 +1,5 @@
 0.1.4
+- in papa, rename t to be time
 - remove airHalifax; data(met, package='oce') is better anyway
 - remove topo2, which is available as decimate(topoWorld, by=4)
 - all index-type datasets are updated to the latest versions
