@@ -59,7 +59,7 @@ salinity <- salinity[lookt, lookz]
 pressure <- -matrix(z, nrow=dim(salinity)[1], ncol=dim(salinity)[2], byrow=TRUE)
 sigmaTheta <- swSigmaTheta(salinity, temperature, pressure)
 ncol <- dim(salinity)[2]
-papa <- list(time=t, z=as.vector(z),
+papa <- list(t=t, z=as.vector(z),
              salinity=matrix(salinity, ncol=ncol),
              temperature=matrix(temperature, ncol=ncol),
              sigmaTheta=matrix(sigmaTheta, ncol=ncol))
