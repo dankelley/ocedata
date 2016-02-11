@@ -8,7 +8,7 @@
 
 \description{This dataset holds the temperature and salinity measured at Ocean
     Weather Station Papa (50N, 145W) in the year 2010.  Time and vertical
-    coordinate are in vectors \code{papa$time} and \code{papa$z}, while
+    coordinate are in vectors \code{papa$t} and \code{papa$z}, while
     temperature, salinity and \eqn{\sigma_\theta}{sigma_theta} are in the
     matrices \code{papa$temperature}, \code{papa$salinity} and
     \code{papa$sigmaTheta}.  This is an excerpt from a larger dataset that
@@ -26,25 +26,25 @@ data(papa, package="ocedata")
 
 par(mfrow=c(3,1))
 ## Page 1: images
-imagep(papa$time, papa$z, papa$temperature, col=oceColorsJet, filledContour=TRUE)
-imagep(papa$time, papa$z, papa$salinity, col=oceColorsJet, filledContour=TRUE)
-imagep(papa$time, papa$z, papa$sigmaTheta, col=oceColorsJet, filledContour=TRUE)
+imagep(papa$t, papa$z, papa$temperature, col=oceColorsJet, filledContour=TRUE)
+imagep(papa$t, papa$z, papa$salinity, col=oceColorsJet, filledContour=TRUE)
+imagep(papa$t, papa$z, papa$sigmaTheta, col=oceColorsJet, filledContour=TRUE)
 ## Page 2: lineplots
-xlim <- c(min(papa$time)-3*28*86400, max(papa$time)) # extra for legend
-plot(papa$time, papa$temperature[,1], type='l', xlim=xlim,
+xlim <- c(min(papa$t)-3*28*86400, max(papa$t)) # extra for legend
+plot(papa$t, papa$temperature[,1], type='l', xlim=xlim,
      xlab="", ylab="Temperature", ylim=range(papa$temperature))
 for (i in 2:dim(papa$temperature)[2])
-    lines(papa$time, papa$temperature[,i], col=i, lwd=2)
+    lines(papa$t, papa$temperature[,i], col=i, lwd=2)
 legend("topleft", title="z [m]", lwd=2, legend=papa$z, col=1:length(papa$z), bg="white")
-plot(papa$time, papa$salinity[,1], type='l', xlim=xlim,
+plot(papa$t, papa$salinity[,1], type='l', xlim=xlim,
      xlab="", ylab="Salinity", ylim=range(papa$salinity), lwd=2)
 for (i in 2:dim(papa$salinity)[2])
-    lines(papa$time, papa$salinity[,i], col=i, lwd=2)
+    lines(papa$t, papa$salinity[,i], col=i, lwd=2)
 legend("topleft", title="z [m]", lwd=2, legend=papa$z, col=1:length(papa$z), bg="white")
-plot(papa$time, papa$sigmaTheta[,1], type='l', xlim=xlim,
+plot(papa$t, papa$sigmaTheta[,1], type='l', xlim=xlim,
      xlab="", ylab=expression(sigma[theta]), ylim=range(papa$sigmaTheta), lwd=2)
 for (i in 2:dim(papa$sigmaTheta)[2])
-    lines(papa$time, papa$sigmaTheta[,i], col=i, lwd=2)
+    lines(papa$t, papa$sigmaTheta[,i], col=i, lwd=2)
 legend("topleft", title="z [m]", lwd=2, legend=papa$z, col=1:length(papa$z), bg="white")
 }
 }
