@@ -4,7 +4,8 @@ all:
 install:
 	for d in $(dirs); do cd $$d && make install && cd .. ; done
 check:
-	Rscript check_longitude.R
+	Rscript check_longitude.R > check_longitude.out
+	Rscript check_summaries.R > check_summaries.out
 clean:
 	for d in $(dirs); do cd $$d && make clean && cd .. ; done
 

@@ -6,6 +6,12 @@ get <- function(f, name) { # fix NaN and make a vector, not 1-col matrix
     x[!is.finite(x)] <- NA
     as.vector(x)
 }
+## > unlist(lapply(seq_along(f$var), function(i) f$var[[i]]$name))
+##  [1] "AOU"        "BOTTLE"     "Delta_C-13" "Delta_C-14" "DEPTH"      "lat"        "lon"        "NO2"       
+##  [9] "NO3"        "OXY"        "PCO2"       "PCO2_TEMP"  "PO4"        "PRESS"      "SAL"        "SIGMA0"    
+## [17] "SIGMA2"     "SIGMA4"     "SIO3"       "STA"        "TALK"       "TCO2"       "TEMP"       "THETA"     
+## [25] "Tritium_TU"
+
 oxygen <- get(f, "OXY")
 nitrate <- get(f, "NO3")
 nitrite <- get(f, "NO2")
@@ -16,57 +22,51 @@ longitude <- get(f, "lon")
 latitude <- get(f, "lat")
 station <- get(f, "STA")[1]
 
-geosecs235 <- as.ctd(salinity=get(f, "SAL"), temperature=get(f, "TEMP"), pressure=get(f, "PRESS"),
-                     longitude=get(f, "lon"), latitude=get(f, "lat"),
-                     station=get(f, "STA")[1], debug=3)
+geosecs235 <- as.ctd(salinity=get(f, "SAL"), temperature=get(f, "TEMP"), pressure=get(f, "PRESS"))
+geosecs235@metadata$dataNamesOriginal <- c("", "SAL", "TEMP", "PRESS") # the "" is for scan
+geosecs235@metadata$longitude <- get(f, "lon")
+geosecs235@metadata$latitude <- get(f, "lat")
+geosecs235@metadata$station <- get(f, "STA")[1]
 geosecs235@metadata$deploymentType <- "profile"
+geosecs235@metadata$filename <- "geosecs235.cdf"
 
 ## Add columns, in the order they show up in the netcdf summary.
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"AOU"), name="AOU", label="Apparent oxygen utilization", unit=expression(mu*mol/kg))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"BOTTLE"), name="bottle", label="Bottle", unit=expression())
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"Delta_C-13"), name="delta13C", label="Delta 13C", unit=expression(per*mil))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"Delta_C-14"), name="delta14C", label="Delta 14C", unit=expression(per*mil))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"DEPTH"), name="depth", label="Depth", unit=expression(m))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"NO2"), name="nitrite", label="Nitrite", unit=expression(mu*mol/kg))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"NO3"), name="nitrate", label="Nitrate", unit=expression(mu*mol/kg))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"OXY"), name="oxygen", label="Oxygen", unit=expression(mu*mol/kg))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"PCO2"), name="pCO2", label="pCO2", unit=expression(mu*atm))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"PCO2_TEMP"), name="pCO2temperature", label="pCO2temperature", unit=expression(degree*C))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"SIGMA0"), name="sigma0", label="Sigma0", unit=expression(kg/m^3))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"SIGMA2"), name="sigma2", label="Sigma2", unit=expression(kg/m^3))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"SIGMA4"), name="sigma4", label="Sigma4", unit=expression(kg/m^3))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"SIO3"), name="SiO3", label="SiO3", unit=expression(mu*mol/kg))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"TALK"), name="TALK", label="TALK", unit=expression(mu*equiv/kg))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"TCO2"), name="TCO2", label="TCO2", unit=expression(mu*mol/kg))
-geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"Tritium_TU"), name="tritium", label="Tritium", unit=expression(TU))
-
-
-## The file contents (> when added to object) are as follow:
-## AOU   units: micromole/kg
-## BOTTLE   units: unitless
-## Delta_C-13   units: per mil
-## Delta_C-14   units: per mil
-## DEPTH   units: m
-## lat   units: degree_north
-## lon   units: degree_east
-## NO2   units: micromole/kg
-## NO3   units: micromole/kg
-## OXY   units: micromole/kg
-## PCO2   units: microatm
-## PCO2_TEMP   units: Celsius_scale
-## PO4   units: micromole/kg
-## PRESS   units: dbar
-## SAL   units: PSU
-## SIGMA0   units: sigma
-## SIGMA2   units: sigma
-## SIGMA4   units: sigma
-## SO3   units: micromole/kg
-## STA   units: unitless
-## TALK   units: microEquivalents/kg
-## TCO2   units: micromole/kg
-## TEMP   units: Celsius_scale
-## THETA   units: Celsius_scale
-## Tritium_TU   units: unitless
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"AOU"), name="AOU", label="Apparent oxygen utilization",
+                           unit=list(expression(unit=mu*mol/kg), scale=""), log=FALSE, originalName="AOU")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"BOTTLE"), name="bottle", label="Bottle",
+                           unit=list(unit=expression(), scale=""), log=FALSE, originalName="BOTTLE")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"Delta_C-13"), name="delta13C", label="Delta 13C",
+                           unit=list(unit=expression(per*mil), scale=""), log=FALSE, originalName="Delta_C-13")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"Delta_C-14"), name="delta14C", label="Delta 14C",
+                           unit=list(unit=expression(per*mil), scale=""), log=FALSE, originalName="Delta_C-14")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"DEPTH"), name="depth", label="Depth",
+                           unit=list(unit=expression(m), scale=""), log=FALSE, originalName="DEPTH")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"NO2"), name="nitrite", label="Nitrite",
+                           unit=list(unit=expression(mu*mol/kg), scale=""), log=FALSE, originalName="NO2")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"NO3"), name="nitrate", label="Nitrate",
+                           unit=list(unit=expression(mu*mol/kg), scale=""), log=FALSE, originalName="NO3")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"OXY"), name="oxygen", label="Oxygen",
+                           unit=list(unit=expression(mu*mol/kg), scale=""), log=FALSE, originalName="OXY")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"PCO2"), name="pCO2", label="pCO2",
+                           unit=list(unit=expression(mu*atm), scale=""), log=FALSE, originalName="PCO2")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"PCO2_TEMP"), name="pCO2temperature", label="pCO2temperature",
+                           unit=list(unit=expression(degree*C), scale="ITS-90"), log=FALSE, originalName="PCO2_TEMP")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"SIGMA0"), name="sigma0", label="Sigma0",
+                           unit=list(unit=expression(kg/m^3), scale=""), log=FALSE, originalName="SIGMA0")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"SIGMA2"), name="sigma2", label="Sigma2",
+                           unit=list(unit=expression(kg/m^3), scale=""), log=FALSE, originalName="SIGMA2")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"SIGMA4"), name="sigma4", label="Sigma4",
+                           unit=list(unit=expression(kg/m^3), scale=""), log=FALSE, originalName="SIGMA4")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"SIO3"), name="silicate", label="Silicate",
+                           unit=list(unit=expression(mu*mol/kg), scale=""), log=FALSE, originalName="SIO3")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"TALK"), name="totalAlkalinity", label="TotalAlkalinity",
+                           unit=list(unit=expression(mu*equiv/kg), scale=""), log=FALSE, originalName="TALK")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"THETA"), name="theta", label="theta",
+                           unit=list(unit=expression(degree*C), scale="ITS-90"), log=FALSE, originalName="THETA")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"TCO2"), name="totalCO2", label="totalCO2",
+                           unit=list(unit=expression(mu*mol/kg), scale=""), log=FALSE, originalName="TCO2")
+geosecs235 <- ctdAddColumn(geosecs235, column=get(f,"Tritium_TU"), name="tritium", label="Tritium",
+                           unit=list(unit=expression(TU), scale=""), log=FALSE, originalName="Tritium_TU")
 summary(geosecs235)
 save(geosecs235, file="geosecs235.rda")
 tools::resaveRdaFiles("geosecs235.rda")

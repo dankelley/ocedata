@@ -2,7 +2,7 @@
 - remove airHalifax; data(met, package='oce') is better anyway
 - remove topo2, which is available as decimate(topoWorld, by=4)
 - all index-type datasets are updated to the latest versions
-- oce datasets are rebuilt to get metadata$units and metadata$flag
+- oce datasets are rebuilt to get units, flags, and original names
 
 0.1.3
 - add conveyor
