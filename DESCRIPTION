@@ -1,15 +1,22 @@
 Package: ocedata
 Version: 0.1.4
-Date: 2016-08-26
+Date: 2016-10-26
 Title: Oceanographic Data Sets for `oce` Package
 Author: Dan Kelley <Dan.Kelley@Dal.Ca>
 Maintainer: Dan Kelley <Dan.Kelley@Dal.Ca>
-Depends: R (>= 2.15), methods, testthat
+Depends:
+    R (>= 2.15),
+    methods,
+    testthat
 Enhances: oce
-BugReports: https://github.com/dankelley/ocedata/issues?sort=created&direction=desc&state=open
-Description: Several important and Oceanographic data sets are provided. These are particularly useful to the `oce` package, but can also be helpful in a general context.
+BugReports: https://github.com/dankelley/ocedata/issues?
+    sort=created&direction=desc&state=open
+Description: Several important and Oceanographic data sets are provided. These
+    are particularly useful to the `oce` package, but can also be helpful in a
+    general context.
 License: GPL (>= 2)
 URL: http://dankelley.github.com/ocedata/
 LazyLoad: yes
 LazyData: no
 Packaged: Dan Kelley
+RoxygenNote: 5.0.1
