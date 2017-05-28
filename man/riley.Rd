@@ -27,7 +27,7 @@
 
     }
     
-    This is used in Chapter 4 of Kelley (2013).}
+    This is used in Chapter 4 of [1].}
 
 \usage{data(riley)}
 
@@ -47,9 +47,9 @@ lines(riley$fig21curve$day, riley$fig21curve$P)
     Riley's appendix.}
 
 \references{
-    Dan Kelley, in preparation. Oceanographic Analysis with R.  Springer Verlag.
+    1. Dan Kelley, in preparation. Oceanographic Analysis with R.  Springer Verlag.
 
-    Gordon A. Riley, 1946.  Factors controlling phytoplankton populations on Georges Bank.
+    2. Gordon A. Riley, 1946.  Factors controlling phytoplankton populations on Georges Bank.
     Journal of Marine Research, 6(1): 54-73.
 
 }

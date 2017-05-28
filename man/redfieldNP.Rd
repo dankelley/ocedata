@@ -8,7 +8,7 @@
 
 \description{Data digitized from Redfield's (1934) Figure 1, showing
     \eqn{\textrm{NO}_3}{NO3} dependence on \eqn{\textrm{PO}_4}{PO4}.  This
-    dataset is used in Chapter 4 of Kelley (2012).}
+    dataset is used in Chapter 4 of [1].}
 
 \usage{data(redfieldNP)}
 
