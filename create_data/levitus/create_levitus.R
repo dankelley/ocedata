@@ -15,7 +15,6 @@ SST <- get(con, "t_an")[,,1]
 SST[SST > 100] <- NA
 
 con <- nc_open("/data/oar/levitus/woa13_decav_s00_01.nc")
-con <- nc_open("salinity_annual_1deg.nc")
 SSS <- get(con, "s_an")[,,1]
 SSS[SSS > 100] <- NA
 
