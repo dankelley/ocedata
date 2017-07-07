@@ -18,7 +18,7 @@ plot(beaufort$wind, beaufort$height)
 }
 
 \source{The data were downloaded from
-    \url{http://www.metoffice.gov.uk/weather/marine/guide/beaufortscale.html}
+    \url{https://www.metoffice.gov.uk/weather/marine/guide/beaufortscale.html}
     on April 20, 2014.  Many other sources are also available.}
 
 \keyword{datasets}

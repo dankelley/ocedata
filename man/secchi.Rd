@@ -24,7 +24,7 @@ mapPolygon(coastlineWorld, col='gray')
 \usage{data(secchi)}
 
 \source{The data were downloaded as a file named \code{Secchi_Ships.csv} in
-    October 2013 from \url{http://ocean.ices.dk/Project/SECCHI/}, and made into
+    October 2013 from \url{https://ocean.ices.dk/Project/SECCHI/}, and made into
     a data frame with new variable names, for use in R.  See references for
     more on the data.}
     

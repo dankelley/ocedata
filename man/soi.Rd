@@ -13,7 +13,7 @@
 \details{The data were downloaded from [1] and processed with the following
     \preformatted{
 library(ncdf4)
-url <- "http://www.cgd.ucar.edu/cas/catalog/climind/SOI.nc"
+url <- "https://www.cgd.ucar.edu/cas/catalog/climind/SOI.nc"
 download.file(url, "SOI.nc")
 f <- nc_open("SOI.nc")
 year <- as.vector(ncvar_get(f, "TIME"))

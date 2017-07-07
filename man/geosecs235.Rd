@@ -20,7 +20,7 @@ plotProfile(geosecs235, xtype="tritium", type='p', ylim=c(600, 0))
 }
 
 \source{Data from
-    \url{http://iridl.ldeo.columbia.edu/SOURCES/.GEOSECS/ISTA/235/VALUE/data.cdf},
+    \url{https://iridl.ldeo.columbia.edu/SOURCES/.GEOSECS/ISTA/235/VALUE/data.cdf},
     a netCDF file.}
 
 \references{D. E. Kelley and Van Scoy, K. A., 1999.  A basin-wide estimate of

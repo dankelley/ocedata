@@ -8,3 +8,5 @@ _layouts
 ^.*\.Rproj$
 ^\.Rproj\.user$
 create_data
+check_urls.R
+

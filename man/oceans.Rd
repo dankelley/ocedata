@@ -23,7 +23,7 @@ dotchart(oceans$Area, rownames(oceans), main="Surface Area [m^2]",
 }
 
 \source{Data were downloaded from the NOAA website
-    \url{http://ngdc.noaa.gov/mgg/global/etopo1_ocean_volumes.html} in October
+    \url{https://ngdc.noaa.gov/mgg/global/etopo1_ocean_volumes.html} in October
     2012.}
 
 \references{Amante, C. and B. W. Eakins, ETOPO1 1 Arc-Minute Global Relief

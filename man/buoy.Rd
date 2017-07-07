@@ -65,9 +65,13 @@ Tw <- as.numeric(d[,15])
 }
 }
 
-\references{\enumerate{\item\url{http://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf}
+\references{
+    \enumerate{
+        \item\url{http://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf}
         \item\url{http://www.ndbc.noaa.gov/measdes.shtml}
-        \item\url{http://www.ndbc.noaa.gov/station_page.php?station=44258} }}
+        \item\url{http://www.ndbc.noaa.gov/station_page.php?station=44258}
+        }
+}
 
 \keyword{datasets}
 

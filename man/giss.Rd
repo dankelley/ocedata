@@ -44,20 +44,26 @@ Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    
 
 \usage{data(giss)}
 
+
 \references{
 
-1. Web location of the raw LOTI data
-\url{http://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt}
+Note: all the URLs given below links worked at some time but were found to fail
+in July 2017; they are included here in case the failure was temporary,
+or in case the old URLs might be a good starting point for a reader seeking the
+cited material.
+
+1. Web location of the raw LOTI data: 
+\code{http://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt}
 
 2. GISTEMP Team, 2015: GISS Surface Temperature Analysis (GISTEMP). NASA
-Goddard Institute for Space Studies. Dataset accessed 2016-01-12 at
-\url{http://data.giss.nasa.gov/gistemp/}
+Goddard Institute for Space Studies. 
+\code{http://data.giss.nasa.gov/gistemp/}
 
 3. J. Hansen, R. Ruedy, M. Sato and K. Lo, 2010.  Global surface temperature
 change.  Rev. Geophys., 48, RG4004.
-(\url{http://pubs.giss.nasa.gov/abs/ha00510u.html})
+\code{http://pubs.giss.nasa.gov/abs/ha00510u.html}
 
-4. Updates to analysis: \url{http://data.giss.nasa.gov/gistemp/updates_v3}
+4. Updates to analysis: \code{https://data.giss.nasa.gov/gistemp/updates_v3}
 
 5. R code to convert from NASA format to the format stored here
 \url{https://github.com/dankelley/ocedata/blob/master/create_data/giss/create_giss.R}

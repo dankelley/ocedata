@@ -33,7 +33,8 @@ for (i in gs$month)
 \usage{data(gs)}
 
 \source{Depatment of Fisheries and Oceans online library
-    (\url{http://www.dfo-mpo.gc.ca/Library/166053.pdf}).}
+    at \url{http://www.dfo-mpo.gc.ca/Library/166053.pdf}
+}
 
 \references{K. F. Drinkwater, R. A Myers, R. G. Pettipas and T. L. Wright,
     1994.  Climatic data for the northwest Atlantic: the position of the

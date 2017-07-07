@@ -50,19 +50,20 @@ legend("topleft", title="z [m]", lwd=2, legend=papa$z, col=1:length(papa$z), bg=
 }
 
 \source{Salinity was inferred from
-    \code{http://www.pmel.noaa.gov/stnP/data/daily/s50n145w_dy.ascii} and
+    \code{https://www.pmel.noaa.gov/stnP/data/daily/s50n145w_dy.ascii} and
     temperature from
-    \code{http://www.pmel.noaa.gov/stnP/data/daily/t50n145w_dy.ascii}, as
+    \code{https://www.pmel.noaa.gov/stnP/data/daily/t50n145w_dy.ascii}, as
     downloaded in early 2015; PMEL changed its website subsequent to that date,
     and as of early 2016 there seems to be no way to link directly to the data;
     instead, one must use a graphical interface provided at
-    \url{http://www.pmel.noaa.gov/ocs/data/disdel/}, which includes filling out
+    \url{https://www.pmel.noaa.gov/ocs/data/disdel/}, which includes filling out
     a form identifying the user and purpose. 
   
     Although there is a data file for \eqn{\sigma_\theta}{sigma-theta} on the
     NOAA website, here it was calculated with \code{swSigmaTheta} in the Oce
     package.}
 
-\references{The larger data set is described at \url{http://www.pmel.noaa.gov/stnP/}.}
+\references{The larger data set is described at \url{http://www.pmel.noaa.gov/stnP/}
+    }
     
 \keyword{datasets}
