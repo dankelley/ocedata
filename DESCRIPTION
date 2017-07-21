@@ -14,7 +14,7 @@ Description: Several important and Oceanographic data sets are provided. These
     are particularly useful to the 'oce' package, but can also be helpful in a
     general context.
 License: GPL (>= 2)
-URL: <https://dankelley.github.com/ocedata>
+URL: https://dankelley.github.io/ocedata
 LazyLoad: yes
 LazyData: no
 Packaged: Dan Kelley
