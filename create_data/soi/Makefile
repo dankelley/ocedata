@@ -5,8 +5,6 @@ all: create_$(what).out
 	R --no-save < $< > $@
 clean:
 	-rm *~ *.rda *.out
-# download: force
-# 	http://www.cgd.ucar.edu/cas/catalog/climind/SOI.nc > SOI.nc
 install:
 	cp $(what).rda ../../data
 force:

@@ -34,8 +34,8 @@ plot(recent$year, recent$index, type='l', xlab="Year", ylab="SOI")
 \usage{data(soi)}
 
 \source{[1] The source data were downloaded as
-    \url{http://www.cgd.ucar.edu/cas/catalog/climind/SOI.nc} on August 26,
-    2016.}
+    \url{http://www.cgd.ucar.edu/cas/catalog/climind/SOI.nc} on August 11,
+    2017.}
     
 \author{Dan Kelley}
 
