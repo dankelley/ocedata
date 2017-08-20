@@ -8,6 +8,12 @@ get <- function(f, item) {
     res
 }
 
+con <- nc_open("woa13_all_o00_01.nc")
+longitude <- get(con, "lon")
+latitude <- get(con, "lat")
+SSO <- get(con, "o_an")[,,1]
+##SSO[SSO > 100] <- NA # none, actually
+
 con <- nc_open("/data/oar/levitus/woa13_decav_t00_01.nc")
 longitude <- get(con, "lon")
 latitude <- get(con, "lat")
@@ -15,6 +21,8 @@ SST <- get(con, "t_an")[,,1]
 SST[SST > 100] <- NA
 
 con <- nc_open("/data/oar/levitus/woa13_decav_s00_01.nc")
+longitude <- get(con, "lon")
+latitude <- get(con, "lat")
 SSS <- get(con, "s_an")[,,1]
 SSS[SSS > 100] <- NA
 
@@ -24,16 +32,18 @@ i  <- order(lon2)
 longitude <- lon2[i]
 SST <- SST[i, ]
 SSS <- SSS[i, ]
+SSO <- SSO[i, ]
 
 ## Save and compress
-levitus <- list(longitude=longitude, latitude=latitude, SSS=SSS, SST=SST)
+levitus <- list(longitude=longitude, latitude=latitude, SSS=SSS, SST=SST, SSO=SSO)
 save(levitus, file='levitus.rda')
 require(tools)
 tools::resaveRdaFiles("levitus.rda")
 
 ## Check with a graph
 
-par(mfrow=c(2,1))
+par(mfrow=c(3,1))
 imagep(levitus$longitude, levitus$latitude, levitus$SST)
 imagep(levitus$longitude, levitus$latitude, levitus$SSS)
+imagep(levitus$longitude, levitus$latitude, levitus$SSO)
 
