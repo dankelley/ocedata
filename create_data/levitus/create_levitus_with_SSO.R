@@ -40,10 +40,3 @@ save(levitus, file='levitus.rda')
 require(tools)
 tools::resaveRdaFiles("levitus.rda")
 
-## Check with a graph
-
-par(mfrow=c(3,1))
-imagep(levitus$longitude, levitus$latitude, levitus$SST)
-imagep(levitus$longitude, levitus$latitude, levitus$SSS)
-imagep(levitus$longitude, levitus$latitude, levitus$SSO)
-
