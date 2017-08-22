@@ -8,9 +8,12 @@ get <- function(f, item) {
     res
 }
 
-con <- nc_open("woa13_nitrate.nc")
+con <- nc_open("woa13_density.nc")
 longitude <- get(con, "lon")
 latitude <- get(con, "lat")
+SSdensity <- get(con, "I_an")[,,1]
+
+con <- nc_open("woa13_nitrate.nc")
 SSnitrate <- get(con, "n_an")[,,1]
 
 con <- nc_open("woa13_o2sat.nc")
@@ -36,6 +39,7 @@ SStemperature[SStemperature > 100] <- NA
 lon2 <- ifelse(longitude > 180, longitude - 360, longitude)
 i  <- order(lon2)
 longitude <- lon2[i]
+SSdensity <- SSdensity[i, ]
 SSnitrate <- SSnitrate[i, ]
 SSo2sat <- SSo2sat[i, ]
 SSoxygen <- SSoxygen[i, ]
@@ -46,6 +50,7 @@ SStemperature <- SStemperature[i, ]
 
 ## Save and compress
 levitus <- list(longitude=longitude, latitude=latitude,
+                SSdensity=SSdensity,
                 SSnitrate=SSnitrate,
                 SSo2sat=SSo2sat,
                 SSoxygen=SSoxygen,
