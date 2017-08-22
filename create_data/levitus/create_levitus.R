@@ -8,13 +8,13 @@ get <- function(f, item) {
     res
 }
 
-con <- nc_open("/data/oar/levitus/woa13_decav_t00_01.nc")
+con <- nc_open("woa13_temperature.nc")
 longitude <- get(con, "lon")
 latitude <- get(con, "lat")
 SST <- get(con, "t_an")[,,1]
 SST[SST > 100] <- NA
 
-con <- nc_open("/data/oar/levitus/woa13_decav_s00_01.nc")
+con <- nc_open("woa13_salinity.nc")
 longitude <- get(con, "lon")
 latitude <- get(con, "lat")
 SSS <- get(con, "s_an")[,,1]
