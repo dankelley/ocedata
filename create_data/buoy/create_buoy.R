@@ -24,17 +24,16 @@ time <- ISOdatetime(d[,1], d[,2], d[,3], d[,4], d[,5], 0, tz="UTC")
 o <- order(time)
 time <- time[o]
 d[d == "MM"] <- NA                     # weird missing code
-footPerMetre <- 39.3701 / 12
 ## Wind direction (the direction the wind is coming from in degrees clockwise from true N) 
 direction <- as.numeric(d[,6])[o]
 wind <- as.numeric(d[,7])[o]
+gust <- as.numeric(d[,8])[o]
 height <- as.numeric(d[,9])[o]
 period <- as.numeric(d[,10])[o]
 pa <- as.numeric(d[,13])[o]
 Ta <- as.numeric(d[,14])[o]
 Tw <- as.numeric(d[,15])[o]
-buoy <- data.frame(time=time, wind=wind, direction=direction,
-                   height=height, period=period, pa=pa, Ta=Ta, Tw=Tw)
+buoy <- data.frame(time, wind, direction, gust, height, period, pa, Ta, Tw)
 save(buoy, file="buoy.rda")
 library(tools)
 tools::resaveRdaFiles("buoy.rda")

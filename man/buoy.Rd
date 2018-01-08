@@ -16,6 +16,7 @@
         \item{\code{wind}}{wind speed in m/s}
         \item{\code{direction}}{direction from which the wind is blowing,
             measured in degrees clockwise of true North.}
+        \item{\code{gust}}{gust speed in m/s}
         \item{\code{height}}{wave height in metres}
         \item{\code{period}}{wave period in seconds}
         \item{\code{pa}}{atmospheric pressure in kPa}
@@ -54,9 +55,9 @@ d[d == "MM"] <- NA
 ## put oldest first
 t <- t[o]
 d <- d[o,]
-footPerMetre <- 39.3701 / 12
 direction <- as.numeric(d[,6])
 wind <- as.numeric(d[,7])
+gust <- as.numeric(d[,8])[o]
 height <- as.numeric(d[,9])
 period <- as.numeric(d[,10])
 pa <- as.numeric(d[,13])
