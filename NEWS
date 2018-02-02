@@ -1,4 +1,5 @@
 0.1.4
+- update data(giss) to cover up to the end of year 2017
 - remove airHalifax; data('met', package='oce') is better anyway
 - update index-type datasets to the latest data
 - oce datasets are rebuilt to get units, flags, and original names
