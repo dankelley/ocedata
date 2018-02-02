@@ -17,7 +17,7 @@
   any given year is at year+1/24) and \code{index} for the temperature anomaly.
   The resolution of the latter is 0.01C.  The details of the original data
   processing are provided in [1] and [2], and the site of the (Land-Ocean
-  Temperature Indec. Anyone using the present dataset is advised very strongly
+  Temperature Index. Anyone using the present dataset is advised very strongly
   to read the NASA documents on changes to the processing of the data [3].}
 
 
@@ -47,16 +47,13 @@ Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    
 
 \references{
 
-Note: all the URLs given below links worked at some time but were found to fail
-in July 2017; they are included here in case the failure was temporary,
-or in case the old URLs might be a good starting point for a reader seeking the
-cited material.
+Note: the URLs given were last checked on February 2, 2018.
 
-1. Web location of the raw LOTI data: 
-\code{http://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt}
+1. Web location of the raw LOTI data:
+\code{https://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt}
 
 2. GISTEMP Team, 2015: GISS Surface Temperature Analysis (GISTEMP). NASA
-Goddard Institute for Space Studies. 
+Goddard Institute for Space Studies.
 \code{http://data.giss.nasa.gov/gistemp/}
 
 3. J. Hansen, R. Ruedy, M. Sato and K. Lo, 2010.  Global surface temperature

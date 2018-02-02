@@ -1,5 +1,5 @@
 what=giss
-all: create_$(what).out
+all: create_$(what).out plot_$(what).out
 %.out: %.R
 	R --no-save < $< > $@
 clean:
@@ -7,6 +7,7 @@ clean:
 install:
 	cp $(what).rda ../../data
 download:
-	curl http://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt > giss.dat
+	#curl http://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt > giss.dat
+	curl https://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt > giss.dat
 
 
