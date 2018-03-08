@@ -1,31 +1,14 @@
 library(oce)
-library(ncdf4)
-#con <- nc_open("temperature_annual_1deg.nc")
-get <- function(f, item) {
-    res <- ncvar_get(f, item)
-    res <- if (1 == length(dim(res))) as.vector(res) else array(res, dim=dim(res))
-    res[!is.finite(res)] <- NA
-    res
-}
 
-con <- nc_open("woa13_temperature.nc")
-longitude <- get(con, "lon")
-latitude <- get(con, "lat")
-SST <- get(con, "t_an")[,,1]
+t <- read.woa("woa13_temperature.nc", "t_an")
+longitude <- t$longitude
+latitude <- t$latitude
+SST <- t$t_an[,,1]
 SST[SST > 100] <- NA
 
-con <- nc_open("woa13_salinity.nc")
-longitude <- get(con, "lon")
-latitude <- get(con, "lat")
-SSS <- get(con, "s_an")[,,1]
+t <- read.woa("woa13_salinity.nc", "s_an")
+SSS <- t$s_an[,,1]
 SSS[SSS > 100] <- NA
-
-## Shift longitude
-lon2 <- ifelse(longitude > 180, longitude - 360, longitude)
-i  <- order(lon2)
-longitude <- lon2[i]
-SST <- SST[i, ]
-SSS <- SSS[i, ]
 
 ## Save and compress
 levitus <- list(longitude=longitude, latitude=latitude, SSS=SSS, SST=SST)
@@ -33,9 +16,25 @@ save(levitus, file='levitus.rda')
 require(tools)
 tools::resaveRdaFiles("levitus.rda")
 
-## Check with a graph
+## using read.woa() is new as of Mar 8, 2018, so let's check the
+## new results against the existing database. Of course, this will
+## fail if we update from woa13 to woaXX (whatever that will be), but
+## then we just remove the next lines, because the purpose is merely
+## to check for identical values.
+lev <- levitus
+expect_equal(lev$longitude, levitus$longitude)
+expect_equal(lev$latitude, levitus$latitude)
+expect_equal(lev$SST, levitus$SST)
+expect_equal(lev$SSS, levitus$SSS)
 
-par(mfrow=c(2,1))
-imagep(levitus$longitude, levitus$latitude, levitus$SST)
-imagep(levitus$longitude, levitus$latitude, levitus$SSS)
+## Check with a graph
+if (!interactive()) png("create_levitus.png", unit="in", width=10, height=8, res=200)
+par(mfrow=c(2, 2))
+imagep(levitus$longitude, levitus$latitude, levitus$SST, zlab="SSTnew")
+imagep(levitus$longitude, levitus$latitude, levitus$SSS, zlab="SSSnew")
+data(levitus, package="ocedata")
+imagep(levitus$longitude, levitus$latitude, levitus$SST, zlab="SSTold")
+imagep(levitus$longitude, levitus$latitude, levitus$SSS, zlab="SSSold")
+
+if (!interactive()) dev.off()
 
