@@ -7,7 +7,7 @@
 \title{Measurements made at a buoy off Halifax}
 
 \description{This is a data frame holding hourly observations made between
-    March 3rd and April 18th of 2014, at the Environment Canada 3-metre discus
+    March 3 and April 18 of 2014, at the Environment Canada 3-metre discus
     buoy situated at (44.502N 63.403W) near Halifax Harbour.  The contents are
     as follows; other items in the original data file are ignored.
 

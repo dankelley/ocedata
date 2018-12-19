@@ -6,7 +6,7 @@
 
 \title{Secchi depth dataset}
 
-\description{Measurements of secchi depth in the North and Baltic Seas}
+\description{Measurements of Secchi depth in the North and Baltic Seas}
 
 \examples{
 \dontrun{

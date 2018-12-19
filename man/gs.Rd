@@ -32,7 +32,7 @@ for (i in gs$month)
 
 \usage{data(gs)}
 
-\source{Depatment of Fisheries and Oceans online library
+\source{Department of Fisheries and Oceans online library
     at \url{http://www.dfo-mpo.gc.ca/Library/166053.pdf}
 }
 
