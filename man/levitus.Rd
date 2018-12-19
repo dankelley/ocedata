@@ -31,12 +31,13 @@ imagep(longitude, latitude, SSS, col=oceColorsJet, zlim=c(20, 40))
 
 \usage{data(levitus)}
 
-\source{\itemize{
-        \item
-        \url{https://data.nodc.noaa.gov/thredds/fileServer/woa/WOA13/DATA/temperature/netcdf/decav/1.00/woa13_decav_t00_01.nc}
-        \item
-        \url{https://data.nodc.noaa.gov/thredds/fileServer/woa/WOA13/DATA/salinity/netcdf/decav/1.00/woa13_decav_s00_01.nc}
-        }}
+\source{
+    The following URLs sometimes fail, despite being linked-to by the NOAA "threads" server.
+
+    1. \code{https://data.nodc.noaa.gov/thredds/fileServer/woa/WOA13/DATA/temperature/netcdf/decav/1.00/woa13_decav_t00_01.nc}
+
+    2. \code{https://data.nodc.noaa.gov/thredds/fileServer/woa/WOA13/DATA/salinity/netcdf/decav/1.00/woa13_decav_s00_01.nc}
+}
 
 
 \author{The atlas was constructed by NOAA personnel [1, 2, 3]. The salinity and

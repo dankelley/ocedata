@@ -9,4 +9,5 @@ _layouts
 ^\.Rproj\.user$
 create_data
 check_urls.R
+^CODE_OF_CONDUCT.md$
 
