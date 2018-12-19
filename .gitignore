@@ -1,3 +1,4 @@
+revdep
 TAGS
 *.o
 *.so
@@ -18,3 +19,4 @@ inst/doc/oce.R
 .DS_Store
 .Rproj.user
 *Rproj
+

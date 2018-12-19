@@ -10,4 +10,5 @@ _layouts
 create_data
 check_urls.R
 ^CODE_OF_CONDUCT.md$
-
+^revdep$
+^cran-comments.md$
