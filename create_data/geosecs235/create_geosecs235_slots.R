@@ -31,7 +31,7 @@ geosecs235@metadata$deploymentType <- "profile"
 geosecs235@metadata$filename <- "geosecs235.cdf"
 
 ## Add columns, in the order they show up in the netcdf summary.
-# object name value unit originalName note
+                                        # object name value unit originalName note
 geosecs235 <- oceSetData(geosecs235, value=get(f,"AOU"), name="AOU",
                          unit=list(unit=expression(mu*mol/kg), scale=""), originalName="AOU")
 geosecs235 <- oceSetData(geosecs235, value=get(f,"AOU"), name="AOU",
@@ -70,9 +70,8 @@ geosecs235 <- oceSetData(geosecs235, value=get(f,"TCO2"), name="totalCO2",
                          unit=list(unit=expression(mu*mol/kg), scale=""), originalName="TCO2")
 geosecs235 <- oceSetData(geosecs235, value=get(f,"Tritium_TU"), name="tritium",
                          unit=list(unit=expression(TU), scale=""), originalName="Tritium_TU")
-save(geosecs235, file="geosecs235.rda")
-tools::resaveRdaFiles("geosecs235.rda")
-
-### summary(geosecs235)
-### plotProfile(geosecs235, xtype="tritium", type='p', ylim=c(600, 0))
+data <- geosecs235@data
+metadata <- geosecs235@metadata
+processingLog <- geosecs235@processingLog
+save(data, metadata, processingLog, file="geosecs2352_slots.rda", version=2)
 

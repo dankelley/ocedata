@@ -1,5 +1,5 @@
 ## Test environments
-* local R-3.5.1 MacOS install OK
+* local R [Under development (unstable) (2020-01-21 r77682)] install OK
 * rhub::check_for_cran() status OK
 * devtools::build_win(version="R-release") status OK
 * devtools::build_win(version="R-devel") status OK
