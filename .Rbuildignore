@@ -1,4 +1,5 @@
 ^CRAN-RELEASE$
+appveyor.yml
 .travis.yml
 README.rst
 .Rhistory
