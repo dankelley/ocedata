@@ -8,7 +8,7 @@
 \title{Annually-averaged sea-surface temperature and salinity}
 
 \description{Sea-surface temperature and salinity from the 2013 version of the
-    World Ocean Atlas (WOA), commonly referred to as the ``Levitus'' atlas, in
+    World Ocean Atlas (WOA), commonly referred to as the Levitus atlas, in
     the form of a list containing \code{longitude}, \code{latitude}, and
     sea-surface salinity \code{SSS} and temperature \code{SST}.}
 
