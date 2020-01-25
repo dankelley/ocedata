@@ -8,7 +8,7 @@
 
 \description{A matrix containing world topography data, on a 2-degree grid.
     This is provided for occasions where the higher resolution topography in
-    \link[oce]{topoWorld} is not needed. See \dQuote{Examples} for a plot that
+    \code{topoWorld} from the Oce package is not needed. See \dQuote{Examples} for a plot that
     illustrates the longitude and latitude grid for the data.}
 
 \usage{data(topo2)}
@@ -27,7 +27,7 @@ contour(lon, lat, topo2, level=0, add=TRUE, col='red', lty='dotted', drawlabels=
 }
 }
 
-\source{The data are calculated by applying \code{\link[oce]{decimate}} to the
+\source{The data are calculated by applying \code{oce::decimate} to the
     \code{topoWorld} dataset from the \code{oce} package, followed by
     extraction of the \code{"z"} value.}
 

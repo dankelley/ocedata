@@ -1,3 +1,7 @@
+0.1.6
+- use a wrapper for some datasets, to prevent CRAN problems
+- no longer 'suggest' oce
+
 0.1.5
 - make this package 'suggest' oce
 - fix some broken URLs in the documentation

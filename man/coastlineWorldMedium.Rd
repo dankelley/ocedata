@@ -12,7 +12,7 @@
 \usage{data(coastlineWorldMedium)
 data(coastlineWorldFine)}
 
-\details{These datasets are analogous to \code{\link[oce]{coastlineWorld}} in
+\details{These datasets are analogous to \code{coastlineWorld} in
     the Oce package, but they are of finer resolution; a comparison table
     follows.
 
