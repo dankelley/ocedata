@@ -14,7 +14,7 @@
 
         \item \code{riley$fig21points} is a data frame representing the data shown in Riley's Figure
         21.  Resulting from digitization of his graph, this is a list containing \code{day} (day in
-        year) and \code{P} (phytoplankton concentraiton, in grams of Carbon per square meter.
+        year) and \code{P} (phytoplankton concentration, in grams of Carbon per square meter.
 
         \item \code{riley$fig21curve} is a data frame with columns named \code{day} and \code{P},
         containing a digitized trace of the curve with which Riley illustrates his numerical
