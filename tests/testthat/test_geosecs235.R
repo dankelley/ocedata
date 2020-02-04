@@ -2,7 +2,7 @@
 context("geosecs235 class and tritium values")
 test_that("geosecs235 has correct form", {
           data("geosecs235", package="ocedata")
-          expect_true(inherits(geosecs235, "oce"))
+          expect_true(inherits(geosecs235, "ctd"))
           expect_equal(geosecs235@data$tritium,
                        c(NA, 4.69999980926514, 4.40000009536743,
                          4.59999990463257, 4.80000019073486, 5, NA,
