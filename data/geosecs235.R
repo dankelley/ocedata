@@ -8,6 +8,7 @@ geosecs235 <-
         slot(res, "data") <- data
         slot(res, "metadata") <- metadata
         slot(res, "processingLog") <- processingLog
+        class(res) <- structure("ctd", package = "ocedata")
         res
     })
 

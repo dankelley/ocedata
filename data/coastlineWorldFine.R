@@ -8,6 +8,7 @@ coastlineWorldFine <-
         slot(res, "data") <- data
         slot(res, "metadata") <- metadata
         slot(res, "processingLog") <- processingLog
+        class(res) <- structure("coastline", package = "ocedata")
         res
     })
 
