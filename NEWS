@@ -1,5 +1,5 @@
 0.1.7
-- set specialized class for coastline* and geosecs235
+- fix bug in wrappers, to prevent problems with oce package
 
 0.1.6
 - use a wrapper for some datasets, to prevent CRAN problems
