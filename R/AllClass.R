@@ -25,3 +25,6 @@ setClass("oce",
                         processingLog=list(time=presentTime(), value="Create oce object"))
          )
 
+setClass("ctd", contains="oce")
+setClass("coastline", contains="oce")
+
