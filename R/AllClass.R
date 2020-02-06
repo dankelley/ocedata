@@ -9,21 +9,14 @@ presentTime <- function(tz="UTC")
 
 #' Base Class for oce Objects
 #'
-#' This is used to create objects to be used by oce.
+#' This is used to create objects to be used by oce, created here by ocedata.
 #'
 #' @slot metadata A list containing information about the data.
 #'
 #' @slot data A list containing the data.
 #'
 #' @slot processingLog A list containing time-stamped processing steps.
-setClass("oce",
-         representation(metadata="list",
-                        data="list",
-                        processingLog="list"),
-         prototype=list(metadata=list(units=list(), flags=list()),
-                        data=list(),
-                        processingLog=list(time=presentTime(), value="Create oce object"))
-         )
+setClass("oce", slots=c(metadata="list", data="list", processingLog="list"))
 
 setClass("ctd", contains="oce")
 setClass("coastline", contains="oce")
