@@ -1,8 +1,8 @@
-development:
-    mode: release
+destination: docs
 
 reference:
 - title: Datasets and functions
+- desc: Datasets and functions
 - contents:
   - matches(".*")
 

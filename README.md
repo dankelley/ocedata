@@ -1,5 +1,4 @@
 # ocedata 0.1.7
-
 [![TravisCI Build Status](https://travis-ci.org/dankelley/ocedata.svg?branch=master)](https://travis-ci.org/dankelley/ocedata)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/dankelley/ocedata?branch=master&svg=true)](https://ci.appveyor.com/project/dankelley/ocedata)
 [![codecov report](https://codecov.io/gh/dankelley/ocedata/branch/master/graph/badge.svg)](https://codecov.io/gh/dankelley/ocedata)
@@ -7,6 +6,7 @@
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-month/ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-week/ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-day/ocedata)
+[![Rdoc](http://www.rdocumentation.org/badges/version/ocedata)](http://www.rdocumentation.org/packages/ocedata)
 
 
 ## About ocedata
