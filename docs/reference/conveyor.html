@@ -130,10 +130,10 @@
     <p>The data were digitized from Figure 1 of Broecker (1991), by a
     multistep process. First, a world map was drawn with <code>mapPlot</code> from
     the <code>oce</code> package, using a projection (Mercator) that seemed similar
-    to Broecker's. Second, <code><a href='https://rdrr.io/r/graphics/locator.html'>locator</a></code> was used to digitize points
+    to of Broecker. Second, <code><a href='https://rdrr.io/r/graphics/locator.html'>locator</a></code> was used to digitize points
     along his conveyor-belt pathlines. No projection information being provided
     by Broecker, this had to be done by coastline reference.  Third, the x-y
-    data were converted to lon-lat space using <code><a href='https://rdrr.io/pkg/oce/man/map2lonlat.html'>map2lonlat()</a></code> in the
+    data were converted to lon-lat space using <code>map2lonlat()</code> in the
     <code>oce</code> package. When this was done, splines were fitted to the data and
     the resultant paths were drawn on the map (using code like that given in
     the example). Then, some adjustments were made to the data files, to get
@@ -144,17 +144,20 @@
     <em>Oceanography</em>, 4: 79-89.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>oce</span>)
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>coastlineWorld</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>mar</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span>(<span class='fl'>1</span>,<span class='fl'>4</span>))
-<span class='fu'><a href='https://rdrr.io/pkg/oce/man/mapPlot.html'>mapPlot</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/oce/man/coastlineCut.html'>coastlineCut</a></span>(<span class='no'>coastlineWorld</span>,<span class='fl'>70</span>), <span class='kw'>projection</span><span class='kw'>=</span><span class='st'>"+proj=wintri +lon_0=70"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>conveyor</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"ocedata"</span>)
-<span class='co'>## Main path</span>
-<span class='no'>lon</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>conveyor</span>, <span class='no'>path</span><span class='kw'>==</span><span class='fl'>1</span>)$<span class='no'>longitude</span>
-<span class='no'>lat</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>conveyor</span>, <span class='no'>path</span><span class='kw'>==</span><span class='fl'>1</span>)$<span class='no'>latitude</span>
-<span class='fu'><a href='https://rdrr.io/pkg/oce/man/mapLines.html'>mapLines</a></span>(<span class='no'>lon</span>, <span class='no'>lat</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>"blue"</span>, <span class='kw'>lwd</span><span class='kw'>=</span><span class='fl'>3</span>)</div><div class='input'><span class='co'>## Secondary path (in Indian Ocean)</span>
-<span class='no'>lon</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>conveyor</span>, <span class='no'>path</span><span class='kw'>==</span><span class='fl'>2</span>)$<span class='no'>longitude</span>
-<span class='no'>lat</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>conveyor</span>, <span class='no'>path</span><span class='kw'>==</span><span class='fl'>2</span>)$<span class='no'>latitude</span>
-<span class='fu'><a href='https://rdrr.io/pkg/oce/man/mapLines.html'>mapLines</a></span>(<span class='no'>lon</span>, <span class='no'>lat</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>"darkgreen"</span>, <span class='kw'>lwd</span><span class='kw'>=</span><span class='fl'>3</span>)</div><div class='img'><img src='conveyor-1.png' alt='' width='672' height='672' /></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>conveyor</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"ocedata"</span>)
+<span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+    <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>coastlineWorld</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"oce"</span>)
+    <span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>mar</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span>(<span class='fl'>1</span>,<span class='fl'>4</span>))
+    <span class='kw pkg'>oce</span><span class='kw ns'>::</span><span class='fu'><a href='https://rdrr.io/pkg/oce/man/mapPlot.html'>mapPlot</a></span>(<span class='fu'>coastlineCut</span>(<span class='no'>coastlineWorld</span>,<span class='fl'>70</span>), <span class='kw'>projection</span><span class='kw'>=</span><span class='st'>"+proj=wintri +lon_0=70"</span>)
+    <span class='co'>## Main path</span>
+    <span class='no'>lon</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>conveyor</span>, <span class='no'>path</span><span class='kw'>==</span><span class='fl'>1</span>)$<span class='no'>longitude</span>
+    <span class='no'>lat</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>conveyor</span>, <span class='no'>path</span><span class='kw'>==</span><span class='fl'>1</span>)$<span class='no'>latitude</span>
+    <span class='kw pkg'>oce</span><span class='kw ns'>::</span><span class='fu'><a href='https://rdrr.io/pkg/oce/man/mapLines.html'>mapLines</a></span>(<span class='no'>lon</span>, <span class='no'>lat</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>"blue"</span>, <span class='kw'>lwd</span><span class='kw'>=</span><span class='fl'>3</span>)
+    <span class='co'>## Secondary path (in Indian Ocean)</span>
+    <span class='no'>lon</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>conveyor</span>, <span class='no'>path</span><span class='kw'>==</span><span class='fl'>2</span>)$<span class='no'>longitude</span>
+    <span class='no'>lat</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>conveyor</span>, <span class='no'>path</span><span class='kw'>==</span><span class='fl'>2</span>)$<span class='no'>latitude</span>
+    <span class='kw pkg'>oce</span><span class='kw ns'>::</span><span class='fu'><a href='https://rdrr.io/pkg/oce/man/mapLines.html'>mapLines</a></span>(<span class='no'>lon</span>, <span class='no'>lat</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>"darkgreen"</span>, <span class='kw'>lwd</span><span class='kw'>=</span><span class='fl'>3</span>)
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

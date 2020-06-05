@@ -138,9 +138,10 @@
         Physical Oceanography</em>, 11:1015-1026.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>oce</span>)
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>schmitt</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"ocedata"</span>)
-<span class='fu'><a href='https://rdrr.io/pkg/oce/man/plotTS.html'>plotTS</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/oce/man/as.ctd.html'>as.ctd</a></span>(<span class='no'>schmitt</span>$<span class='no'>S</span>, <span class='no'>schmitt</span>$<span class='no'>theta</span>, <span class='fl'>0</span>), <span class='kw'>eos</span><span class='kw'>=</span><span class='st'>"unesco"</span>)</div><div class='img'><img src='schmitt-1.png' alt='' width='672' height='672' /></div></pre>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+    <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>schmitt</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"ocedata"</span>)
+    <span class='kw pkg'>oce</span><span class='kw ns'>::</span><span class='fu'><a href='https://rdrr.io/pkg/oce/man/plotTS.html'>plotTS</a></span>(<span class='fu'>as.ctd</span>(<span class='no'>schmitt</span>$<span class='no'>S</span>, <span class='no'>schmitt</span>$<span class='no'>theta</span>, <span class='fl'>0</span>), <span class='kw'>eos</span><span class='kw'>=</span><span class='st'>"unesco"</span>)
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

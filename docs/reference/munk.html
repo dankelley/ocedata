@@ -130,8 +130,7 @@
     <p>Walter H. Munk, 1966.  Abyssal recipes.  Deep-Sea Research, 13, 707-730.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ocedata</span>)
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>munk</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>munk</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"ocedata"</span>)
 <span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>munk</span>$<span class='no'>temperature</span>, <span class='no'>munk</span>$<span class='no'>depth</span>,
      <span class='kw'>ylim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/rev.html'>rev</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/range.html'>range</a></span>(<span class='no'>munk</span>$<span class='no'>depth</span>)), <span class='kw'>xlab</span><span class='kw'>=</span><span class='st'>"Temperature [degC]"</span>, <span class='kw'>ylab</span><span class='kw'>=</span><span class='st'>"Depth [km]"</span>)</div><div class='img'><img src='munk-1.png' alt='' width='672' height='672' /></div></pre>
   </div>

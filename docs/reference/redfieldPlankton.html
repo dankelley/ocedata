@@ -136,7 +136,7 @@
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     
-    
+
 <p>1. Dan Kelley, in preparation. Oceanographic Analysis with R.  Springer Verlag.</p>
 <p>2. Alfred C. Redfield, 1934.  On the proportions of organic derivations in sea
     water and their relation to the composition of plankton.  Pages 177--192 in
@@ -146,8 +146,7 @@
     <div class='dont-index'><p>See <code><a href='redfieldNP.html'>redfieldNP</a></code> and <code><a href='redfieldNC.html'>redfieldNC</a></code>.</p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ocedata</span>)
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>redfieldPlankton</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>redfieldPlankton</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"ocedata"</span>)
 <span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>mfrow</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>,<span class='fl'>2</span>))
 <span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span>(<span class='no'>redfieldPlankton</span>$<span class='no'>Nitrogen</span>)
 <span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='kw'>h</span><span class='kw'>=</span><span class='fl'>16.7</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>'gray'</span>)
