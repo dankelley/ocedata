@@ -20,15 +20,8 @@
 \usage{data(papa)}
 
 \examples{
-library(oce)
 data(papa, package="ocedata")
-
 par(mfrow=c(3,1))
-## Page 1: images
-imagep(papa$t, papa$z, papa$temperature, col=oceColorsJet, filledContour=TRUE)
-imagep(papa$t, papa$z, papa$salinity, col=oceColorsJet, filledContour=TRUE)
-imagep(papa$t, papa$z, papa$sigmaTheta, col=oceColorsJet, filledContour=TRUE)
-## Page 2: lineplots
 xlim <- c(min(papa$t)-3*28*86400, max(papa$t)) # extra for legend
 plot(papa$t, papa$temperature[,1], type='l', xlim=xlim,
      xlab="", ylab="Temperature", ylim=range(papa$temperature))

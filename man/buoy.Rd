@@ -31,12 +31,11 @@
 \usage{data(buoy)}
 
 \examples{
-library(oce)
 data(buoy, package="ocedata")
 par(mfrow=c(3,1))
-oce.plot.ts(buoy$time, buoy$wind, ylab="Wind Speed [m/s]")
-oce.plot.ts(buoy$time, buoy$height, ylab="Wave height [m]")
-oce.plot.ts(buoy$time, buoy$period, ylab="Wave period [s]")
+plot(buoy$time, buoy$wind, ylab="Wind Speed [m/s]")
+plot(buoy$time, buoy$height, ylab="Wave height [m]")
+plot(buoy$time, buoy$period, ylab="Wave period [s]")
 }
 
 

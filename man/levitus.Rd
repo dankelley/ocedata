@@ -19,12 +19,13 @@
     used by \CRANpkg{oce}.}
 
 \examples{
-library(oce)
-data(levitus, package="ocedata")
-attach(levitus)
-par(mfrow=c(2,1))
-imagep(longitude, latitude, SST, col=oceColorsJet, zlim=c(-2, 30))
-imagep(longitude, latitude, SSS, col=oceColorsJet, zlim=c(20, 40))
+\dontrun{
+    data(levitus, package="ocedata")
+    attach(levitus)
+    par(mfrow=c(2,1))
+    oce::imagep(longitude, latitude, SST, col=oceColorsJet, zlim=c(-2, 30))
+    oce::imagep(longitude, latitude, SSS, col=oceColorsJet, zlim=c(20, 40))
+}
 }
 
 \usage{data(levitus)}

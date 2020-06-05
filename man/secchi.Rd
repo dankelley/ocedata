@@ -9,18 +9,18 @@
 \description{Measurements of Secchi depth in the North and Baltic Seas}
 
 \examples{
-library(oce)
-library(ocedata)
 data(coastlineWorldMedium, package="ocedata")
 data(secchi, package="ocedata")
-logdepth <- log10(secchi$depth)
-cm <- colormap(logdepth)
-par(mar=c(3, 3, 2, 1))
-drawPalette(colormap=cm)
-plot(coastlineWorldMedium, clongitude=10, clatitude=60, span=4000,
-     mar=par("mar"))
-points(secchi$longitude, secchi$latitude, pch=1, col=cm$zcol, cex=0.5)
-title("log10 of secchi depth in m")
+\dontrun{
+    logdepth <- log10(secchi$depth)
+    cm <- colormap(logdepth)
+    par(mar=c(3, 3, 2, 1))
+    oce::drawPalette(colormap=cm)
+    oce::plot(coastlineWorldMedium, clongitude=10, clatitude=60, span=4000,
+              mar=par("mar"))
+    points(secchi$longitude, secchi$latitude, pch=1, col=cm$zcol, cex=0.5)
+    title("log10 of secchi depth in m")
+}
 }
 
 \usage{data(secchi)}

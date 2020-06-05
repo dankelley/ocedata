@@ -6,7 +6,7 @@ Authors@R: c(
     person(given="Clark", family="Richards", email="clark.richards@gmail.com", role=c("aut"), comment=c(ORCID="https://orcid.org/0000-0002-7833-206X")))
 Maintainer: Dan Kelley <Dan.Kelley@Dal.Ca>
 Depends:
-    R (>= 2.15),
+    R (>= 3.5.0),
     methods,
     testthat
 BugReports: https://github.com/dankelley/ocedata/issues

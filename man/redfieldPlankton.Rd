@@ -14,8 +14,7 @@
 \usage{data(redfieldPlankton)}
 
 \examples{
-library(ocedata)
-data(redfieldPlankton)
+data(redfieldPlankton, package="ocedata")
 par(mfrow=c(1,2))
 boxplot(redfieldPlankton$Nitrogen)
 abline(h=16.7, col='gray')
@@ -27,7 +26,7 @@ abline(h=1.85, col='gray')
     from [2] Table II.}
 
 \references{
-    
+
     1. Dan Kelley, in preparation. Oceanographic Analysis with R.  Springer Verlag.
 
     2. Alfred C. Redfield, 1934.  On the proportions of organic derivations in sea
