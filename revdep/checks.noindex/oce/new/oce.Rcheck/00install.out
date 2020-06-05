@@ -1,0 +1,60 @@
+* installing *source* package ‘oce’ ...
+** package ‘oce’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c RcppExports.cpp -o RcppExports.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c ad2cp_ahrs.cpp -o ad2cp_ahrs.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c adv_vector_time.cpp -o adv_vector_time.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c amsr.cpp -o amsr.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c approx.cpp -o approx.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c bilinear_interp.cpp -o bilinear_interp.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c bin.cpp -o bin.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c bin_average.c -o bin_average.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c binmap.c -o binmap.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c bitwise.c -o bitwise.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c coastline.c -o coastline.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c curl.cpp -o curl.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c echosounder.cpp -o echosounder.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c fillgap.cpp -o fillgap.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c geod.cpp -o geod.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c get_bit.cpp -o get_bit.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c gradient.cpp -o gradient.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c interp_barnes.cpp -o interp_barnes.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c landsat.cpp -o landsat.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c ldc_ad2cp_in_file.cpp -o ldc_ad2cp_in_file.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c ldc_rdi_in_buffer.c -o ldc_rdi_in_buffer.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c ldc_rdi_in_file.cpp -o ldc_rdi_in_file.o
+gfortran  -fPIC  -Wall -g -O2  -c magdec.f -o magdec.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c map.c -o map.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c matrix_smooth.cpp -o matrix_smooth.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c oce_approx.cpp -o oce_approx.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c oce_convolve.cpp -o oce_convolve.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c oce_filter.cpp -o oce_filter.o
+gfortran  -fPIC  -Wall -g -O2  -c ocecp.f -o ocecp.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c run.cpp -o run.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c sfm_enu.cpp -o sfm_enu.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c sontek_adp.cpp -o sontek_adp.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c sw.c -o sw.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c time.cpp -o time.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c trap.cpp -o trap.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I"/Users/kelley/git/ocedata/revdep/library.noindex/oce/Rcpp/include" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -O3 -pedantic -c trim.cpp -o trim.o
+clang++ -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/Library/Frameworks/R.framework/Resources/lib -L/usr/local/lib -o oce.so RcppExports.o ad2cp_ahrs.o adv_vector_time.o amsr.o approx.o bilinear_interp.o bin.o bin_average.o binmap.o bitwise.o coastline.o curl.o echosounder.o fillgap.o geod.o get_bit.o gradient.o interp_barnes.o landsat.o ldc_ad2cp_in_file.o ldc_rdi_in_buffer.o ldc_rdi_in_file.o magdec.o map.o matrix_smooth.o oce_approx.o oce_convolve.o oce_filter.o ocecp.o registerDynamicSymbol.o run.o sfm_enu.o sontek_adp.o sw.o time.o trap.o trim.o -L/usr/local/gfortran/lib/gcc/x86_64-apple-darwin15/6.1.0 -L/usr/local/gfortran/lib -lgfortran -lquadmath -lm -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+ld: warning: directory not found for option '-L/usr/local/gfortran/lib/gcc/x86_64-apple-darwin15/6.1.0'
+ld: warning: directory not found for option '-L/usr/local/gfortran/lib'
+installing to /Users/kelley/git/ocedata/revdep/checks.noindex/oce/new/oce.Rcheck/00LOCK-oce/00new/oce/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (oce)

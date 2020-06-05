@@ -1,0 +1,3 @@
+exportClasses("oce")
+importFrom("testthat", "expect_silent")
+importFrom("methods", "setClass")

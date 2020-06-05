@@ -1,0 +1,32 @@
+RRprofile               Seawater profile used by Reiniger and Ross
+                        (1968)
+beaufort                Beaufort scale relationship of wind speed to
+                        wave height
+buoy                    Measurements made at a buoy off Halifax
+coastlineWorldMedium    World coastlines at medium and fine-scale
+                        resolution
+conveyor                Conveyor-belt path
+drag                    Wind drag coefficient
+endeavour               Cook's Endeavour cruise track
+geosecs235              GEOSECS station 235 data
+giss                    Time series of NASA/GISS land-ocean temperature
+                        index
+gs                      Gulf Stream position
+levitus                 Annually-averaged sea-surface temperature and
+                        salinity
+munk                    Munk's (1966) temperature profile
+nao                     North Atlantic Oscillation Index
+oceans                  Geometries of the five world oceans.
+ocedata                 Datasets for the oce package
+papa                    OWS Papa hydrographic record during 2010
+redfieldNC              Redfield's (1934) NO3 and total CO2 data
+redfieldNP              Redfield's (1934) NO3 and PO4 data
+redfieldPlankton        Redfield's (1934) Table II
+riley                   Riley's (1946) observation and theory of
+                        phytoplankton concentration
+schmitt                 Schmitt's (1981) NACW temperature-salinity data
+secchi                  Secchi depth dataset
+soi                     Southern Oscillation Index
+topo2                   World topography data, on a 2-degree grid.
+turbulence              Grant et al. (1962) turbulence data
+wilson                  Wilson's (1963) table of seafloor spreading

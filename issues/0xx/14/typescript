@@ -1,0 +1,280 @@
+Script started on Fri Jun  5 08:40:12 2020
+inc make
+
+Rscript case1.R
+Removing package from ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+Removing package from ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+Downloading GitHub repo dankelley/ocedata@develop
+
+     checking for file ‘/private/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T/RtmpsF8cQe/remotes90eb7781ce93/dankelley-ocedata-51df3d8/DESCRIPTION’ ...  [32m✔[39m  [90mchecking for file ‘/private/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T/RtmpsF8cQe/remotes90eb7781ce93/dankelley-ocedata-51df3d8/DESCRIPTION’[39m[36m[36m (403ms)[36m[39m
+  [90m─[39m[90m  [39m[90mpreparing ‘ocedata’:[39m[36m[39m
+     checking DESCRIPTION meta-information ...  [32m✔[39m  [90mchecking DESCRIPTION meta-information[39m[36m[39m
+  [90m─[39m[90m  [39m[90mchecking for LF line-endings in source and make files and shell scripts[39m[36m[39m
+  [90m─[39m[90m  [39m[90mchecking for empty or unneeded directories[39m[36m[39m
+[90m─[39m[90m  [39m[90mlooking to see if a ‘data/datalist’ file should be added[39m[36m[39m
+  [90m─[39m[90m  [39m[90mbuilding ‘ocedata_0.1.7.tar.gz’[39m[36m[39m
+     
+Installing package into ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+* installing *source* package ‘ocedata’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ocedata)
+Downloading GitHub repo dankelley/oce@develop
+
+     checking for file ‘/private/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T/RtmpsF8cQe/remotes90eb1930b924/dankelley-oce-a2001b2/DESCRIPTION’ ...  [32m✔[39m  [90mchecking for file ‘/private/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T/RtmpsF8cQe/remotes90eb1930b924/dankelley-oce-a2001b2/DESCRIPTION’[39m[36m[39m
+  [90m─[39m[90m  [39m[90mpreparing ‘oce’:[39m[36m[36m (1.5s)[36m[39m
+     checking DESCRIPTION meta-information ...  [32m✔[39m  [90mchecking DESCRIPTION meta-information[39m[36m[39m
+  [90m─[39m[90m  [39m[90mcleaning src[39m[36m[39m
+  [90m─[39m[90m  [39m[90mchecking for LF line-endings in source and make files and shell scripts[39m[36m[36m (1.7s)[36m[39m
+  [90m─[39m[90m  [39m[90mchecking for empty or unneeded directories[39m[36m[39m
+  [90m─[39m[90m  [39m[90mlooking to see if a ‘data/datalist’ file should be added[39m[36m[39m
+  [90m─[39m[90m  [39m[90mbuilding ‘oce_1.2-1.tar.gz’[39m[36m[39m
+     
+Installing package into ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+* installing *source* package ‘oce’ ...
+** using staged installation
+** libs
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c RcppExports.cpp -o RcppExports.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c ad2cp_ahrs.cpp -o ad2cp_ahrs.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c adv_vector_time.cpp -o adv_vector_time.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c amsr.cpp -o amsr.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c approx.cpp -o approx.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c bilinear_interp.cpp -o bilinear_interp.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c bin.cpp -o bin.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c bin_average.c -o bin_average.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c binmap.c -o binmap.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c bitwise.c -o bitwise.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c coastline.c -o coastline.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c curl.cpp -o curl.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c echosounder.cpp -o echosounder.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c fillgap.cpp -o fillgap.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c geod.cpp -o geod.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c get_bit.cpp -o get_bit.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c gradient.cpp -o gradient.o
+gfortran -mmacosx-version-min=10.13 -fno-optimize-sibling-calls  -fPIC  -Wall -g -O2  -c igrf12.f -o igrf12.o
+gfortran -mmacosx-version-min=10.13 -fno-optimize-sibling-calls  -fPIC  -Wall -g -O2  -c igrf13.f -o igrf13.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c interp_barnes.cpp -o interp_barnes.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c landsat.cpp -o landsat.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c ldc_ad2cp_in_file.cpp -o ldc_ad2cp_in_file.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c ldc_rdi_in_buffer.c -o ldc_rdi_in_buffer.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c ldc_rdi_in_file.cpp -o ldc_rdi_in_file.o
+gfortran -mmacosx-version-min=10.13 -fno-optimize-sibling-calls  -fPIC  -Wall -g -O2  -c magdec.f -o magdec.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c map.c -o map.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c matrix_smooth.cpp -o matrix_smooth.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c oce_approx.cpp -o oce_approx.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c oce_convolve.cpp -o oce_convolve.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c oce_filter.cpp -o oce_filter.o
+gfortran -mmacosx-version-min=10.13 -fno-optimize-sibling-calls  -fPIC  -Wall -g -O2  -c ocecp.f -o ocecp.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c run.cpp -o run.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c sfm_enu.cpp -o sfm_enu.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c sontek_adp.cpp -o sontek_adp.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c sw.c -o sw.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c time.cpp -o time.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c trap.cpp -o trap.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c trim.cpp -o trim.o
+clang++ -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/Library/Frameworks/R.framework/Resources/lib -L/usr/local/lib -o oce.so RcppExports.o ad2cp_ahrs.o adv_vector_time.o amsr.o approx.o bilinear_interp.o bin.o bin_average.o binmap.o bitwise.o coastline.o curl.o echosounder.o fillgap.o geod.o get_bit.o gradient.o igrf12.o igrf13.o interp_barnes.o landsat.o ldc_ad2cp_in_file.o ldc_rdi_in_buffer.o ldc_rdi_in_file.o magdec.o map.o matrix_smooth.o oce_approx.o oce_convolve.o oce_filter.o ocecp.o registerDynamicSymbol.o run.o sfm_enu.o sontek_adp.o sw.o time.o trap.o trim.o -L/usr/local/gfortran/lib/gcc/x86_64-apple-darwin18/8.2.0 -L/usr/local/gfortran/lib -lgfortran -lquadmath -lm -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+ld: warning: directory not found for option '-L/usr/local/gfortran/lib/gcc/x86_64-apple-darwin18/8.2.0'
+ld: warning: directory not found for option '-L/usr/local/gfortran/lib'
+installing to /Users/kelley/Library/R/4.0/library/00LOCK-oce/00new/oce/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (oce)
+Loading required package: gsw
+Loading required package: testthat
+null device 
+          1 
+Rscript case2.R
+Removing package from ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+Removing package from ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+Downloading GitHub repo dankelley/ocedata@develop
+
+     checking for file ‘/private/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T/RtmpPe1PVZ/remotes91f837f830e0/dankelley-ocedata-51df3d8/DESCRIPTION’ ...  [32m✔[39m  [90mchecking for file ‘/private/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T/RtmpPe1PVZ/remotes91f837f830e0/dankelley-ocedata-51df3d8/DESCRIPTION’[39m[36m[39m
+  [90m─[39m[90m  [39m[90mpreparing ‘ocedata’:[39m[36m[39m
+     checking DESCRIPTION meta-information ...  [32m✔[39m  [90mchecking DESCRIPTION meta-information[39m[36m[39m
+  [90m─[39m[90m  [39m[90mchecking for LF line-endings in source and make files and shell scripts[39m[36m[39m
+  [90m─[39m[90m  [39m[90mchecking for empty or unneeded directories[39m[36m[39m
+[90m─[39m[90m  [39m[90mlooking to see if a ‘data/datalist’ file should be added[39m[36m[39m
+  [90m─[39m[90m  [39m[90mbuilding ‘ocedata_0.1.7.tar.gz’[39m[36m[39m
+     
+Installing package into ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+* installing *source* package ‘ocedata’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ocedata)
+Installing package into ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/bin/macosx/contrib/4.0/oce_1.2-0.tgz'
+Content type 'application/x-gzip' length 8949252 bytes (8.5 MB)
+==================================================
+downloaded 8.5 MB
+
+
+The downloaded binary packages are in
+	/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T//RtmpPe1PVZ/downloaded_packages
+Loading required package: gsw
+Loading required package: testthat
+null device 
+          1 
+Rscript case3.R
+Removing package from ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+Removing package from ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+Installing package into ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/bin/macosx/contrib/4.0/ocedata_0.1.6.tgz'
+Content type 'application/x-gzip' length 4225544 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+
+The downloaded binary packages are in
+	/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T//Rtmp8v2yqZ/downloaded_packages
+Downloading GitHub repo dankelley/oce@develop
+
+     checking for file ‘/private/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T/Rtmp8v2yqZ/remotes92366cb728f4/dankelley-oce-a2001b2/DESCRIPTION’ ...  [32m✔[39m  [90mchecking for file ‘/private/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T/Rtmp8v2yqZ/remotes92366cb728f4/dankelley-oce-a2001b2/DESCRIPTION’[39m[36m[39m
+  [90m─[39m[90m  [39m[90mpreparing ‘oce’:[39m[36m[36m (1.3s)[36m[39m
+     checking DESCRIPTION meta-information ...  [32m✔[39m  [90mchecking DESCRIPTION meta-information[39m[36m[39m
+  [90m─[39m[90m  [39m[90mcleaning src[39m[36m[39m
+  [90m─[39m[90m  [39m[90mchecking for LF line-endings in source and make files and shell scripts[39m[36m[36m (1.5s)[36m[39m
+  [90m─[39m[90m  [39m[90mchecking for empty or unneeded directories[39m[36m[39m
+  [90m─[39m[90m  [39m[90mlooking to see if a ‘data/datalist’ file should be added[39m[36m[39m
+  [90m─[39m[90m  [39m[90mbuilding ‘oce_1.2-1.tar.gz’[39m[36m[39m
+     
+Installing package into ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+* installing *source* package ‘oce’ ...
+** using staged installation
+** libs
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c RcppExports.cpp -o RcppExports.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c ad2cp_ahrs.cpp -o ad2cp_ahrs.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c adv_vector_time.cpp -o adv_vector_time.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c amsr.cpp -o amsr.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c approx.cpp -o approx.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c bilinear_interp.cpp -o bilinear_interp.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c bin.cpp -o bin.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c bin_average.c -o bin_average.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c binmap.c -o binmap.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c bitwise.c -o bitwise.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c coastline.c -o coastline.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c curl.cpp -o curl.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c echosounder.cpp -o echosounder.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c fillgap.cpp -o fillgap.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c geod.cpp -o geod.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c get_bit.cpp -o get_bit.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c gradient.cpp -o gradient.o
+gfortran -mmacosx-version-min=10.13 -fno-optimize-sibling-calls  -fPIC  -Wall -g -O2  -c igrf12.f -o igrf12.o
+gfortran -mmacosx-version-min=10.13 -fno-optimize-sibling-calls  -fPIC  -Wall -g -O2  -c igrf13.f -o igrf13.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c interp_barnes.cpp -o interp_barnes.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c landsat.cpp -o landsat.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c ldc_ad2cp_in_file.cpp -o ldc_ad2cp_in_file.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c ldc_rdi_in_buffer.c -o ldc_rdi_in_buffer.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c ldc_rdi_in_file.cpp -o ldc_rdi_in_file.o
+gfortran -mmacosx-version-min=10.13 -fno-optimize-sibling-calls  -fPIC  -Wall -g -O2  -c magdec.f -o magdec.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c map.c -o map.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c matrix_smooth.cpp -o matrix_smooth.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c oce_approx.cpp -o oce_approx.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c oce_convolve.cpp -o oce_convolve.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c oce_filter.cpp -o oce_filter.o
+gfortran -mmacosx-version-min=10.13 -fno-optimize-sibling-calls  -fPIC  -Wall -g -O2  -c ocecp.f -o ocecp.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c run.cpp -o run.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c sfm_enu.cpp -o sfm_enu.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c sontek_adp.cpp -o sontek_adp.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -Wall -g -O2  -c sw.c -o sw.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c time.cpp -o time.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c trap.cpp -o trap.o
+clang++ -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG  -I'/Users/kelley/Library/R/4.0/library/Rcpp/include' -I/usr/local/include   -fPIC  -O3 -pedantic -c trim.cpp -o trim.o
+clang++ -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/Library/Frameworks/R.framework/Resources/lib -L/usr/local/lib -o oce.so RcppExports.o ad2cp_ahrs.o adv_vector_time.o amsr.o approx.o bilinear_interp.o bin.o bin_average.o binmap.o bitwise.o coastline.o curl.o echosounder.o fillgap.o geod.o get_bit.o gradient.o igrf12.o igrf13.o interp_barnes.o landsat.o ldc_ad2cp_in_file.o ldc_rdi_in_buffer.o ldc_rdi_in_file.o magdec.o map.o matrix_smooth.o oce_approx.o oce_convolve.o oce_filter.o ocecp.o registerDynamicSymbol.o run.o sfm_enu.o sontek_adp.o sw.o time.o trap.o trim.o -L/usr/local/gfortran/lib/gcc/x86_64-apple-darwin18/8.2.0 -L/usr/local/gfortran/lib -lgfortran -lquadmath -lm -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+ld: warning: directory not found for option '-L/usr/local/gfortran/lib/gcc/x86_64-apple-darwin18/8.2.0'
+ld: warning: directory not found for option '-L/usr/local/gfortran/lib'
+installing to /Users/kelley/Library/R/4.0/library/00LOCK-oce/00new/oce/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (oce)
+Loading required package: gsw
+Loading required package: testthat
+null device 
+          1 
+Rscript case4.R
+Removing package from ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+Removing package from ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+Installing package into ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/bin/macosx/contrib/4.0/ocedata_0.1.6.tgz'
+Content type 'application/x-gzip' length 4225544 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+
+The downloaded binary packages are in
+	/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T//Rtmpss2GhX/downloaded_packages
+Installing package into ‘/Users/kelley/Library/R/4.0/library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/bin/macosx/contrib/4.0/oce_1.2-0.tgz'
+Content type 'application/x-gzip' length 8949252 bytes (8.5 MB)
+==================================================
+downloaded 8.5 MB
+
+
+The downloaded binary packages are in
+	/var/folders/rx/k1x_t_q12zb9hbjr4ldxmjc80000gn/T//Rtmpss2GhX/downloaded_packages
+Loading required package: gsw
+Loading required package: testthat
+null device 
+          1 
+[1m[3m%[23m[1m[0m                                                                                                      k..issues/0xx/14\[0m[23m[24m[J[01;32m➜  [36m14[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004heexit[?1l>[?2004l
+kexit\
+Script done on Fri Jun  5 08:48:09 2020
