@@ -19,7 +19,6 @@ interpolation with application to oceanographic data.  \emph{Deep Sea
 Research}, \bold{15}, 185-193.}
 
 \examples{
-\dontrun{
 library(oce)
 data(RRprofile, package="ocedata")
 par(mgp=getOption('oceMgp'))
@@ -37,7 +36,6 @@ s <- smooth.spline(RRprofile$depth, RRprofile$temperature)
 lines(predict(s, zz)$y, zz, col='blue')
 legend("topright", lwd=1, col=c("black", "red", "blue"),
       legend=c("oceApprox", "approx", "smooth.spline"), cex=2/3)
-}
 }
 
 \keyword{datasets}
