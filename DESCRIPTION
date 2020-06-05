@@ -19,5 +19,4 @@ LazyData: no
 LazyDataNote: not possible, since we use data/*.R
 BuildResaveData: no
 Packaged: Dan Kelley
-RoxygenNote: 7.0.2
 
