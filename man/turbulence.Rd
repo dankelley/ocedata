@@ -15,7 +15,6 @@
 \usage{data(turbulence)}
 
 \examples{
-\dontrun{
 ## Recreate Fig 9 of Grant et al. (1962), with intercept
 ## chosen to mimic the published figure
 data(turbulence, package="ocedata")
@@ -25,7 +24,6 @@ grid()
 power <- -5/3
 intercept <- -0.3
 abline(intercept, power)
-}
 }
 
 \references{H. L. Grant and R. W. Stewart and A. Moilliet, 1962.  Turbulence

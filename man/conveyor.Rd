@@ -10,7 +10,6 @@
     conveyor-belt path.}
 
 \examples{
-\dontrun{
 library(oce)
 data(coastlineWorld)
 par(mar=rep(1,4))
@@ -24,7 +23,6 @@ mapLines(lon, lat, col="blue", lwd=3)
 lon <- subset(conveyor, path==2)$longitude
 lat <- subset(conveyor, path==2)$latitude
 mapLines(lon, lat, col="darkgreen", lwd=3)
-}
 }
 
 \usage{data(conveyor)}

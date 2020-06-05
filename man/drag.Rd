@@ -16,7 +16,6 @@
 \usage{data(drag)}
 
 \examples{
-\dontrun{
 library(ocedata)
 data(drag)
 par(mar=c(3,3,1,1), mgp=c(2, 0.7, 0))
@@ -24,7 +23,6 @@ plot(drag$U, drag$Cd, pch=ifelse(drag$method == "profile", 1, 19),
      xlab="U [m/s]", ylab=expression(C[D]),
      xlim=c(0, 22), ylim=c(0, 3e-3))
 legend("topleft", pch=c(1,19), legend=c("profile method", "eddy covariance method"))
-}
 }
 
 \source{Data digitized from Figure 3 of Garratt (1977) by Dan Kelley.}

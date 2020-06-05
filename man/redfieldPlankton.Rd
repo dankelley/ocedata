@@ -14,7 +14,6 @@
 \usage{data(redfieldPlankton)}
 
 \examples{
-\dontrun{
 library(ocedata)
 data(redfieldPlankton)
 par(mfrow=c(1,2))
@@ -22,7 +21,6 @@ boxplot(redfieldPlankton$Nitrogen)
 abline(h=16.7, col='gray')
 boxplot(redfieldPlankton$Phosphorus)
 abline(h=1.85, col='gray')
-}
 }
 
 \source{Data entered verbatim (sans italics for species name) by Dan Kelley

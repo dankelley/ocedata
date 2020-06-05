@@ -15,19 +15,17 @@
     from typos and inaccurate reading of occasionally blurry digits.}
 
 \examples{
-\dontrun{
 library(oce)
 data(gs, package="ocedata")
 data(coastlineWorldMedium, package="ocedata")
 plot(coastlineWorldMedium,
-     clon=mean(gs$longitude), clat=mean(gs$latitude), span=3200)
+     clongitude=mean(gs$longitude), clatitude=mean(gs$latitude), span=3200)
 data(topoWorld)
-contour(topoWorld[["longitude"]]-360, 
+contour(topoWorld[["longitude"]]-360,
         topoWorld[["latitude"]], -topoWorld[["z"]],
         level=1000*(1:5), col='brown', add=TRUE)
 for (i in gs$month)
     lines(gs$longitude, gs$latitude[,i], col='blue')
-}
 }
 
 \usage{data(gs)}

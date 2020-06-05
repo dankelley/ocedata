@@ -20,7 +20,6 @@
 \usage{data(papa)}
 
 \examples{
-\dontrun{
 library(oce)
 data(papa, package="ocedata")
 
@@ -46,7 +45,6 @@ plot(papa$t, papa$sigmaTheta[,1], type='l', xlim=xlim,
 for (i in 2:dim(papa$sigmaTheta)[2])
     lines(papa$t, papa$sigmaTheta[,i], col=i, lwd=2)
 legend("topleft", title="z [m]", lwd=2, legend=papa$z, col=1:length(papa$z), bg="white")
-}
 }
 
 \source{Salinity was inferred from

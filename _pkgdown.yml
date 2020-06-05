@@ -1,0 +1,11 @@
+destination: docs
+
+reference:
+- title: Datasets and functions
+- contents:
+  - matches(".*")
+
+figures:
+  fig.width: 7
+  fig.height: 7
+
