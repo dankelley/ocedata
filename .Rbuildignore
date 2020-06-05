@@ -20,3 +20,4 @@ check_urls.R
 ^.github$
 
 ^pkgdown$
+^\.github$
