@@ -17,7 +17,8 @@ Encoding: UTF-8
 URL: https://dankelley.github.io/ocedata
 LazyData: no
 LazyDataNote: not possible, since we use data/*.R
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
 BuildResaveData: no
 Packaged: Dan Kelley
-RoxygenNote: 7.0.2
 
