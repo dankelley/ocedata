@@ -192,12 +192,11 @@ About two percent of the observation times are missing." />
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>oce</span>)
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>buoy</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"ocedata"</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>buoy</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"ocedata"</span>)
 <span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>mfrow</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>3</span>,<span class='fl'>1</span>))
-<span class='fu'><a href='https://rdrr.io/pkg/oce/man/oce.plot.ts.html'>oce.plot.ts</a></span>(<span class='no'>buoy</span>$<span class='no'>time</span>, <span class='no'>buoy</span>$<span class='no'>wind</span>, <span class='kw'>ylab</span><span class='kw'>=</span><span class='st'>"Wind Speed [m/s]"</span>)
-<span class='fu'><a href='https://rdrr.io/pkg/oce/man/oce.plot.ts.html'>oce.plot.ts</a></span>(<span class='no'>buoy</span>$<span class='no'>time</span>, <span class='no'>buoy</span>$<span class='no'>height</span>, <span class='kw'>ylab</span><span class='kw'>=</span><span class='st'>"Wave height [m]"</span>)
-<span class='fu'><a href='https://rdrr.io/pkg/oce/man/oce.plot.ts.html'>oce.plot.ts</a></span>(<span class='no'>buoy</span>$<span class='no'>time</span>, <span class='no'>buoy</span>$<span class='no'>period</span>, <span class='kw'>ylab</span><span class='kw'>=</span><span class='st'>"Wave period [s]"</span>)</div><div class='img'><img src='buoy-1.png' alt='' width='672' height='672' /></div></pre>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>buoy</span>$<span class='no'>time</span>, <span class='no'>buoy</span>$<span class='no'>wind</span>, <span class='kw'>ylab</span><span class='kw'>=</span><span class='st'>"Wind Speed [m/s]"</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>buoy</span>$<span class='no'>time</span>, <span class='no'>buoy</span>$<span class='no'>height</span>, <span class='kw'>ylab</span><span class='kw'>=</span><span class='st'>"Wave height [m]"</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>buoy</span>$<span class='no'>time</span>, <span class='no'>buoy</span>$<span class='no'>period</span>, <span class='kw'>ylab</span><span class='kw'>=</span><span class='st'>"Wave period [s]"</span>)</div><div class='img'><img src='buoy-1.png' alt='' width='672' height='672' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

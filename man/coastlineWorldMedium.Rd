@@ -9,8 +9,9 @@
 
 \description{World coastlines at medium and fine-scale resolution}
 
-\usage{data(coastlineWorldMedium)
-data(coastlineWorldFine)}
+\usage{data(coastlineWorldMedium, package="ocedata")
+data(coastlineWorldFine, package="ocedata")
+}
 
 \details{These datasets are analogous to \code{coastlineWorld} in
     the Oce package, but they are of finer resolution; a comparison table

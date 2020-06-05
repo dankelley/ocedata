@@ -156,12 +156,13 @@
     Technical Ed.; NOAA Atlas NESDIS 74, 39 pp.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>oce</span>)
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>levitus</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"ocedata"</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/attach.html'>attach</a></span>(<span class='no'>levitus</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>mfrow</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>1</span>))
-<span class='fu'><a href='https://rdrr.io/pkg/oce/man/imagep.html'>imagep</a></span>(<span class='no'>longitude</span>, <span class='no'>latitude</span>, <span class='no'>SST</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>oceColorsJet</span>, <span class='kw'>zlim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>2</span>, <span class='fl'>30</span>))
-<span class='fu'><a href='https://rdrr.io/pkg/oce/man/imagep.html'>imagep</a></span>(<span class='no'>longitude</span>, <span class='no'>latitude</span>, <span class='no'>SSS</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>oceColorsJet</span>, <span class='kw'>zlim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>20</span>, <span class='fl'>40</span>))</div><div class='img'><img src='levitus-1.png' alt='' width='672' height='672' /></div></pre>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+    <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>levitus</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"ocedata"</span>)
+    <span class='fu'><a href='https://rdrr.io/r/base/attach.html'>attach</a></span>(<span class='no'>levitus</span>)
+    <span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>mfrow</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>1</span>))
+    <span class='kw pkg'>oce</span><span class='kw ns'>::</span><span class='fu'><a href='https://rdrr.io/pkg/oce/man/imagep.html'>imagep</a></span>(<span class='no'>longitude</span>, <span class='no'>latitude</span>, <span class='no'>SST</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>oceColorsJet</span>, <span class='kw'>zlim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>2</span>, <span class='fl'>30</span>))
+    <span class='kw pkg'>oce</span><span class='kw ns'>::</span><span class='fu'><a href='https://rdrr.io/pkg/oce/man/imagep.html'>imagep</a></span>(<span class='no'>longitude</span>, <span class='no'>latitude</span>, <span class='no'>SSS</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>oceColorsJet</span>, <span class='kw'>zlim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>20</span>, <span class='fl'>40</span>))
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

@@ -14,8 +14,7 @@ nao <- data.frame(year=year, index=index)
 \usage{data(nao)}
 
 \examples{
-library(ocedata)
-data(nao)
+data(nao, package="ocedata")
 plot(nao$year, nao$index, xlab="Year", ylab="NAO index", type="l", col="gray")
 k <- kernel("fejer", m=25, r=2)
 smoothed <- kernapply(nao$index, k, circular=TRUE)

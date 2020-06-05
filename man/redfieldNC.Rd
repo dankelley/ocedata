@@ -12,7 +12,6 @@
 \usage{data(redfieldNC)}
 
 \examples{
-library(oce)
 data(redfieldNC, package="ocedata")
 plot(redfieldNC$CO2, redfieldNC$NO3, xlab=expression(CO[2]), ylab=expression(NO[3]))
 slope <- 1/7
