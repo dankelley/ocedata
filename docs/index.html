@@ -70,13 +70,28 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
+
 <div id="ocedata" class="section level2">
 <h2 class="hasAnchor">
 <a href="#ocedata" class="anchor"></a><strong>ocedata</strong>
 </h2>
 
-<p><code>ocedata</code> supplies some oceanographic datasets, for general use and as an adjunct to the <code>oce</code> package. Indeed, some of the datasets were once supplied by <code>oce</code>, but they were moved to <code>ocedata</code> as a way to reduce storage pressure on the CRAN system, assuming that <code>oce</code> will be updated more frequently than <code>ocedata</code>.</p>
 </div>
+<div id="about-ocedata" class="section level2">
+<h2 class="hasAnchor">
+<a href="#about-ocedata" class="anchor"></a>About ocedata</h2>
+<p>The <code>ocedata</code> package supplies some oceanographic datasets, for general use and as an adjunct to the <code>oce</code> package. Indeed, some of the datasets were once supplied by <code>oce</code>, but they were moved to <code>ocedata</code> to reduce storage pressure on the CRAN system, assuming that <code>oce</code> will be updated more frequently than <code>ocedata</code>.</p>
+</div>
+<div id="installing-ocedata" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installing-ocedata" class="anchor"></a>Installing ocedata</h2>
+<p>Stable versions of <code>ocedata</code> may be installed from within R, in the same way as other packages, with</p>
+<pre class="splus"><code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("ocedata")</a></code></pre>
+<p>However, this version is only updated a few times a year (pursuant to CRAN policy), so some users install <code>ocedata</code> from the github.com website instead, to get the latest version. This is done with e.g.</p>
+<pre class="splus"><code><a href="https://devtools.r-lib.org//reference">library(devtools)
+install_github("dankelley/ocedata", ref="master")</a></code></pre>
+</div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

@@ -11,22 +11,22 @@
 
 ## About ocedata
 
-`ocedata` supplies some oceanographic datasets, for general use and as an
-adjunct to the `oce` package. Indeed, some of the datasets were once supplied
-by `oce`, but they were moved to `ocedata` to reduce storage pressure on the
-CRAN system, assuming that `oce` will be updated more frequently than
+The `ocedata` package supplies some oceanographic datasets, for general use and
+as an adjunct to the `oce` package. Indeed, some of the datasets were once
+supplied by `oce`, but they were moved to `ocedata` to reduce storage pressure
+on the CRAN system, assuming that `oce` will be updated more frequently than
 `ocedata`.
 
 
 ## Installing ocedata
 
-Stable versions of ocedata may be installed from within R, in the same way as
+Stable versions of `ocedata` may be installed from within R, in the same way as
 other packages, with
 ```splus
 install.packages("ocedata")
 ```
-However, this version is only updated a few times a year
-(pursuant to CRAN policy), so some users install ocedata from github instead,
+However, this version is only updated a few times a year (pursuant to CRAN
+policy), so some users install `ocedata` from the github.com website instead,
 to get the latest version. This is done with e.g.
 ```splus
 library(devtools)
