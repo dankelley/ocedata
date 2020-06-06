@@ -1,5 +1,9 @@
 # ocedata (development version)
 
+## 0.1.8
+
+* documentation cleanup
+
 ## 0.1.7
 
 * fix bug in wrappers, to prevent problems with oce package

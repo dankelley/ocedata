@@ -2,8 +2,6 @@ language: r
 warnings_are_errors: false
 sudo: required
 sudo: required
-r_binary_packages:
-    - oce
 r_packages:
     - covr
 after_success:
