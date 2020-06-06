@@ -19,3 +19,4 @@ check_urls.R
 ^docs$
 ^pkgdown$
 ^\.github$
+^\.travis\.yml$

@@ -1,16 +1,4 @@
-language: r
-warnings_are_errors: false
-sudo: required
-sudo: required
-r_packages:
-    - covr
-after_success:
-    - Rscript -e 'library(covr); codecov()'
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
-env:
-    global:
-        - _R_CHECK_FORCE_SUGGESTS_=False
-        - _R_BUILD_ARGS="--no-build-vignettes --no-manual"
-        - _R_CHECK_ARGS="--no-build-vignettes --no-manual"
-        - _R_CHECK_CRAN_INCOMING=False
-        - BOOTSTRAP_LATEX=""
+language: R
+cache: packages
