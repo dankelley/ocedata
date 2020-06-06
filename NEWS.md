@@ -1,4 +1,4 @@
-# ocedata (development version)
+# ocedata 0.1.8
 
 ## 0.1.8
 
