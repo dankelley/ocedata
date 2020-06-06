@@ -1,12 +1,14 @@
 Package: ocedata
-Type: Package
+Version: 0.1.8
 Title: Oceanographic Data Sets for 'oce' Package
-Version: 0.1.7
 Authors@R: c(
     person(given="Dan", family="Kelley", email="Dan.Kelley@Dal.Ca", role=c("aut", "cre"), comment=c(ORCID="https://orcid.org/0000-0001-7808-5911")),
     person(given="Clark", family="Richards", email="clark.richards@gmail.com", role=c("aut"), comment=c(ORCID="https://orcid.org/0000-0002-7833-206X")))
 Maintainer: Dan Kelley <Dan.Kelley@Dal.Ca>
-Depends: R (>= 3.5.0), methods, testthat
+Depends:
+    R (>= 3.5.0),
+    methods,
+    testthat
 BugReports: https://github.com/dankelley/ocedata/issues
 Description: Several Oceanographic data sets are provided for use
     by the 'oce' package and for other purposes.
@@ -15,8 +17,7 @@ Encoding: UTF-8
 URL: https://dankelley.github.io/ocedata
 LazyData: no
 LazyDataNote: not possible, since we use data/*.R
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
 BuildResaveData: no
 Packaged: Dan Kelley
+RoxygenNote: 7.0.2
 
