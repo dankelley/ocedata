@@ -1,5 +1,5 @@
 Package: ocedata
-Version: 0.1.8
+Version: 0.1.9
 Title: Oceanographic Data Sets for 'oce' Package
 Authors@R: c(
     person(given="Dan", family="Kelley", email="Dan.Kelley@Dal.Ca", role=c("aut", "cre"), comment=c(ORCID="https://orcid.org/0000-0001-7808-5911")),
