@@ -1,4 +1,8 @@
-# ocedata 0.1.8
+# ocedata 0.1.9
+
+## 0.1.9
+
+* update docs slightly
 
 ## 0.1.8
 
