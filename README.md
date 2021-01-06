@@ -1,6 +1,6 @@
 # ocedata 0.1.8
 
-[![R build status](https://github.com/dankelley/ocedata/workflows/R-CMD-check/badge.svg)](https://github.com/dankelley/ocedata/actions)
+![R-CMD-check](https://github.com/dankelley/ocedata/workflows/R-CMD-check/badge.svg)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/ocedata)](https://cran.r-project.org/package=ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-month/ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-week/ocedata)
