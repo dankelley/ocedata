@@ -3,11 +3,11 @@
 on:
   push:
     branches:
-      - develop
+      - main
       - master
   pull_request:
     branches:
-      - develop
+      - main
       - master
 
 name: R-CMD-check
@@ -15,6 +15,8 @@ name: R-CMD-check
 jobs:
   R-CMD-check:
     runs-on: macOS-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@v1

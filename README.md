@@ -1,11 +1,15 @@
 # ocedata 0.1.8
 
-![R-CMD-check](https://github.com/dankelley/ocedata/workflows/R-CMD-check/badge.svg)
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/dankelley/ocedata/workflows/R-CMD-check/badge.svg)](https://github.com/dankelley/ocedata/actions)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/ocedata)](https://cran.r-project.org/package=ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-month/ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-week/ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-day/ocedata)
 [![Rdoc](http://www.rdocumentation.org/badges/version/ocedata)](http://www.rdocumentation.org/packages/ocedata)
+
+<!-- badges: end -->
 
 
 ## About ocedata
