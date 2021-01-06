@@ -1,7 +1,6 @@
 # ocedata 0.1.8
 
-[![Travis build status](https://travis-ci.com/dankelley/ocedata.svg?branch=main)](https://travis-ci.com/dankelley/ocedata)
-[![codecov report](https://codecov.io/gh/dankelley/ocedata/branch/main/graph/badge.svg)](https://codecov.io/gh/dankelley/ocedata)
+[![R build status](https://github.com/dankelley/ocedata/workflows/R-CMD-check/badge.svg)](https://github.com/dankelley/ocedata/actions)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/ocedata)](https://cran.r-project.org/package=ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-month/ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-week/ocedata)
