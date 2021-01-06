@@ -44,6 +44,17 @@ data(coastlineWorldFine, package="ocedata")
     that has 27221 points, putting it intermediate between the Oce default and
     coarse versions.}
 
+\examples{
+data(coastlineWorldMedium, package="ocedata")
+data(coastlineWorldFine, package="ocedata")
+\dontrun{
+library(oce)
+plot(coastlineWorldMedium, clongitude=-63, clatitude=45.5, span=800)
+lines(coastlineWorldFine[["longitude"]], coastlineWorldFine[["latitude"]],
+      col=2, lwd=2)}
+}
+
+
 \author{Dan Kelley}
 
 \keyword{datasets}

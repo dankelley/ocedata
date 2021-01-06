@@ -2,7 +2,7 @@
 
 ## 0.1.9
 
-* in development
+* improve docs
 
 ## 0.1.8
 
