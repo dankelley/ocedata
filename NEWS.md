@@ -2,7 +2,7 @@
 
 ## 0.1.9
 
-* update docs slightly
+* improve docs
 
 ## 0.1.8
 
