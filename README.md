@@ -7,7 +7,6 @@
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-month/ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-week/ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-day/ocedata)
-[![Rdoc](https://www.rdocumentation.org/badges/version/ocedata)](https://www.rdocumentation.org/packages/ocedata)
 
 <!-- badges: end -->
 
