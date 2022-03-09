@@ -9,7 +9,7 @@ Depends:
     R (>= 3.5.0),
     methods
 Suggests:
-    testthat
+    testthat (>= 3.0.0)
 BugReports: https://github.com/dankelley/ocedata/issues
 Description: Several Oceanographic data sets are provided for use
     by the 'oce' package and for other purposes.
