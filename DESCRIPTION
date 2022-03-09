@@ -7,7 +7,8 @@ Authors@R: c(
 Maintainer: Dan Kelley <Dan.Kelley@Dal.Ca>
 Depends:
     R (>= 3.5.0),
-    methods,
+    methods
+Suggests:
     testthat
 BugReports: https://github.com/dankelley/ocedata/issues
 Description: Several Oceanographic data sets are provided for use
