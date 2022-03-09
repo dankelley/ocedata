@@ -1,5 +1,5 @@
 Package: ocedata
-Version: 0.1.9
+Version: 0.2.0
 Title: Oceanographic Data Sets for 'oce' Package
 Authors@R: c(
     person(given="Dan", family="Kelley", email="Dan.Kelley@Dal.Ca", role=c("aut", "cre"), comment=c(ORCID="https://orcid.org/0000-0001-7808-5911")),
@@ -15,7 +15,7 @@ Description: Several Oceanographic data sets are provided for use
     by the 'oce' package and for other purposes.
 License: GPL (>= 2)
 Encoding: UTF-8
-URL: https://dankelley.github.io/ocedata
+URL: https://dankelley.github.io/ocedata/
 LazyData: no
 LazyDataNote: not possible, since we use data/*.R
 BuildResaveData: no

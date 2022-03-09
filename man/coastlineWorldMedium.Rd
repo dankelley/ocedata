@@ -32,7 +32,7 @@ data(coastlineWorldFine, package="ocedata")
     }
 }
 
-\source{Downloaded from \url{http://www.naturalearthdata.com}, in files
+\source{Downloaded from \url{https://www.naturalearthdata.com}, in files
     \code{ne_50m_admin_0_countries.shp} for \code{coastlineWorldMedium}, and
     \code{ne_10m_admin_0_countries.shp} for \code{coastlineWorldFine}.}
 

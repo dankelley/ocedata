@@ -40,7 +40,7 @@ plot(buoy$time, buoy$period, ylab="Wave period [s]")
 
 
 \source{The data were downloaded as a file named \code{44258.txt} in April 2014
-    from \url{http://www.ndbc.noaa.gov/data/realtime2/}, and made into a data
+    from \url{https://www.ndbc.noaa.gov/data/realtime2/}, and made into a data
     frame.  See [1] and [2] for information on the data in such buoys, and [3]
     for more on this particular buoy.  The code to create the dataset is given below.
 \preformatted{
@@ -65,9 +65,9 @@ Tw <- as.numeric(d[,15])
 
 \references{
     \enumerate{
-        \item\url{http://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf}
-        \item\url{http://www.ndbc.noaa.gov/measdes.shtml}
-        \item\url{http://www.ndbc.noaa.gov/station_page.php?station=44258}
+        \item\url{https://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf}
+        \item\url{https://www.ndbc.noaa.gov/measdes.shtml}
+        \item\url{https://www.ndbc.noaa.gov/station_page.php?station=44258}
         }
 }
 
