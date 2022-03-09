@@ -1,4 +1,9 @@
-# ocedata 0.1.9
+# ocedata 0.1.10
+
+## 0.1.10
+
+* Move testthat package from Depends to Suggests
+* Fix some broken links in docs.
 
 ## 0.1.9
 
