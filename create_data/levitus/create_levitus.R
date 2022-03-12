@@ -22,10 +22,10 @@ tools::resaveRdaFiles("levitus.rda")
 ## then we just remove the next lines, because the purpose is merely
 ## to check for identical values.
 lev <- levitus
-expect_equal(lev$longitude, levitus$longitude)
-expect_equal(lev$latitude, levitus$latitude)
-expect_equal(lev$SST, levitus$SST)
-expect_equal(lev$SSS, levitus$SSS)
+stopifnot(all.equal(lev$longitude, levitus$longitude))
+stopifnot(all.equal(lev$latitude, levitus$latitude))
+stopifnot(all.equal(lev$SST, levitus$SST))
+stopifnot(all.equal(lev$SSS, levitus$SSS))
 
 ## Check with a graph
 if (!interactive()) png("create_levitus.png", unit="in", width=10, height=8, res=200)
