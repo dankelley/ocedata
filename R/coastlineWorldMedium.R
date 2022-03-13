@@ -1,4 +1,4 @@
-#' World coastline at medium (1:50M) resolution
+#' World coastline at medium-scale (1:50M) resolution
 #'
 #' `coastlineWorldMedum` is analogous to `coastlineWorld` in the \CRANpkg{oce}
 #' package, but at higher resolution, i.e. showing more detail.  It is suitable

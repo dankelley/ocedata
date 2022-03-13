@@ -3,7 +3,7 @@
 \docType{data}
 \name{riley}
 \alias{riley}
-\title{Riley's (1946) observation and theory of phytoplankton concentration}
+\title{Riley's (1946) observation/theory of phytoplankton concentration}
 \usage{
 data(riley, package="ocedata")
 }

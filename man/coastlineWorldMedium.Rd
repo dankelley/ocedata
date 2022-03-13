@@ -3,7 +3,7 @@
 \docType{data}
 \name{coastlineWorldMedium}
 \alias{coastlineWorldMedium}
-\title{World coastline at medium (1:50M) resolution}
+\title{World coastline at medium-scale (1:50M) resolution}
 \usage{
 data(coastlineWorldMedium, package="ocedata")
 }

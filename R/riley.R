@@ -1,4 +1,4 @@
-#' Riley's (1946) observation and theory of phytoplankton concentration
+#' Riley's (1946) observation/theory of phytoplankton concentration
 #'
 #' `riley` is a list holding information relating to Riley's (1946) observation and theory of
 #' phytoplankton concentration, used in Chapter 4 of Kelley (2018).
