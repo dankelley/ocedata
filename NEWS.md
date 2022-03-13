@@ -1,9 +1,10 @@
-# ocedata 0.1.10
+# ocedata 0.2.0
 
-## 0.1.10
+## 0.2.0
 
-* Move testthat package from Depends to Suggests
-* Fix some broken links in docs.
+* Move `testthat` package from Depends to Suggests.
+* Reformulate docs using `roxygen2`.
+* Update links in docs.
 
 ## 0.1.9
 

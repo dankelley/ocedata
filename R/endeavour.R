@@ -1,0 +1,23 @@
+#' Cook's Endeavour cruise track
+#'
+#' Time, longitude, and latitude for the H.M.S. Endeavour cruise, 1768-1771.
+#' The data were extracted from an XML file contained within a zipfile provided
+#' at Reference 1, last checked March 13, 2022.
+#'
+#' @name endeavour
+#'
+#' @docType data
+#'
+#' @usage data(endeavour, package="ocedata")
+#'
+#' @references
+#' 1. \url{https://www.data.gov.au/dataset/7f03ac78-7210-4702-8cd5-f3e373f4097b}
+#'
+#' @examples
+#' data(endeavour, package="ocedata")
+#'\dontrun{
+#' library(oce)
+#' data(coastlineWorld, package="oce")
+#' mapPlot(coastlineWorld, col="tan")
+#' mapPoints(endeavour$longitude, endeavour$latitude, pch=20, cex=2/3, col=2)}
+NULL
