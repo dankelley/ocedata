@@ -21,3 +21,4 @@ check_urls.R
 ^pkgdown$
 ^\.github$
 ^\.travis\.yml$
+check_package.R

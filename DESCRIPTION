@@ -20,5 +20,5 @@ LazyData: no
 LazyDataNote: not possible, since we use data/*.R
 BuildResaveData: no
 Packaged: Dan Kelley
-RoxygenNote: 7.0.2
-
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
