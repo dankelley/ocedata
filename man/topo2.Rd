@@ -14,7 +14,7 @@ This is provided for occasions where the higher resolution topography in
 plot that illustrates the longitude and latitude grid for the data.
 }
 \details{
-The data are calculated by applying \code{\link[oce:decimate]{oce::decimate()}} to the \code{topoWorld}
+The data are calculated by applying \code{decimate()} to the \code{topoWorld}
 dataset from the \CRANpkg{oce} package, followed by extraction of the \code{"z"} value.
 }
 \examples{

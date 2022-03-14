@@ -21,7 +21,7 @@
 #' form identifying the user and purpose.
 #'
 #' Although there is a data file for \eqn{\sigma_\theta}{sigma-theta} on the
-#' NOAA website, here it was calculated with [oce::swSigmaTheta()] in the
+#' NOAA website, here it was calculated with `swSigmaTheta()` in the
 #' \CRANpkg{oce} package.
 #'
 #' The larger data set is described at `http://www.pmel.noaa.gov/stnP/`.

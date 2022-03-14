@@ -5,7 +5,7 @@
 #' `topoWorld` from the Oce package is not needed. See \dQuote{Examples} for a
 #' plot that illustrates the longitude and latitude grid for the data.
 #'
-#' The data are calculated by applying [oce::decimate()] to the `topoWorld`
+#' The data are calculated by applying `decimate()` to the `topoWorld`
 #' dataset from the \CRANpkg{oce} package, followed by extraction of the `"z"` value.
 #'
 #' @name topo2

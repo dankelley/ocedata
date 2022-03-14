@@ -30,7 +30,7 @@ one must use a graphical interface provided at
 form identifying the user and purpose.
 
 Although there is a data file for \eqn{\sigma_\theta}{sigma-theta} on the
-NOAA website, here it was calculated with \code{\link[oce:swSigmaTheta]{oce::swSigmaTheta()}} in the
+NOAA website, here it was calculated with \code{swSigmaTheta()} in the
 \CRANpkg{oce} package.
 
 The larger data set is described at \verb{http://www.pmel.noaa.gov/stnP/}.
