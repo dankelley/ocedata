@@ -15,7 +15,8 @@
 #' @examples
 #' data(schmitt, package="ocedata")
 #'\dontrun{
-#' oce::plotTS(oce::as.ctd(schmitt$S, schmitt$theta, 0), eos="unesco")}
+#' oce::plotTS(oce::as.ctd(schmitt$S, schmitt$theta, 0), eos="unesco")
+#'}
 #'
 #' @references
 #' R. W. Schmitt, 1981.  Form of the temperature-salinity relationship in

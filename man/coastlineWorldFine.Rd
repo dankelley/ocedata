@@ -26,7 +26,8 @@ structure of coastline objects and discusses functions that deal with them.
 data(coastlineWorldFine, package="ocedata")
 \dontrun{
 library(oce)
-plot(coastlineWorldFine, clongitude=-63, clatitude=45.5, span=600)}
+plot(coastlineWorldFine, clongitude=-63, clatitude=45.5, span=600)
+}
 }
 \seealso{
 Other coastline files: 

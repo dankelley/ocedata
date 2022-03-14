@@ -18,7 +18,8 @@ data(endeavour, package="ocedata")
 library(oce)
 data(coastlineWorld, package="oce")
 mapPlot(coastlineWorld, col="tan")
-mapPoints(endeavour$longitude, endeavour$latitude, pch=20, cex=2/3, col=2)}
+mapPoints(endeavour$longitude, endeavour$latitude, pch=20, cex=2/3, col=2)
+}
 }
 \references{
 \enumerate{

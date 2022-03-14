@@ -17,7 +17,8 @@ source as a cruise of the vessel T. G. Thompson in 1970, and a location of
 \examples{
 data(schmitt, package="ocedata")
 \dontrun{
-oce::plotTS(oce::as.ctd(schmitt$S, schmitt$theta, 0), eos="unesco")}
+oce::plotTS(oce::as.ctd(schmitt$S, schmitt$theta, 0), eos="unesco")
+}
 
 }
 \references{

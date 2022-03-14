@@ -34,7 +34,6 @@
 #'
 #' @examples
 #' data(papa, package="ocedata")
-#' par(mfrow=c(3,1))
 #' xlim <- c(min(papa$t)-3*28*86400, max(papa$t)) # extra for legend
 #' plot(papa$t, papa$temperature[,1], type='l', xlim=xlim,
 #'      xlab="", ylab="Temperature", ylim=range(papa$temperature))

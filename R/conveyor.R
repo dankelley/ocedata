@@ -33,7 +33,8 @@
 #' ## Secondary path (in Indian Ocean)
 #' lon <- subset(conveyor, path==2)$longitude
 #' lat <- subset(conveyor, path==2)$latitude
-#' oce::mapLines(lon, lat, col="darkgreen", lwd=3)}
+#' oce::mapLines(lon, lat, col="darkgreen", lwd=3)
+#'}
 #'
 #' @usage data(conveyor, package="ocedata")
 #'

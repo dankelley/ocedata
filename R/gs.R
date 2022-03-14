@@ -26,7 +26,8 @@
 #'     topoWorld[["latitude"]], -topoWorld[["z"]],
 #'     level=1000*(1:5), col='brown', add=TRUE)
 #' for (i in gs$month)
-#'     lines(gs$longitude, gs$latitude[,i], col='blue')}
+#'     lines(gs$longitude, gs$latitude[,i], col='blue')
+#'}
 #'
 #' @references
 #' K. F. Drinkwater, R. A Myers, R. G. Pettipas and T. L. Wright, 1994.

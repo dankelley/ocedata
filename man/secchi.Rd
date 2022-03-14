@@ -27,8 +27,8 @@ oce::drawPalette(colormap=cm)
 oce::plot(coastlineWorldMedium, clongitude=10, clatitude=60, span=3000,
     mar=par("mar"))
 points(secchi$longitude, secchi$latitude, pch=20, col=cm$zcol)
-title("log10 of secchi depth in m")}
-
+title("log10 of secchi depth in m")
+}
 
 }
 \references{
