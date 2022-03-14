@@ -12,8 +12,9 @@
 #'
 #' @examples
 #' data(redfieldNP, package="ocedata")
-#' plot(redfieldNP$PO4, redfieldNP$NO3, xlab=expression(PO[4]), ylab=expression(NO[3]))
-#' abline(0, 20, lwd=3)                   # line N:P = 20:1, as shown by Redfield
+#' plot(redfieldNP$PO4, redfieldNP$NO3,
+#'     xlab=expression(PO[4]), ylab=expression(NO[3]))
+#' abline(0, 20, lwd=3)  # slope N:P = 20:1, shown by Redfield
 #'
 #' @family data related to Redfield (1934)
 #'

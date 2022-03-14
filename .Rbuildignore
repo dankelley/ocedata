@@ -11,7 +11,6 @@ _layouts
 ^.*\.Rproj$
 ^\.Rproj\.user$
 create_data
-check_urls.R
 ^CODE_OF_CONDUCT.md$
 ^revdep$
 ^cran-comments.md$
@@ -21,4 +20,5 @@ check_urls.R
 ^pkgdown$
 ^\.github$
 ^\.travis\.yml$
-check_package.R
+^check_package.R$
+

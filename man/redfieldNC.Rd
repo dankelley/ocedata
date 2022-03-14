@@ -13,7 +13,8 @@ Data digitized from Redfield's (1934) Figure 3, showing
 }
 \examples{
 data(redfieldNC, package="ocedata")
-plot(redfieldNC$CO2, redfieldNC$NO3, xlab=expression(CO[2]), ylab=expression(NO[3]))
+plot(redfieldNC$CO2, redfieldNC$NO3,
+    xlab=expression(CO[2]), ylab=expression(NO[3]))
 slope <- 1/7
 abline(-275.5, slope, lwd=3)
 abline(-288.5, slope, lwd=3)

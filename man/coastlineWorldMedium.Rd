@@ -25,7 +25,8 @@ structure of coastline objects and discusses functions that deal with them.
 data(coastlineWorldMedium, package="ocedata")
 \dontrun{
 library(oce)
-plot(coastlineWorldMedium, clongitude=-63, clatitude=45.5, span=600)}
+plot(coastlineWorldMedium, clongitude=-63, clatitude=45.5, span=600)
+}
 }
 \seealso{
 Other coastline files: 

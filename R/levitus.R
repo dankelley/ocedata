@@ -23,7 +23,8 @@
 #' attach(levitus)
 #'\dontrun{
 #' oce::imagep(longitude, latitude, SST, col=oceColorsTemperature, zlim=c(-2, 30))
-#' oce::imagep(longitude, latitude, SSS, col=oceColorsSalinity, zlim=c(20, 40))}
+#' oce::imagep(longitude, latitude, SSS, col=oceColorsSalinity, zlim=c(20, 40))
+#'}
 #'
 #' @references
 #' 1. \url{https://www.nodc.noaa.gov/OC5/woa13/}

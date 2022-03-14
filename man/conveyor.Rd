@@ -38,7 +38,8 @@ oce::mapLines(lon, lat, col="blue", lwd=3)
 ## Secondary path (in Indian Ocean)
 lon <- subset(conveyor, path==2)$longitude
 lat <- subset(conveyor, path==2)$latitude
-oce::mapLines(lon, lat, col="darkgreen", lwd=3)}
+oce::mapLines(lon, lat, col="darkgreen", lwd=3)
+}
 
 }
 \references{

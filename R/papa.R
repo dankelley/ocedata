@@ -21,7 +21,7 @@
 #' form identifying the user and purpose.
 #'
 #' Although there is a data file for \eqn{\sigma_\theta}{sigma-theta} on the
-#' NOAA website, here it was calculated with [oce::swSigmaTheta()] in the
+#' NOAA website, here it was calculated with `swSigmaTheta()` in the
 #' \CRANpkg{oce} package.
 #'
 #' The larger data set is described at `http://www.pmel.noaa.gov/stnP/`.
@@ -34,7 +34,6 @@
 #'
 #' @examples
 #' data(papa, package="ocedata")
-#' par(mfrow=c(3,1))
 #' xlim <- c(min(papa$t)-3*28*86400, max(papa$t)) # extra for legend
 #' plot(papa$t, papa$temperature[,1], type='l', xlim=xlim,
 #'      xlab="", ylab="Temperature", ylim=range(papa$temperature))

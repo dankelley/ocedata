@@ -16,8 +16,7 @@
 #'
 #' @docType data
 #'
-#' @usage
-#' data(coastlineWorldFine, package="ocedata")
+#' @usage data(coastlineWorldFine, package="ocedata")
 #'
 #' @family coastline files
 #'
@@ -26,6 +25,7 @@
 #' data(coastlineWorldFine, package="ocedata")
 #'\dontrun{
 #' library(oce)
-#' plot(coastlineWorldFine, clongitude=-63, clatitude=45.5, span=600)}
+#' plot(coastlineWorldFine, clongitude=-63, clatitude=45.5, span=600)
+#'}
 NULL
 
