@@ -20,3 +20,4 @@ create_data
 ^\.travis\.yml$
 ^check_package.R$
 
+^CRAN-SUBMISSION$
