@@ -27,7 +27,9 @@ as in shown below. These data were then read with R code (reference 5) that
 skips the headers, chops out the annual means and then assigns columns to
 year fractions, e.g. the first two numbers in the data shown below are -29
 and -20, yielding values -0.29degC and -0.20degC, and times are here
-represented as 1880+1/24 and 1880+3/24, i.e. 1880.042 and 1880.125.\preformatted{        GLOBAL Land-Ocean Temperature Index in 0.01 degrees Celsius   base period: 1951-1980
+represented as 1880+1/24 and 1880+3/24, i.e. 1880.042 and 1880.125.
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{        GLOBAL Land-Ocean Temperature Index in 0.01 degrees Celsius   base period: 1951-1980
 
                     sources:  GHCN-v3 1880-11/2015 + SST: ERSST v4 1880-11/2015
                     using elimination of outliers and homogeneity adjustment
@@ -38,7 +40,7 @@ Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    
 1880   -29  -20  -18  -27  -14  -28  -22   -7  -16  -15  -18  -20    -19 ***   ****  -19  -19  -16  1880
 1881    -9  -13    2   -2   -4  -28   -5   -2   -8  -19  -25  -14    -11 -11    -14   -1  -12  -17  1881
 1882    10    9    2  -19  -17  -24   -9    4    0  -22  -20  -24     -9  -8      1  -11  -10  -14  1882
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \enumerate{

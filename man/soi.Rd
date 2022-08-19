@@ -13,7 +13,9 @@ columns named \code{year} for decimal year (sampled monthly and represented
 at mid-month) and \code{index} for the index.
 }
 \details{
-The data were downloaded on August 11, 2017, and processed as follows.\if{html}{\out{<div class="sourceCode R">}}\preformatted{library(ncdf4)
+The data were downloaded on August 11, 2017, and processed as follows.
+
+\if{html}{\out{<div class="sourceCode R">}}\preformatted{library(ncdf4)
 url <- "https://www.cgd.ucar.edu/cas/catalog/climind/SOI.nc"
 download.file(url, "SOI.nc")
 f <- nc_open("SOI.nc")

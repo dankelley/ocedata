@@ -21,3 +21,4 @@ create_data
 ^check_package.R$
 
 ^CRAN-SUBMISSION$
+^codemeta\.json$

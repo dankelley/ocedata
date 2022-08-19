@@ -30,7 +30,9 @@ See References 2 and 3 for information on the data in such buoys, and 4 for more
 on this particular buoy.
 }
 
-The code to create the dataset is given below.\preformatted{d <- read.table("44258.txt", stringsAsFactors=FALSE, skip=2)
+The code to create the dataset is given below.
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{d <- read.table("44258.txt", stringsAsFactors=FALSE, skip=2)
 t <- ISOdatetime(d[,1], d[,2], d[,3], d[,4], d[,5], 0, tz="UTC")
 o <- order(t)
 # handle missing data
@@ -46,7 +48,7 @@ period <- as.numeric(d[,10])
 pa <- as.numeric(d[,13])
 Ta <- as.numeric(d[,14])
 Tw <- as.numeric(d[,15])
-}
+}\if{html}{\out{</div>}}
 }
 \examples{
 data(buoy, package="ocedata")

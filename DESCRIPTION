@@ -1,5 +1,5 @@
 Package: ocedata
-Version: 0.2.1
+Version: 0.2.2
 Title: Oceanographic Data Sets for 'oce' Package
 Authors@R: c(
     person(given="Dan", family="Kelley", email="Dan.Kelley@Dal.Ca", role=c("aut", "cre"), comment=c(ORCID="https://orcid.org/0000-0001-7808-5911")),
@@ -21,4 +21,4 @@ LazyDataNote: not possible, since we use data/*.R
 BuildResaveData: no
 Packaged: Dan Kelley
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
