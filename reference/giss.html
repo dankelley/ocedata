@@ -19,7 +19,7 @@ anomaly."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/ma
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ocedata</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.2</span>
       </span>
     </div>
 
@@ -57,7 +57,7 @@ anomaly.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">giss</span>, package<span class="op">=</span><span class="st">"ocedata"</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">giss</span>, package<span class="op">=</span><span class="st">"ocedata"</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="details">
@@ -75,19 +75,18 @@ as in shown below. These data were then read with R code (reference 5) that
 skips the headers, chops out the annual means and then assigns columns to
 year fractions, e.g. the first two numbers in the data shown below are -29
 and -20, yielding values -0.29degC and -0.20degC, and times are here
-represented as 1880+1/24 and 1880+3/24, i.e. 1880.042 and 1880.125.</p><div class="sourceCode"><pre><code>        GLOBAL Land-Ocean Temperature Index in 0.01 degrees Celsius   base period: 1951-1980
-
-                    sources:  GHCN-v3 1880-11/2015 + SST: ERSST v4 1880-11/2015
-                    using elimination of outliers and homogeneity adjustment
-                    Notes: 1950 DJF = Dec 1949 - Feb 1950 ;  ***** = missing
-
-                                                                     AnnMean
-Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year
-1880   -29  -20  -18  -27  -14  -28  -22   -7  -16  -15  -18  -20    -19 ***   ****  -19  -19  -16  1880
-1881    -9  -13    2   -2   -4  -28   -5   -2   -8  -19  -25  -14    -11 -11    -14   -1  -12  -17  1881
-1882    10    9    2  -19  -17  -24   -9    4    0  -22  -20  -24     -9  -8      1  -11  -10  -14  1882
-</code></pre></div>
-
+represented as 1880+1/24 and 1880+3/24, i.e. 1880.042 and 1880.125.</p>
+<p></p><div class="sourceCode"><pre><code><span id="cb1-1"><a href="#cb1-1"></a>        GLOBAL Land<span class="op">-</span>Ocean Temperature Index <span class="cf">in</span> <span class="fl">0.01</span> degrees Celsius   base period<span class="op">:</span><span class="st"> </span><span class="dv">1951-1980</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>                    sources<span class="op">:</span><span class="st">  </span>GHCN<span class="op">-</span>v3 <span class="dv">1880-11</span><span class="op">/</span><span class="dv">2015</span> <span class="op">+</span><span class="st"> </span>SST<span class="op">:</span><span class="st"> </span>ERSST v4 <span class="dv">1880-11</span><span class="op">/</span><span class="dv">2015</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>                    using elimination of outliers and homogeneity adjustment</span>
+<span id="cb1-5"><a href="#cb1-5"></a>                    Notes<span class="op">:</span><span class="st"> </span><span class="dv">1950</span> DJF =<span class="st"> </span>Dec <span class="dv">1949</span> <span class="op">-</span><span class="st"> </span>Feb <span class="dv">1950</span> ;  <span class="op">**</span><span class="er">***</span><span class="st"> </span><span class="er">=</span><span class="st"> </span>missing</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a>                                                                     AnnMean</span>
+<span id="cb1-8"><a href="#cb1-8"></a>Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J<span class="op">-</span>D D<span class="op">-</span>N    DJF  MAM  JJA  SON  Year</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="dv">1880</span>   <span class="dv">-29</span>  <span class="dv">-20</span>  <span class="dv">-18</span>  <span class="dv">-27</span>  <span class="dv">-14</span>  <span class="dv">-28</span>  <span class="dv">-22</span>   <span class="dv">-7</span>  <span class="dv">-16</span>  <span class="dv">-15</span>  <span class="dv">-18</span>  <span class="dv">-20</span>    <span class="dv">-19</span> <span class="op">**</span><span class="er">*</span><span class="st">   </span><span class="er">****</span><span class="st">  </span><span class="dv">-19</span>  <span class="dv">-19</span>  <span class="dv">-16</span>  <span class="dv">1880</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="dv">1881</span>    <span class="dv">-9</span>  <span class="dv">-13</span>    <span class="dv">2</span>   <span class="dv">-2</span>   <span class="dv">-4</span>  <span class="dv">-28</span>   <span class="dv">-5</span>   <span class="dv">-2</span>   <span class="dv">-8</span>  <span class="dv">-19</span>  <span class="dv">-25</span>  <span class="dv">-14</span>    <span class="dv">-11</span> <span class="dv">-11</span>    <span class="dv">-14</span>   <span class="dv">-1</span>  <span class="dv">-12</span>  <span class="dv">-17</span>  <span class="dv">1881</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="dv">1882</span>    <span class="dv">10</span>    <span class="dv">9</span>    <span class="dv">2</span>  <span class="dv">-19</span>  <span class="dv">-17</span>  <span class="dv">-24</span>   <span class="dv">-9</span>    <span class="dv">4</span>    <span class="dv">0</span>  <span class="dv">-22</span>  <span class="dv">-20</span>  <span class="dv">-24</span>     <span class="dv">-9</span>  <span class="dv">-8</span>      <span class="dv">1</span>  <span class="dv">-11</span>  <span class="dv">-10</span>  <span class="dv">-14</span>  <span class="dv">1882</span></span></code></pre><p></p></div>
     </div>
     <div id="references">
     <h2>References</h2>
@@ -117,7 +116,7 @@ change.  <em>Rev. Geophys.</em>, 48, RG4004.
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>
