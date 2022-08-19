@@ -78,5 +78,6 @@
   "relatedLink": ["https://dankelley.github.io/ocedata/", "https://CRAN.R-project.org/package=ocedata"],
   "releaseNotes": "https://github.com/dankelley/ocedata/blob/master/NEWS.md",
   "readme": "https://github.com/dankelley/ocedata/blob/main/README.md",
-  "contIntegration": "https://github.com/dankelley/ocedata/actions"
+  "contIntegration": "https://github.com/dankelley/ocedata/actions",
+  "developmentStatus": "https://www.repostatus.org/"
 }

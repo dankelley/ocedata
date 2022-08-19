@@ -1,9 +1,9 @@
 ## Reason for release
 
-This updates web links and lowers the dependence on other packages.
+This updates html doc pages as required by CRAN.
 
 ## Test environments
-* local macos R [4.1.3 (2022-03-10)] build/check/install OK
+* local macos R [4.2.1 (2022-07-09 r82577)] build/check/install OK
 * rhub::check_for_cran()
   * Fedora Linux, R-devel, clang, gfortran: OK
   * Ubuntu Linux 20.04.1 LTS, R-release, GCC: OK
