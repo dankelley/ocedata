@@ -1,17 +1,14 @@
-# ocedata 0.2.0
+# ocedata
 
 <!-- badges: start -->
 
-[![Project Status: Active – The project has reached a stable, usable
-state and is being actively
-developed.](http://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/)
-[![R-CMD-check](https://github.com/dankelley/ocedata/workflows/R-CMD-check/badge.svg)](https://github.com/dankelley/ocedata/actions)
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ocedata)](https://cran.r-project.org/package=ocedata)
-![RStudio CRAN mirror
-downloads](https://cranlogs.r-pkg.org/badges/last-month/ocedata) ![RStudio
-CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-week/ocedata)
-![RStudio CRAN mirror
-downloads](https://cranlogs.r-pkg.org/badges/last-day/ocedata)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/)
+[![R-CMD-check](https://github.com/dankelley/ocedata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dankelley/ocedata/actions/workflows/R-CMD-check.yaml)
+![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-month/ocedata)
+![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-week/ocedata)
+![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-day/ocedata)
+![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/ocedata)
 
 <!-- badges: end -->
 

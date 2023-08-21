@@ -1,3 +1,11 @@
+# oce 0.2.3
+
+* Fix overall package documentation so `package?ocedata` works.
+
+# oce 0.2.2
+
+* On CRAN
+
 # oce 0.2.1
 
 * Fix problem in html pages (required by CRAN)
