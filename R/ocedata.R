@@ -15,5 +15,7 @@
 #' @docType package
 #'
 #' @name ocedata
+#' @keywords internal
+"_PACKAGE"
 NULL
 

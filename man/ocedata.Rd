@@ -3,6 +3,7 @@
 \docType{package}
 \name{ocedata}
 \alias{ocedata}
+\alias{ocedata-package}
 \title{ocedata: Datasets for the oce package}
 \description{
 The ocedata package provides datasets for use in oceanographic analysis.
@@ -14,3 +15,21 @@ interest to merit inclusion in a separate package.  Such datasets are
 provided here, for use by Oceanographers using the \CRANpkg{oce} package or
 other more general packages.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://dankelley.github.io/ocedata/}
+  \item Report bugs at \url{https://github.com/dankelley/ocedata/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Dan Kelley \email{Dan.Kelley@Dal.Ca} (\href{https://orcid.org/0000-0001-7808-5911}{ORCID})
+
+Authors:
+\itemize{
+  \item Clark Richards \email{clark.richards@gmail.com} (\href{https://orcid.org/0000-0002-7833-206X}{ORCID})
+}
+
+}
+\keyword{internal}
