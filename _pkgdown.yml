@@ -1,2 +1,7 @@
 destination: docs
 
+reference:
+- title: Datasets
+- contents:
+  - matches(".*")
+

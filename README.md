@@ -4,6 +4,7 @@
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ocedata)](https://cran.r-project.org/package=ocedata)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/)
+[![GitHub last commit](https://img.shields.io/github/last-commit/dankelley/ocedata)](https://img.shields.io/github/last-commit/dankelley/ocedata)
 [![R-CMD-check](https://github.com/dankelley/ocedata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dankelley/ocedata/actions/workflows/R-CMD-check.yaml)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-month/ocedata)
 ![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/last-week/ocedata)
